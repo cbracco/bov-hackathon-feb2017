@@ -1,8 +1,9 @@
 /**
- * Color Scheme
+ * VARIABLES
  * (for reference only)
  */
 :root {
+  /* Grayscale */
   --color-gray-darkest: #1e2226;
   --color-gray-darker: #34383c;
   --color-gray-dark: #76818c;
@@ -10,28 +11,229 @@
   --color-gray-light: #acb6bf;
   --color-gray-lighter: #c3ced9;
   --color-gray-lightest: #f3f5f8;
-
-  --color-blue: #51d0ef;
-  --color-blue-light: #dce8fa;
-  --color-blue-lighter: #edfafd;
-
-  -color-pink: #eb74aa;
+  --color-white: #ffffff;
+  /* Primary (Blue) */
+  --color-primary: #51d0ef;
+  --color-primary-light: #a5cfdb;
+  --color-primary-lighter: #dce8fa;
+  --color-primary-lightest: #edfafd;
+  /* Secondary (Pink) */
+  --color-secondary: #eb74aa;
+  /* Border Radius */
+  --border-radius: 4px;
+  /* Spacing */
+  --base-spacing-unit: 1rem;
 }
 
+/**
+ * RESET
+ */
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * TYPOGRAPHY
+ */
+
+/* Default body text styles */
 body {
   font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   background-color: #f3f5f8;
   color: #76818c;
+  margin: 0;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+  font-weight: 400;
   line-height: 1.2;
   color: #1e2226;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* Specify the font for code display */
+code,
+kbd,
+pre,
+samp {
+  font-family: Monaco, Consolas, "Liberation Mono", Courier, monospace;
+}
+
+/**
+ * MASTHEAD
+ */
+
+.sw-masthead {
+  padding: 2rem 2rem 0;
+  background-color: #1e2226;
+  text-align: center;
+}
+
+.sw-masthead .sw-heading {
+  color: #51d0ef;
+}
+
+.sw-masthead .sw-heading span {
+  color: #ffffff;
+}
+
+/**
+ * LOGO
+ */
+
+.sw-logo {
+  display: inline-block;
+  padding: 0.75rem;
+  background-color: #51d0ef;
+  border-radius: 50%;
+  line-height: 0;
+}
+
+.sw-logo img {
+  width: 3rem;
+}
+
+/**
+ * SEARCHFORM
+ */
+
+.sw-searchform {
+  position: relative;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+.sw-searchform-input {
+  display: block;
+  width: 100%;
+  font-size: 100%;
+  padding: 0.75rem 0.75rem 0.75rem 2.25rem;
+  background-color: #34383c;
+  color: #acb6bf;
+  border: 0;
+  border-radius: 4px;
+}
+
+.sw-searchform-input::-webkit-input-placeholder {
+  color: #76818c;
+}
+
+.sw-searchform-input::-moz-placeholder {
+  color: #76818c;
+}
+
+.sw-searchform-input:-ms-input-placeholder {
+  color: #76818c;
+}
+
+.sw-searchform-input:-moz-placeholder {
+  color: #76818c;
+}
+
+.sw-searchform-icon {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  width: 16px;
+}
+
+/**
+ * NAVIGATION
+ */
+
+.sw-nav {
+  line-height: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sw-nav-list {
+  display: inline-block;
+  line-height: 1.5;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sw-nav-item {
+  float: left;
+}
+
+.sw-nav-item.is-current .sw-nav-link,
+.sw-nav-link:hover {
+  color: #ffffff;
+  border-color: #eb74aa;
+}
+
+.sw-nav-link {
+  display: block;
+  padding: 1rem;
+  color: #76818c;
+  text-decoration: none;
+  border-bottom: 4px solid #1e2226;
+  -webkit-transition: color 0.5s ease, border-color 0.5s ease;
+  -moz-transition: color 0.5s ease, border-color 0.5s ease;
+  transition: color 0.5s ease, border-color 0.5s ease;
+}
+
+/**
+ * UTILITIES
+ */
+
+/* Hide only visually, but have it available for screenreaders. */
+.visuallyhidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    border: 0;
+}
+
+/* Contain floats without resorting to using presentational markup. */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
 }
