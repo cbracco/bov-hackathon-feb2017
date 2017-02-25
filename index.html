@@ -3,6 +3,7 @@
 <head>
   <!-- Meta -->
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Title, desc -->
   <title>Showcase Website</title>
   <!-- Fonts -->
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="./assets/showcase/styles/styles.css">
 </head>
 <body>
+  <!-- SVG Icons -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="icon-book" viewBox="0 0 512 512">
       <path d="m499 92l0-34c0-9-8-17-19-13 0 0-30 10-58 0-85-34-145 0-166 15-21-17-81-49-166-15-28 10-58 0-58 0-11-4-19 4-19 13l0 34c-7 0-13 6-13 13l0 364c0 7 6 13 13 13l484 0c6 0 13-6 13-13l0-364c2-7-4-13-11-13z m-85-22c21 9 45 7 57 5l0 343c-10 2-29 7-49-2-79-32-134-6-160 11l0-337c28-26 84-45 152-20z m-373 7c14 2 36 4 57-4 64-26 120-11 149 19l0 337c-40-28-96-36-160-11-19 7-38 4-49 2z"/>
@@ -28,7 +30,9 @@
       <path d="m451 135c0 0-1-5-1-7 0-1-1-2-1-2-1 0-2-4-2-5 0-1 0-1-1-2-4-13-10-24-15-32-44-72-133-94-197-85-59 9-104 39-128 85-6 13-10 23-12 32l-1 7c0 0-1 1-1 2l-2 7c-2 13-2 27 0 43l0 4c0 4-1 8-3 12l-31 67c-4 8-3 17 2 26 5 8 13 13 23 13l13 0-6 30c-2 8-1 16 2 23l1 3c4 11 5 22 3 34-2 8 0 16 4 21 4 7 12 11 20 12l45 7 0 73c0 3 2 6 3 7 2 1 4 2 6 2 1 0 2 0 3-1l205-73c2-1 4-3 6-5 0-3 0-5 0-7-14-34-16-62-6-85 6-13 14-21 19-27l2-1c51-51 69-111 50-178z m-125 90c-3 0-6-2-8-4l-9-18-24 67c-2 4-5 6-8 6l-1 0c-4-1-7-3-8-7l-34-155-26 104c-1 4-4 7-8 7l-53 0c-5 0-9-4-9-9 0-5 4-9 9-9l46 0 33-133c1-4 5-6 9-6 4 0 7 3 8 7l36 161 21-58c2-3 4-5 7-5 3-1 7 1 8 4l17 29 63 0c5 0 9 4 9 9 0 5-4 9-9 9l-69 0z"/>
     </symbol>
   </svg>
+  <!-- Checkbox Hack for Off-Canvas Sidebar Effect -->
   <input class="sw-sidebar-input visuallyhidden" id="swSidebar" type="checkbox">
+  <!-- Header -->
   <header class="sw-header">
     <div class="sw-container">
       <a class="sw-logo" href="#sw-top">
@@ -57,49 +61,162 @@
       </nav>
     </div>
   </header>
+  <!-- Body -->
   <main class="sw-body" role="main">
+    <!-- Mask for Off-Canvas Sidebar Effect -->
     <label class="sw-sidebar-mask" for="swSidebar"></label>
     <div class="sw-container">
+      <!-- Content -->
       <div class="sw-content">
         <section class="sw-section" id="sw-section-1">
           <h1>Button</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
-          <h2>Basic</h2>
+          <h2>Default</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           <div class="sw-demo">[Demo Goes Here]</div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup1">
-            <label class="sw-markup-toggle" for="swMarkup1">Show Markup</label>
-            <pre class="sw-markup-body">&lt;button class="button button-default"&gt;I’m a button!&lt;/button&gt;</pre>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup1Default">
+            <label class="sw-markup-toggle" for="swMarkup1Default">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
           </div>
           <hr>
-          <h2>Rounded</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, vitae deserunt id necessitatibus facilis perspiciatis minus quis ea quod iusto non ut a consequatur atque tenetur ad nesciunt earum vel.</p>
+          <h2>Variant</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup1Variant1">
+            <label class="sw-markup-toggle" for="swMarkup1Variant1">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
         </section>
         <section class="sw-section" id="sw-section-2">
           <h1>Card</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <h2>Default</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Default">
+            <label class="sw-markup-toggle" for="swMarkup2Default">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
+          <hr>
+          <h2>Variant</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Variant1">
+            <label class="sw-markup-toggle" for="swMarkup2Variant1">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
         </section>
         <section class="sw-section" id="sw-section-3">
           <h1>Accordion</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <h2>Default</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Default">
+            <label class="sw-markup-toggle" for="swMarkup3Default">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
+          <hr>
+          <h2>Variant</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Variant1">
+            <label class="sw-markup-toggle" for="swMarkup3Variant1">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
         </section>
         <section class="sw-section" id="sw-section-4">
           <h1>Modal</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <h2>Default</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Default">
+            <label class="sw-markup-toggle" for="swMarkup4Default">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
+          <hr>
+          <h2>Variant</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Variant1">
+            <label class="sw-markup-toggle" for="swMarkup4Variant1">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
         </section>
         <section class="sw-section" id="sw-section-5">
           <h1>Tabpanel</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <h2>Default</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Default">
+            <label class="sw-markup-toggle" for="swMarkup5Default">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
+          <hr>
+          <h2>Variant</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Variant1">
+            <label class="sw-markup-toggle" for="swMarkup5Variant1">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
         </section>
         <section class="sw-section" id="sw-section-6">
           <h1>Tilt Hover</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <h2>Default</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Default">
+            <label class="sw-markup-toggle" for="swMarkup6Default">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
+          <hr>
+          <h2>Variant</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Variant1">
+            <label class="sw-markup-toggle" for="swMarkup6Variant1">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
         </section>
         <section class="sw-section" id="sw-section-7">
           <h1>Scrollspy</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <h2>Default</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Default">
+            <label class="sw-markup-toggle" for="swMarkup7Default">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
+          <hr>
+          <h2>Variant</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Variant1">
+            <label class="sw-markup-toggle" for="swMarkup7Variant1">Show Markup</label>
+            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+          </div>
         </section>
       </div>
+      <!-- Sidebar -->
       <div class="sw-sidebar">
         <label class="sw-sidebar-toggle" for="swSidebar">
           <span class="sw-sidebar-toggle-icon">
@@ -137,6 +254,7 @@
       </div>
     </div>
   </main>
+  <!-- Footer -->
   <footer class="sw-footer" role="contentinfo">
     <div class="sw-container">
       <nav class="sw-footer-nav" role="navigation">
@@ -222,6 +340,7 @@
       </nav>
     </div>
   </footer>
+  <!-- Scripts -->
   <script src="./assets/showcase/scripts/scripts.js"></script>
 </body>
 </html>
