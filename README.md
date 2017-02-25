@@ -20,3 +20,7 @@ Use the visual designs provided by MD as references while developing UI elements
 - Don’t use jQuery or any other library. You don’t want to download a big library just to use a tooltip.
 - Each team must submit at least two innovative elements; see the details below.
 - Remember that each teammate must submit a writeup no later than 12 hours after you submit your project.
+
+# Team
+
+- [Chris Bracco](https://github.com/cbracco) (Project Manager)
