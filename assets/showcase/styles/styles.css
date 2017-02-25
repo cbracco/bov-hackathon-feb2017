@@ -1,0 +1,37 @@
+/**
+ * Color Scheme
+ * (for reference only)
+ */
+:root {
+  --color-gray-darkest: #1e2226;
+  --color-gray-darker: #34383c;
+  --color-gray-dark: #76818c;
+  --color-gray: #939ba3;
+  --color-gray-light: #acb6bf;
+  --color-gray-lighter: #c3ced9;
+  --color-gray-lightest: #f3f5f8;
+
+  --color-blue: #51d0ef;
+  --color-blue-light: #dce8fa;
+  --color-blue-lighter: #edfafd;
+
+  -color-pink: #eb74aa;
+}
+
+body {
+  font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #f3f5f8;
+  color: #76818c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  color: #1e2226;
+}
