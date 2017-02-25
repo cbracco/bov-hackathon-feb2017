@@ -11,28 +11,211 @@
   <link rel="stylesheet" href="./assets/showcase/styles/styles.css">
 </head>
 <body>
-  <header class="sw-masthead">
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-book" viewBox="0 0 512 512">
+      <path d="m499 92l0-34c0-9-8-17-19-13 0 0-30 10-58 0-85-34-145 0-166 15-21-17-81-49-166-15-28 10-58 0-58 0-11-4-19 4-19 13l0 34c-7 0-13 6-13 13l0 364c0 7 6 13 13 13l484 0c6 0 13-6 13-13l0-364c2-7-4-13-11-13z m-85-22c21 9 45 7 57 5l0 343c-10 2-29 7-49-2-79-32-134-6-160 11l0-337c28-26 84-45 152-20z m-373 7c14 2 36 4 57-4 64-26 120-11 149 19l0 337c-40-28-96-36-160-11-19 7-38 4-49 2z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 512 512">
+      <path d="m256 47c68 0 77 0 102 2 26 2 39 4 47 9 13 4 22 10 30 19 9 8 15 17 19 30 5 8 9 23 9 47 2 27 2 34 2 102 0 68 0 77-2 102-2 26-4 39-9 47-4 13-10 22-19 30-8 9-17 15-30 19-8 5-23 9-47 9-27 2-34 2-102 2-68 0-77 0-102-2-26-2-39-4-47-9-13-4-22-10-30-19-9-8-15-17-19-30-5-8-9-23-9-47-2-27-2-34-2-102 0-68 0-77 2-102 0-26 4-41 6-49 5-13 11-22 20-30 10-9 19-13 30-20 8-2 23-6 49-8 25 0 34 0 102 0m0-47c-70 0-79 0-105 2-27 0-46 4-64 11-14 6-29 15-44 30-15 15-24 30-30 44-7 18-11 37-11 64-2 26-2 35-2 105 0 70 0 79 2 105 2 27 7 44 13 61 4 17 13 32 28 47 15 15 27 24 44 30 18 7 35 11 62 13 28 0 37 0 107 0 70 0 79 0 105-2 27-2 44-7 61-13 17-6 32-15 45-30 15-15 24-28 30-45 6-17 11-34 13-61 2-26 2-35 2-105 0-70 0-79-2-105-2-27-7-44-13-61-4-17-13-32-28-47-15-15-27-24-44-30-18-7-35-11-62-13-28 0-37 0-107 0z m0 124c-73 0-132 59-132 132 0 73 59 132 132 132 73 0 132-59 132-132 0-73-59-132-132-132z m0 217c-47 0-85-38-85-85 0-47 38-85 85-85 47 0 85 38 85 85 0 47-38 85-85 85z m166-222c0 17-13 30-29 30-17 0-30-13-30-30 0-16 13-29 30-29 16 0 29 13 29 29z"/>
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 512 512">
+      <path d="m503 463l-93-94c32-40 49-92 49-141 0-126-103-230-231-230-128 0-230 102-230 230 0 126 102 231 230 231 51 0 103-17 141-49l94 93c6 7 13 9 19 9 7 0 13-2 19-9 13-12 13-29 2-40z m-98-233c0 96-79 175-175 175-96 0-175-79-175-175 0-96 79-175 175-175 99 0 175 79 175 175z"/>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 512 512">
+      <path d="m160 464c195 0 299-160 299-299 0-4 0-8 0-13 21-15 38-34 53-53-19 9-38 15-59 17 21-13 38-34 47-58-22 13-43 22-67 26-19-21-46-34-76-34-58 0-105 47-105 104 0 9 0 18 2 24-87-4-164-47-215-109-9 15-15 34-15 53 0 37 19 69 47 88-17 0-34-4-47-13 0 0 0 0 0 2 0 51 36 94 85 103-8 2-17 4-28 4-6 0-12 0-19-2 13 42 51 72 98 72-36 28-81 45-130 45-8 0-17 0-25-2 42 28 98 45 155 45"/>
+    </symbol>
+    <symbol id="icon-logo" viewBox="0 0 512 512">
+      <path d="m451 135c0 0-1-5-1-7 0-1-1-2-1-2-1 0-2-4-2-5 0-1 0-1-1-2-4-13-10-24-15-32-44-72-133-94-197-85-59 9-104 39-128 85-6 13-10 23-12 32l-1 7c0 0-1 1-1 2l-2 7c-2 13-2 27 0 43l0 4c0 4-1 8-3 12l-31 67c-4 8-3 17 2 26 5 8 13 13 23 13l13 0-6 30c-2 8-1 16 2 23l1 3c4 11 5 22 3 34-2 8 0 16 4 21 4 7 12 11 20 12l45 7 0 73c0 3 2 6 3 7 2 1 4 2 6 2 1 0 2 0 3-1l205-73c2-1 4-3 6-5 0-3 0-5 0-7-14-34-16-62-6-85 6-13 14-21 19-27l2-1c51-51 69-111 50-178z m-125 90c-3 0-6-2-8-4l-9-18-24 67c-2 4-5 6-8 6l-1 0c-4-1-7-3-8-7l-34-155-26 104c-1 4-4 7-8 7l-53 0c-5 0-9-4-9-9 0-5 4-9 9-9l46 0 33-133c1-4 5-6 9-6 4 0 7 3 8 7l36 161 21-58c2-3 4-5 7-5 3-1 7 1 8 4l17 29 63 0c5 0 9 4 9 9 0 5-4 9-9 9l-69 0z"/>
+    </symbol>
+  </svg>
+  <input class="sw-sidebar-input visuallyhidden" id="swSidebar" type="checkbox">
+  <header class="sw-header">
     <div class="sw-container">
       <a class="sw-logo" href="#sw-top">
         <span class="sw-logo-image">
-          <img src="./assets/showcase/images/sw-logo.svg">
+          <svg class="sw-logo-icon sw-icon-logo sw-icon-large"><use xlink:href="#icon-logo"></use></svg>
         </span>
         <h1 class="sw-logo-text">Team Twelve <span>UI Framework</span></h1>
       </a>
       <form action="#!" class="sw-searchform">
         <label for="swSearchform" class="sw-searchform-label visuallyhidden">Search this Website</label>
         <input class="sw-searchform-input" type="search" id="swSearchform" placeholder="Search">
-        <img class="sw-searchform-icon" src="./assets/showcase/images/icon-search.svg" alt="Search Icon">
+        <svg class="sw-searchform-icon sw-icon-search sw-icon-small"><use xlink:href="#icon-search"></use></svg>
       </form>
-      <nav class="sw-nav" role="navigation">
-        <ul class="sw-nav-list clearfix">
-          <li class="sw-nav-item is-current"><a href="#!" class="sw-nav-link">UI Elements</a></li>
-          <li class="sw-nav-item"><a href="#!" class="sw-nav-link">Maintainers</a></li>
-          <li class="sw-nav-item"><a href="#!" class="sw-nav-link">About Team Twelve</a></li>
+      <nav class="sw-header-nav" role="navigation">
+        <ul class="sw-header-nav-list clearfix">
+          <li class="sw-header-nav-item is-current">
+            <a class="sw-header-nav-link" href="#!">UI Elements</a>
+          </li>
+          <li class="sw-header-nav-item">
+            <a class="sw-header-nav-link" href="#!">Maintainers</a>
+          </li>
+          <li class="sw-header-nav-item">
+            <a class="sw-header-nav-link" href="#!">About Team Twelve</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
+  <main class="sw-body" role="main">
+    <label class="sw-sidebar-mask" for="swSidebar"></label>
+    <div class="sw-container">
+      <div class="sw-content">
+        <section class="sw-section" id="sw-section-1">
+          <h1>Button</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <h2>Basic</h2>
+          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup1">
+            <label class="sw-markup-toggle" for="swMarkup1">Show Markup</label>
+            <pre class="sw-markup-body">&lt;button class="button button-default"&gt;I’m a button!&lt;/button&gt;</pre>
+          </div>
+          <hr>
+          <h2>Rounded</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, vitae deserunt id necessitatibus facilis perspiciatis minus quis ea quod iusto non ut a consequatur atque tenetur ad nesciunt earum vel.</p>
+        </section>
+        <section class="sw-section" id="sw-section-2">
+          <h1>Card</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+        </section>
+        <section class="sw-section" id="sw-section-3">
+          <h1>Accordion</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+        </section>
+        <section class="sw-section" id="sw-section-4">
+          <h1>Modal</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+        </section>
+        <section class="sw-section" id="sw-section-5">
+          <h1>Tabpanel</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+        </section>
+        <section class="sw-section" id="sw-section-6">
+          <h1>Tilt Hover</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+        </section>
+        <section class="sw-section" id="sw-section-7">
+          <h1>Scrollspy</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque inventore reprehenderit explicabo, doloremque veniam, laborum, veritatis obcaecati aliquam neque voluptatem quidem, harum! Ratione velit, maiores aspernatur, molestias laborum officia ab.</p>
+        </section>
+      </div>
+      <div class="sw-sidebar">
+        <label class="sw-sidebar-toggle" for="swSidebar">
+          <span class="sw-sidebar-toggle-icon">
+            <span class="sw-sidebar-toggle-line sw-sidebar-toggle-line-1"></span>
+            <span class="sw-sidebar-toggle-line sw-sidebar-toggle-line-2"></span>
+            <span class="sw-sidebar-toggle-line sw-sidebar-toggle-line-3"></span>
+          </span>
+        </label>
+        <nav class="sw-sidebar-nav" role="navigation">
+          <h1 class="sw-sidebar-heading">UI Elements</h1>
+          <ul class="sw-sidebar-list">
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link" href="#sw-section-1">Button</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link" href="#sw-section-2">Card</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link" href="#sw-section-3">Accordion</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link" href="#sw-section-4">Modal</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link" href="#sw-section-5">Tabpanel</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link" href="#sw-section-6">Tilt Hover</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link" href="#sw-section-7">Scrollspy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </main>
+  <footer class="sw-footer" role="contentinfo">
+    <div class="sw-container">
+      <nav class="sw-footer-nav" role="navigation">
+        <ul class="sw-footer-nav-list">
+          <li class="sw-footer-nav-item">
+            <a class="sw-footer-nav-link" href="#!">Home</a>
+          </li>
+          <li class="sw-footer-nav-item">
+            <a class="sw-footer-nav-link" href="#!">Programs and Career Paths</a>
+          </li>
+          <li class="sw-footer-nav-item">
+            <a class="sw-footer-nav-link" href="#!">Our Mission</a>
+          </li>
+          <li class="sw-footer-nav-item">
+            <a class="sw-footer-nav-link" href="#!">Careers</a>
+          </li>
+          <li class="sw-footer-nav-item">
+            <a class="sw-footer-nav-link" href="#!">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="sw-footer-nav" role="navigation">
+        <ul class="sw-footer-nav-list">
+          <li class="sw-footer-nav-item">
+            <a class="sw-footer-nav-link" href="#!">
+              <svg class="sw-icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+            </a>
+          </li>
+          <li class="sw-footer-nav-item">
+            <a class="sw-footer-nav-link" href="#!">
+              <svg class="sw-icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+            </a>
+          </li>
+          <li class="sw-footer-nav-item">
+            <a class="sw-footer-nav-link" href="#!">
+              <svg class="sw-icon-book"><use xlink:href="#icon-book"></use></svg>
+            </a>
+          </li>
+          </li>
+        </ul>
+      </nav>
+      <hr>
+      <p>Developed by Bov Academy Students</p>
+      <nav class="sw-footer-credits">
+        <ul class="sw-footer-credits-list">
+          <li class="sw-footer-credits-item">
+            <a class="sw-footer-credits-link" href="#!" target="_blank">
+              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-chris-bracco.jpg" alt="Chris Bracco">
+              <span class="sw-footer-credits-text">Chris Bracco</span>
+            </a>
+          </li>
+          <li class="sw-footer-credits-item">
+            <a class="sw-footer-credits-link" href="#!" target="_blank">
+              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-chris-feltus.jpg" alt="Chris Feltus">
+              <span class="sw-footer-credits-text">Chris Feltus</span>
+            </a>
+          </li>
+          <li class="sw-footer-credits-item">
+            <a class="sw-footer-credits-link" href="#!" target="_blank">
+              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-chenfeng-lai.jpg" alt="Chenfeng Lai">
+              <span class="sw-footer-credits-text">Chenfeng Lai</span>
+            </a>
+          </li>
+          <li class="sw-footer-credits-item">
+            <a class="sw-footer-credits-link" href="#!" target="_blank">
+              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-jennifer-chiang.jpg" alt="Jennifer Chiang">
+              <span class="sw-footer-credits-text">Jennifer Chiang</span>
+            </a>
+          </li>
+          <li class="sw-footer-credits-item">
+            <a class="sw-footer-credits-link" href="#!" target="_blank">
+              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-leonardo-deleon.jpg" alt="Leonardo Deleon">
+              <span class="sw-footer-credits-text">Leonardo Deleon</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
   <script src="./assets/showcase/scripts/scripts.js"></script>
 </body>
 </html>
