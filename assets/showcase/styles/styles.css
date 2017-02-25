@@ -310,9 +310,16 @@ samp {
   padding: 18px 16px;
   border: 0;
   border-radius: 50%;
-  background-color: #51d0ef;
+  background-color: #eb74aa;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: transform 0.25s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.sw-sidebar-toggle:hover {
+  background-color: #d45f94;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1)
 }
 
 .sw-sidebar-toggle-icon {
@@ -331,7 +338,6 @@ samp {
   width: 100%;
   height: 4px;
   background-color: #ffffff;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 .sw-sidebar-toggle-line-1 {
@@ -428,7 +434,7 @@ samp {
 
 @media (min-width: 1140px) {
   .sw-sidebar {
-    width: 25%;
+    width: 20%;
   }
 
   .sw-sidebar-toggle {
@@ -574,7 +580,7 @@ samp {
 
 @media (min-width: 1140px) {
   .sw-content {
-    width: 75%;
+    width: 80%;
   }
 
   .sw-section {
