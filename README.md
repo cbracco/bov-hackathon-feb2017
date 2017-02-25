@@ -1,4 +1,4 @@
-# MD Hackathon, Feb 22-24 2017: Team 12
+# MD Hackathon, Feb 24-26 2017: Team 12
 
 > The repository for Team 12’s February 2017 Hackathon for Modern Developer!
 
