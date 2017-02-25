@@ -23,7 +23,8 @@ Use the visual designs provided by MD as references while developing UI elements
 
 # Team
 
-- [Chris Bracco](https://github.com/cbracco) (Project Manager)
+- [Chris Bracco](https://github.com/cbracco) (Project Manager, Developer)
+- [Chenfeng Lai](https://github.com/kubbafox) (Product Manager, Developer)
 - [Jason Rivera](https://github.com/rivera1294) (Developer)
 - [Jennifer Chiang](https://github.com/jchiang7874) (Developer)
   [Leonardo De Leon](https://github.com/bruceLeeO) (Developer)
