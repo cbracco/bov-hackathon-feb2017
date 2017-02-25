@@ -1,1 +1,141 @@
-.button {}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.content {
+    padding: 20px 0;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*******************************/
+/*********** HEADERS ***********/
+/*******************************/
+
+h1, h3 {
+    color: #373E45;
+}
+
+h3 {
+    margin: 0 0 20px 0;
+}
+
+p {
+    color: #A3B5C4;
+    padding: 10px 0;
+}
+
+hr {
+    border: 1px solid #EEF3F7;
+}
+
+/*******************************/
+/*********** WRAPPERS **********/
+/*******************************/
+
+.btns-wrapper {
+    width: 100%;
+    padding: 30px 0 10px 0;
+    margin: 0 auto;
+}
+
+.btns {
+    display: flex;
+}
+
+
+/*******************************/
+/*********** BUTTONS ***********/
+/*******************************/
+
+button {
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.90em;
+    color: #FFFFFF;
+}
+
+button:nth-child(even) {
+    margin: 0 10px;
+}
+
+.blue {
+    background-color: #65D8F1;
+}
+
+.gray {
+    background-color: #CED7E0;
+}
+
+.lite-gray {
+    background-color: #F6F7F9;
+    color: #BDC6CD;
+}
+
+.basic, .rounded {
+    flex-grow: 6;
+    padding: 15px 15px;
+    width: 13%;
+}
+
+.fa {
+    padding: 0 10px 0 0;
+}
+
+.basic {
+    border-radius: 5px;
+}
+
+.rounded {
+    border-radius: 50px;
+}
+
+.btns-markup {
+    background-color: #FFFFFF;
+    color: #A7B9C7;
+    border: 1px solid #CBD8EA;
+    width: 100%;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/*******************************/
+/************ HOVER ************/
+/*******************************/
+
+button:hover {
+    background-color: #EDFAFD;
+    color: #65D8F1;
+    cursor: pointer;
+}
+
+/*******************************/
+/*********** CODE BOX **********/
+/*******************************/
+
+.codeBox {
+    width: 100%;
+    height: 400px;
+    background-color: #F5F7FB;
+    border: 1px solid #CBD8EA;
+    margin: -50px 0 20px 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.code {
+    margin: 60px 0 0 25px;
+}
+
+.hide {
+    display: none;
+}
