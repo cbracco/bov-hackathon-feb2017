@@ -25,3 +25,4 @@ Use the visual designs provided by MD as references while developing UI elements
 
 - [Chris Bracco](https://github.com/cbracco) (Project Manager)
 - [Jason Rivera](https://github.com/rivera1294)
+- [Jennifer Chiang] (https://github.com/jchiang7874)
