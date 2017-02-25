@@ -8,7 +8,7 @@
 
 We will develop the website for our UI framework and at least 5 UI elements.
 
-Use the visual designs attached to this card as references when developing UI elements and the website.
+Use the visual designs provided by MD as references while developing UI elements and the website.
 
 # Rules
 
