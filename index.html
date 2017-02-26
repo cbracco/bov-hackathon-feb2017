@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./assets/ui/accordion/accordion.css">
   <link rel="stylesheet" href="./assets/ui/button/button.css">
   <link rel="stylesheet" href="./assets/ui/card/card.css">
+  <link rel="stylesheet" href="./assets/ui/modal/modal.css">
   <link rel="stylesheet" href="./assets/showcase/styles/styles.css">
 </head>
 <body>
@@ -271,20 +272,43 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
           <h2>Default</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-demo sw-demo-modal">
+            <input type="checkbox" id="modal1" class="modal-input">
+            <label class="button button-blue" for="modal1">Open Modal</label>
+            <label class="modal-overlay" for="modal1"></label>
+            <div class="modal">
+              <div class="modal-body">
+                <h3 class="modal-heading">
+                  <i class="modal-heading-icon fa fa-exclamation-circle"></i>
+                  Update form Feb 12, 2015
+                </h3>
+                <div class="modal-content">Bender, we’re trying our best. You’ll have all the Slurm you can drink when you’re partying with Slurms McKenzie!</div>
+              </div>
+              <div class="modal-footer">
+                <label class="modal-button modal-button-blue" for="modal1">Apply</label>
+                <label class="modal-button" for="modal1">Cancel</label>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Default">
             <label class="sw-markup-toggle" for="swMarkup4Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
-          </div>
-          <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
-          <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Variant1">
-            <label class="sw-markup-toggle" for="swMarkup4Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;input type="checkbox" id="modal1" class="modal-input"&gt;
+&lt;label class="button button-blue" for="modal1"&gt;Open Modal&lt;/label&gt;
+&lt;label class="modal-overlay" for="modal1"&gt;&lt;/label&gt;
+&lt;div class="modal"&gt;
+  &lt;div class="modal-body"&gt;
+    &lt;h3 class="modal-heading"&gt;
+      &lt;i class="modal-heading-icon fa fa-exclamation-circle"&gt;&lt;/i&gt;
+      Update form Feb 12, 2015
+    &lt;/h3&gt;
+    &lt;div class="modal-content"&gt;Bender, we’re trying our best. You’ll have all the Slurm you can drink when you’re partying with Slurms McKenzie!&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="modal-footer"&gt;
+    &lt;label class="modal-button modal-button-blue" for="modal1"&gt;Apply&lt;/label&gt;
+    &lt;label class="modal-button" for="modal1"&gt;Cancel&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
         </section>
         <section class="sw-section js-scrollspy-section" id="sw-section-5">

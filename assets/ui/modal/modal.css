@@ -1,146 +1,104 @@
-html {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
+/* Default */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 425px;
+  background-color: #ffffff;
+  transform: translate3d(-50%, -50%, 0);
+  text-align: center;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  border-radius: 4px;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
 }
 
-h1, h2, h3, p {
-    margin: 0;
+.modal-input:checked ~ .modal {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.content {
-    padding: 50px 0;
-    width: 90%;
-    margin: 0 auto;
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  cursor: pointer;
 }
 
-/*******************************/
-/*********** HEADERS ***********/
-/*******************************/
-
-h1 {
-    color: #373E45;
+.modal-input:checked ~ .modal-overlay {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-h3, h4 {
-    color: #6E7C8F;
+.modal-input {
+  display: none;
 }
 
-h3 {
-    margin: 30px 0 20px 0;
+.modal-body {
+  padding: 24px;
+  text-align: left;
 }
 
-h4 {
-    display: inline;
-    margin: 0 0 0 10px;
+.modal-heading {
+  font-size: 24px;
+  font-weight: 400;
+  color: #34383c;
+  margin: 0 0 16px;
 }
 
-p {
-    color: #A3B5C4;
-    padding: 10px 0;
+.modal-heading .modal-heading-icon {
+  position: relative;
+  top: -2px;
+  vertical-align: top;
+  font-size: 32px;
+  color: #ff9948;
+  margin-right: 4px;
 }
 
-/*******************************/
-/********* MODAL SAMPLE ********/
-/*******************************/
-
-.modalBoxSample, .modalBox {
-    width: 425px;
-    height: 250px;
-    border-radius: 5px;
-    box-shadow: 0px 6px 20px 3px rgba(37, 24, 24, 0.2);
+.modal-content {
+  color: #76818c;
+  font-size: 18px;
 }
 
-.fa {
-    color: #FFA961;
+.modal-footer:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
-.modalContent {
-    padding: 30px 30px 0;
+.modal-button {
+  float: left;
+  width: 50%;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #34383c;
+  border-top: 1px solid #51d0ef;
+  border-left: 1px solid #51d0ef;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 16px 24px;
+  transition: background-color 0.5s ease;
 }
 
-.summary {
-    color: #A6B0BD;
-    font-size: 0.80em;
-    margin: 10px 10px 20px 10px;
-    line-height: 30px;
+.modal-button:hover {
+  background-color: #f3f5f8;
 }
 
-/*******************************/
-/********* ACTION BTNS *********/
-/*******************************/
-
-.actionCall {
-    display: flex;
+.modal-button:first-child {
+  border-left: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
-.action.apply {
-    border-right: 1px solid #CBD8EA;
-}
-
-.action {
-    flex-grow: 2;
-    text-align: center;
-    border-top: 1px solid #CBD8EA;
-    padding: 15px;
-}
-
-.apply {
-    color: #65D8F1;
-}
-
-.cancel {
-    color: #6E7C8F;
-}
-
-
-/*******************************/
-/*********** MARKUP ***********/
-/*******************************/
-
-.btns-markup {
-    background-color: #FFFFFF;
-    color: #A7B9C7;
-    border: 1px solid #CBD8EA;
-    width: 100%;
-    margin: 50px 0;
-    padding: 15px;
-    border-radius: 5px;
-    font-size: 0.90em;
-}
-
-/*******************************/
-/********** MODAL POPUP*********/
-/*******************************/
-
-.bkgrd {
-    position: fixed;
-    height: 800px;
-    top: 0%;
-    left: 0%;
-    width: 800px;
-    background: linear-gradient(to bottom right, #1EBEBA, #25C5CD, #37B9E9);
-    visibility: hidden;
-    opacity: 0.95;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-.modalBox {
-    position: absolute;
-    top: 30%;
-    left: 30%;
-    z-index:999;
-    background-color: #FFF;
-}
-
-.bkgrd:target {
-    visibility: visible;
-    transition: 1s;
-    left: 50%;
-    top: 50%;
+.modal-button-blue {
+  color: #51d0ef;
 }

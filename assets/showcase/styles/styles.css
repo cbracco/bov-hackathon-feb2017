@@ -21,6 +21,8 @@
   --color-pink-dark: #d45f94;
   --color-pink: #eb74aa;
   --color-pink-light: #ffe7f2;
+  /* Tertiary (Orange) */
+  --color-orange: #ff9948;
   /* Border Radius */
   --border-radius: 4px;
   /* Spacing */
@@ -498,31 +500,31 @@ samp {
   margin-bottom: 0;
 }
 
-.sw-section p,
-.sw-section h1,
-.sw-section h2,
-.sw-section h3,
-.sw-section h4,
-.sw-section h5,
-.sw-section h6 {
+.sw-section > p,
+.sw-section > h1,
+.sw-section > h2,
+.sw-section > h3,
+.sw-section > h4,
+.sw-section > h5,
+.sw-section > h6 {
   margin-bottom: 24px;
 }
 
-.sw-section p {
+.sw-section > p {
   margin-top: 0;
 }
 
-.sw-section h1,
-.sw-section h2,
-.sw-section h3,
-.sw-section h4,
-.sw-section h5,
-.sw-section h6 {
+.sw-section > h1,
+.sw-section > h2,
+.sw-section > h3,
+.sw-section > h4,
+.sw-section > h5,
+.sw-section > h6 {
   margin-top: 32px;
   margin-bottom: 12px;
 }
 
-.sw-section hr {
+.sw-section > hr {
   display: block;
   height: 2px;
   border: 0;
