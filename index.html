@@ -11,6 +11,7 @@
   <script src="https://use.fontawesome.com/8d78942c92.js"></script>
   <!-- Styles -->
   <link rel="stylesheet" href="./assets/ui/button/button.css">
+  <link rel="stylesheet" href="./assets/ui/card/card.css">
   <link rel="stylesheet" href="./assets/showcase/styles/styles.css">
 </head>
 <body>
@@ -144,20 +145,72 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
           <h2>Default</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo"></div>
+          <div class="sw-demo sw-demo-card">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-heading"><span>$15</span>PSD Version</div>
+              </div>
+              <div class="card-body">
+                <ul class="card-list">
+                  <li><strong>Photoshop CS6+</strong> Optimized</li>
+                  <li><strong>Vector Shapes</strong> Used</li>
+                  <li><strong>Well Organized</strong> PSD Files</li>
+                  <li><strong>Light & Dark</strong> Theme</li>
+                  <li><strong>Free Fonts</strong> Used</li>
+                </ul>
+                <a href="#!" class="card-button button button-blue">Read More</a>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Default">
             <label class="sw-markup-toggle" for="swMarkup2Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="card"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;div class="card-heading"&gt;&lt;span&gt;$15&lt;/span&gt;PSD Version&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;ul class="card-list"&gt;
+      &lt;li&gt;&lt;strong&gt;Photoshop CS6+&lt;/strong&gt; Optimized&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Vector Shapes&lt;/strong&gt; Used&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Well Organized&lt;/strong&gt; PSD Files&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Light & Dark&lt;/strong&gt; Theme&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Free Fonts&lt;/strong&gt; Used&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href="#!" class="card-button button button-blue"&gt;Read More&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
           <hr>
-          <h2>Variant</h2>
+          <h2>With Image</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo"></div>
+          <div class="sw-demo sw-demo-card">
+            <div class="card card-image">
+              <div class="card-header">
+                <img src="./assets/ui/card/card-image.jpg" alt="Foggy Lake">
+              </div>
+              <div class="card-body">
+                <span class="card-date">Feb 12, 2015</span>
+                <h3 class="card-title">Bendin’ The Wind</h3>
+                <div class="card-desc">Goodbye, friends. I never thought I'd die like this. But I always really hoped. We can't compete with Mom! Her company is big and evil!</div>
+                <a href="#!" class="card-button button button-blue">Read More</a>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Variant1">
             <label class="sw-markup-toggle" for="swMarkup2Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="card card-image"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;img src="./assets/ui/card/card-image.jpg" alt="Foggy Lake"&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;span class="card-date"&gt;Feb 12, 2015&lt;/span&gt;
+    &lt;h3 class="card-title"&gt;Bendin’ The Wind&lt;/h3&gt;
+    &lt;div class="card-desc"&gt;Goodbye, friends. I never thought I'd die like this. But I always really hoped. We can't compete with Mom! Her company is big and evil!&lt;/div&gt;
+    &lt;a href="#!" class="card-button button button-blue"&gt;Read More&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
         </section>
         <section class="sw-section js-scrollspy-section" id="sw-section-3">

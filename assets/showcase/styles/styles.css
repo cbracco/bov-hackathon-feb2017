@@ -552,6 +552,10 @@ samp {
   margin-bottom: 12px;
 }
 
+.sw-demo-card .card {
+  max-width: 400px;
+}
+
 /* Markup */
 .sw-markup-toggle {
   display: block;
@@ -578,6 +582,13 @@ samp {
 
 .sw-markup-body {
   display: none;
+  position: relative;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  word-break: normal;
+  tab-size: 4;
+  hyphens: none;
   border: 1px solid #51d0ef;
   border-radius: 0 0 4px 4px;
   background-color: #f2f5fa;

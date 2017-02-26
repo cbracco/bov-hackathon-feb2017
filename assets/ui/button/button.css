@@ -17,6 +17,7 @@
   line-height: 1.5;
   padding: 12px 32px;
   border-radius: 4px;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .button:hover {
