@@ -412,7 +412,7 @@ samp {
 
 /* Dark mask to overlay content when sidebar menu is visible */
 .sw-sidebar-mask {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -434,7 +434,16 @@ samp {
 
 @media (min-width: 1140px) {
   .sw-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     width: 20%;
+  }
+
+  .sw-sidebar.is-affixed {
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .sw-sidebar-toggle {
@@ -465,7 +474,7 @@ samp {
     transition: border-color 0.33s ease, color 0.33s ease;
   }
 
-  .sw-sidebar-item.is-current .sw-sidebar-link,
+  .sw-sidebar-link.is-current,
   .sw-sidebar-link:hover {
     background-color: transparent;
     border-right-color: #eb74aa;
