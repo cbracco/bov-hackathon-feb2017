@@ -558,6 +558,14 @@ samp {
   max-width: 400px;
 }
 
+.sw-demo-tabpanel .tabpanel {
+  max-width: 650px;
+}
+
+.sw-demo-tilt .tilt-background {
+  background-image: url(./assets/ui/tilt/tilt-image-1.jpg)
+}
+
 /* Markup */
 .sw-markup-toggle {
   display: block;

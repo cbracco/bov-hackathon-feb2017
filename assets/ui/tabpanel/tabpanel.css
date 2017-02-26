@@ -1,0 +1,203 @@
+/* Default */
+.tabpanel {
+  display: block;
+  position: relative;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #76818c;
+}
+
+.tabpanel:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.tabpanel-input {
+  display: none;
+}
+
+.tabpanel-label {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  padding: 12px 0;
+  margin: 0 24px;
+  border-bottom: 2px solid #ffffff;
+  user-select: none;
+  transition: color 0.5s ease, border-color 0.5s ease;
+}
+
+.tabpanel-input:first-of-type:checked ~ .tabpanel-nav .tabpanel-label:first-of-type,
+.tabpanel-input:nth-of-type(2):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(2),
+.tabpanel-input:nth-of-type(3):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(3),
+.tabpanel-input:nth-of-type(4):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(4),
+.tabpanel-input:nth-of-type(5):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(5),
+.tabpanel-input:nth-of-type(6):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(6),
+.tabpanel-input:nth-of-type(7):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(7),
+.tabpanel-input:nth-of-type(8):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(8),
+.tabpanel-input:nth-of-type(9):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(9),
+.tabpanel-input:nth-of-type(10):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(10) {
+  border-bottom-color: #51d0ef;
+  color: #34383c;
+}
+
+.tabpanel-item {
+  display: none;
+  clear: left;
+  padding: 24px;
+  border: 1px solid #dce8fa;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tabpanel-input:first-of-type:checked ~ .tabpanel-list .tabpanel-item:first-of-type,
+.tabpanel-input:nth-of-type(2):checked ~ .tabpanel-list .tabpanel-item:nth-of-type(2),
+.tabpanel-input:nth-of-type(3):checked ~ .tabpanel-list .tabpanel-item:nth-of-type(3),
+.tabpanel-input:nth-of-type(4):checked ~ .tabpanel-list .tabpanel-item:nth-of-type(4),
+.tabpanel-input:nth-of-type(5):checked ~ .tabpanel-list .tabpanel-item:nth-of-type(5),
+.tabpanel-input:nth-of-type(6):checked ~ .tabpanel-list .tabpanel-item:nth-of-type(6),
+.tabpanel-input:nth-of-type(7):checked ~ .tabpanel-list .tabpanel-item:nth-of-type(7),
+.tabpanel-input:nth-of-type(8):checked ~ .tabpanel-list .tabpanel-item:nth-of-type(8),
+.tabpanel-input:nth-of-type(9):checked ~ .tabpanel-list .tabpanel-item:nth-of-type(9),
+.tabpanel-input:nth-of-type(10):checked ~ .tabpanel-list .tabpanel-item:nth-of-type(10) {
+  display: block;
+}
+
+.tabpanel-image {
+  float: left;
+  width: 128px;
+  margin-right: 24px;
+}
+
+.tabpanel-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.tabpanel-image + .tabpanel-content {
+  overflow: hidden;
+}
+
+.tabpanel-heading {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #34383c;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.tabpanel-desc {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.tabpanel-button {
+  font-size: 87.5%;
+  padding: 8px 16px;
+}
+
+/* Default Alternative */
+.tabpanel-alt .tabpanel-label {
+  position: relative;
+  top: 1px;
+  margin-top: -1px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #f3f5f8;
+  border-radius: 4px 4px 0 0;
+  background-color: #f3f5f8;
+  transition: color 0.5s ease;
+}
+
+.tabpanel-alt .tabpanel-label:hover {
+  color: #34383c;
+}
+
+.tabpanel-alt .tabpanel-input:first-of-type:checked ~ .tabpanel-nav .tabpanel-label:first-of-type,
+.tabpanel-alt .tabpanel-input:nth-of-type(2):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(2),
+.tabpanel-alt .tabpanel-input:nth-of-type(3):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(3),
+.tabpanel-alt .tabpanel-input:nth-of-type(4):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(4),
+.tabpanel-alt .tabpanel-input:nth-of-type(5):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(5),
+.tabpanel-alt .tabpanel-input:nth-of-type(6):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(6),
+.tabpanel-alt .tabpanel-input:nth-of-type(7):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(7),
+.tabpanel-alt .tabpanel-input:nth-of-type(8):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(8),
+.tabpanel-alt .tabpanel-input:nth-of-type(9):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(9),
+.tabpanel-alt .tabpanel-input:nth-of-type(10):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(10) {
+  z-index: 2;
+  color: #51d0ef;
+  border-color: #dce8fa;
+  border-bottom-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.tabpanel-alt .tabpanel-item {
+  position: relative;
+  z-index: 1;
+  border-radius: 0 4px 4px 4px;
+}
+
+/* Vertical Alternative */
+.tabpanel-vertical {}
+
+.tabpanel-vertical .tabpanel-nav {
+  float: left;
+  width: 33.333%;
+  box-sizing: border-box;
+}
+
+.tabpanel-vertical .tabpanel-label {
+  position: relative;
+  left: 2px;
+  display: block;
+  padding: 12px 24px;
+  margin: 0;
+  text-align: right;
+  border-bottom: 0;
+  border-radius: 4px 0 0 4px;
+  background-color: #f3f5f8;
+  border: 1px solid #f3f5f8;
+  margin-bottom: 8px;
+  transition: color 0.5s ease;
+  margin-left: -2px;
+}
+
+.tabpanel-vertical .tabpanel-label:hover {
+  color: #34383c;
+}
+
+.tabpanel-vertical .tabpanel-input:first-of-type:checked ~ .tabpanel-nav .tabpanel-label:first-of-type,
+.tabpanel-vertical .tabpanel-input:nth-of-type(2):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(2),
+.tabpanel-vertical .tabpanel-input:nth-of-type(3):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(3),
+.tabpanel-vertical .tabpanel-input:nth-of-type(4):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(4),
+.tabpanel-vertical .tabpanel-input:nth-of-type(5):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(5),
+.tabpanel-vertical .tabpanel-input:nth-of-type(6):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(6),
+.tabpanel-vertical .tabpanel-input:nth-of-type(7):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(7),
+.tabpanel-vertical .tabpanel-input:nth-of-type(8):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(8),
+.tabpanel-vertical .tabpanel-input:nth-of-type(9):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(9),
+.tabpanel-vertical .tabpanel-input:nth-of-type(10):checked ~ .tabpanel-nav .tabpanel-label:nth-of-type(10) {
+  z-index: 2;
+  color: #51d0ef;
+  border-color: #dce8fa;
+  border-right-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.tabpanel-vertical .tabpanel-list {
+  float: right;
+  width: 66.666%;
+  box-sizing: border-box;
+}
+
+.tabpanel-vertical .tabpanel-item {
+  position: relative;
+  z-index: 1;
+  border-radius: 0 4px 4px 4px;
+}

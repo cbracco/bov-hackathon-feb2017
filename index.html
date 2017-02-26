@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="./assets/ui/button/button.css">
   <link rel="stylesheet" href="./assets/ui/card/card.css">
   <link rel="stylesheet" href="./assets/ui/modal/modal.css">
+  <link rel="stylesheet" href="./assets/ui/tabpanel/tabpanel.css">
+  <link rel="stylesheet" href="./assets/ui/tilt/tilt.css">
   <link rel="stylesheet" href="./assets/showcase/styles/styles.css">
 </head>
 <body>
@@ -316,20 +318,281 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
           <h2>Default</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-demo sw-demo-tabpanel">
+            <div class="tabpanel" role="tabpanel">
+              <input class="tabpanel-input" type="radio" id="tabpanel-1-input-1" name="tabpanel-1" checked>
+              <input class="tabpanel-input" type="radio" id="tabpanel-1-input-2" name="tabpanel-1">
+              <input class="tabpanel-input" type="radio" id="tabpanel-1-input-3" name="tabpanel-1">
+              <div class="tabpanel-nav">
+                <label class="tabpanel-label" for="tabpanel-1-input-1">First Tab</label>
+                <label class="tabpanel-label" for="tabpanel-1-input-2">Second Tab</label>
+                <label class="tabpanel-label" for="tabpanel-1-input-3">Third Tab</label>
+              </div>
+              <div class="tabpanel-list">
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Hell is Other Robots</h3>
+                    <p class="tabpanel-desc">Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Time Keeps on Slippin’</h3>
+                    <p class="tabpanel-desc">File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Bendin’ in the Wind</h3>
+                    <p class="tabpanel-desc">Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Default">
             <label class="sw-markup-toggle" for="swMarkup5Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="tabpanel" role="tabpanel"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-1" name="tabpanel-1" checked&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-2" name="tabpanel-1"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-3" name="tabpanel-1"&gt;
+  &lt;div class="tabpanel-nav"&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-1-input-1"&gt;First Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-1-input-2"&gt;Second Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-1-input-3"&gt;Third Tab&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="tabpanel-list"&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Hell is Other Robots&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Time Keeps on Slippin’&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Bendin’ in the Wind&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
           <hr>
-          <h2>Variant</h2>
+          <h2>Default Alternative</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-demo sw-demo-tabpanel">
+            <div class="tabpanel tabpanel-alt" role="tabpanel">
+              <input class="tabpanel-input" type="radio" id="tabpanel-2-input-1" name="tabpanel-2" checked>
+              <input class="tabpanel-input" type="radio" id="tabpanel-2-input-2" name="tabpanel-2">
+              <input class="tabpanel-input" type="radio" id="tabpanel-2-input-3" name="tabpanel-2">
+              <div class="tabpanel-nav">
+                <label class="tabpanel-label" for="tabpanel-2-input-1">First Tab</label>
+                <label class="tabpanel-label" for="tabpanel-2-input-2">Second Tab</label>
+                <label class="tabpanel-label" for="tabpanel-2-input-3">Third Tab</label>
+              </div>
+              <div class="tabpanel-list">
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Hell is Other Robots</h3>
+                    <p class="tabpanel-desc">Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Time Keeps on Slippin’</h3>
+                    <p class="tabpanel-desc">File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Bendin’ in the Wind</h3>
+                    <p class="tabpanel-desc">Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Variant1">
             <label class="sw-markup-toggle" for="swMarkup5Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-alt" role="tabpanel"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-1" name="tabpanel-2" checked&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-2" name="tabpanel-2"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-3" name="tabpanel-2"&gt;
+  &lt;div class="tabpanel-nav"&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-2-input-1"&gt;First Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-2-input-2"&gt;Second Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-2-input-3"&gt;Third Tab&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="tabpanel-list"&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Hell is Other Robots&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Time Keeps on Slippin’&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Bendin’ in the Wind&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+          <hr>
+          <h2>Vertical Alternative</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="sw-demo sw-demo-tabpanel">
+            <div class="tabpanel tabpanel-vertical" role="tabpanel">
+              <input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked>
+              <input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3">
+              <input class="tabpanel-input" type="radio" id="tabpanel-3-input-3" name="tabpanel-3">
+              <div class="tabpanel-nav">
+                <label class="tabpanel-label" for="tabpanel-3-input-1">First Tab</label>
+                <label class="tabpanel-label" for="tabpanel-3-input-2">Second Tab</label>
+                <label class="tabpanel-label" for="tabpanel-3-input-3">Third Tab</label>
+              </div>
+              <div class="tabpanel-list">
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Hell is Other Robots</h3>
+                    <p class="tabpanel-desc">Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Time Keeps on Slippin’</h3>
+                    <p class="tabpanel-desc">File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Bendin’ in the Wind</h3>
+                    <p class="tabpanel-desc">Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Variant2">
+            <label class="sw-markup-toggle" for="swMarkup5Variant2">Show Markup</label>
+            <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-vertical" role="tabpanel"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-3" name="tabpanel-3"&gt;
+  &lt;div class="tabpanel-nav"&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-3-input-1"&gt;First Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-3-input-2"&gt;Second Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-3-input-3"&gt;Third Tab&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="tabpanel-list"&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Hell is Other Robots&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Time Keeps on Slippin’&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Bendin’ in the Wind&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
         </section>
         <section class="sw-section js-scrollspy-section" id="sw-section-6">
@@ -337,41 +600,49 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
           <h2>Default</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <div class="sw-demo">
+            <div class="tilt">
+              <div class="tilt-container">
+                <div class="tilt-grid" id="tilt-grid-1">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-2">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-3">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-4">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-5">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-6">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-7">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-8">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-9">&nbsp;</div>
+                <div class="tilt-background"></div>
+                <div class="tilt-frame"></div>
+                <div class="tilt-content">
+                  <h1 class="tilt-heading">Tilt Hover Effect</h1>
+                  <p>Bov Academy</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Default">
             <label class="sw-markup-toggle" for="swMarkup6Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
-          </div>
-          <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
-          <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Variant1">
-            <label class="sw-markup-toggle" for="swMarkup6Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
-          </div>
-        </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-7">
-          <h1>Scrollspy</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
-          <h2>Default</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
-          <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Default">
-            <label class="sw-markup-toggle" for="swMarkup7Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
-          </div>
-          <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
-          <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Variant1">
-            <label class="sw-markup-toggle" for="swMarkup7Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="tilt"&gt;
+  &lt;div class="tilt-container"&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-1"&gt;&nbsp;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-2"&gt;&nbsp;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-3"&gt;&nbsp;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-4"&gt;&nbsp;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-5"&gt;&nbsp;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-6"&gt;&nbsp;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-7"&gt;&nbsp;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-8"&gt;&nbsp;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-9"&gt;&nbsp;&lt;/div&gt;
+    &lt;div class="tilt-background"&gt;&lt;/div&gt;
+    &lt;div class="tilt-frame"&gt;&lt;/div&gt;
+    &lt;div class="tilt-content"&gt;
+      &lt;h1 class="tilt-heading"&gt;Tilt Hover Effect&lt;/h1&gt;
+      &lt;p&gt;Bov Academy&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
         </section>
       </div>
@@ -404,9 +675,6 @@
             </li>
             <li class="sw-sidebar-item">
               <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Tilt Hover</a>
-            </li>
-            <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">Scrollspy</a>
             </li>
           </ul>
         </nav>
