@@ -1,7 +1,6 @@
 .accordion {
   display: block;
   width: 100%;
-  font-family: 'Karla';
 }
 
 .accordion-input {
@@ -35,8 +34,7 @@
 }
 
 .accordion-input:checked + .accordion-label .accordion-label-icon:before {
-  margin-top: 2px;
-  content: '-';
+  content: '–';
 }
 
 .accordion-input:checked + .accordion-label {
