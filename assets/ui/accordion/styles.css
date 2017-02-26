@@ -1,0 +1,149 @@
+body {
+   font-family: 'Karla', sans-serif;
+}
+
+.container {
+    margin-bottom: 2px;
+}
+
+img {
+/*    visibility: hidden;*/
+    border-radius: 15px;
+    float: left;
+    padding: 7px;
+}
+
+
+.main {
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.expand {
+    background-color: #212121;
+    padding: 15px;
+    padding-bottom: 32px;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+}
+
+.expand2 {
+    background-color: transparent;
+}
+
+.content {
+    padding: 15px;
+    border: 1px solid black;
+    border-top: 5px solid #f12268;
+    font-style: italic;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    padding-top: 35px;
+}
+
+.variant2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #212121;
+}
+
+label {
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.15em;
+    position: relative;
+}
+
+label:after {
+    content: url('images/angle.png');
+    float: right;
+}
+
+label.expand2:after {
+    content: url('images/pinkangle.png');
+    float: right;
+}
+
+.white {
+    color: white;
+    font-weight: 100;
+}
+
+
+input:checked + label {
+    color: white;
+    transition: all .25s ease-in;
+}
+
+input:checked + label.expand2 {
+    color: black;
+    transition: all .25s ease-in;
+}
+/*highlights section headers white*/
+
+input:checked + label + div {
+/*    color: black;
+    transition: color 1s ease-in-out;*/
+    /*define color first statement as black
+    next statement use color in a transition*/
+    visibility: visible;
+    height: 290px;
+    transition: height .5s ease;
+}
+
+input:checked + label + div + img {
+    border: 5px solid red;
+}
+
+/*makes section paragraph contents visible*/
+
+
+input[type=radio] {
+    display: none;
+}
+/*hides radio buttons*/ 
+
+.group {
+  clear: both;
+}
+
+/*///////////////////////////////////
+////=Media Queries
+////////////////////////////////////*/
+
+@media only screen and (max-width : 1210px){
+  .main{
+    width: 55%;   
+}
+
+input:checked + label + div {
+    color: black;
+    transition: color 1s ease-in-out;
+    /*define color first statement as black
+    next statement use color in a transition*/
+    visibility: visible;
+    height: 200px;
+    transition: height .5s ease;
+}
+
+
+@media only screen and (max-width : 830px){
+  .main{
+    width: 100%;
+}
+
+input:checked + label + div {
+    color: black;
+    transition: color 1s ease-in-out;
+    /*define color first statement as black
+    next statement use color in a transition*/
+    visibility: visible;
+    height: 180px;
+    transition: height .5s ease;
+}
+
+
