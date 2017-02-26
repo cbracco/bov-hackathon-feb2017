@@ -3,7 +3,8 @@ body {
 }
 .card {
   position: relative;
-	width: 30%;
+	width: 25%;
+  margin: 0 auto;
 	background: white;
   border-radius:5px;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
@@ -59,8 +60,9 @@ body {
 
 
 .card2 {
-  width: 30%;
+  width: 25%;
 	background: white;
+  margin: 0 auto;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
 }
 
