@@ -1,0 +1,110 @@
+/* this tabs class is an ul element */
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.tabs {
+  width: 675px;
+  height: 300px;
+  float: none;
+  list-style: none;
+  position: relative;
+  display: block;
+  border-left: 2px solid #eee;
+  border-right: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+
+/* to hide the radio button */
+.tabs input[type=radio] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* for horizontal tabs, to keep it inline */
+.tabs section {
+  display: block;
+}
+
+/* style the tab labels, First Tab, Second Tab, etc */
+.tabs label {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 2px 2px 0 0;
+    color: black;
+    font-size: 22px;
+    font-weight: normal;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+    width: 190px;
+    text-align: right;
+}
+
+.tabs section article {
+  display: none;
+  left: 189px;
+  min-width: 280px;
+  position: absolute;
+  top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* effect when you hover over the label */
+.tabs label:hover {
+  color: #08c;
+  top: 0;
+}
+
+/* effect after you select a tab */
+[id^=tab]:checked + label {
+  color: #08c;
+  border-right: 2px solid #08c;
+}
+
+/* display the div block content of selected tab */
+[id^=tab]:checked ~ [id^=tab-content] {
+    display: block;
+}
+
+/* style of the content */
+.tab-content{
+  z-index: 2;
+  display: none;
+  text-align: left;
+  font-size: 22px;
+  font-family: sans-serif;
+  background: #fff;
+  color: black;
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-bottom: 25px;
+  padding-top: 0;
+}
+
+.tabs h3 {
+	text-transform: uppercase;
+  margin: 8px 5px 0 0;
+}
+
+p {
+	font-size: 17px;
+  line-height: 25px;
+}
+
+a {
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-left: 1px;
+	color: white;
+	background-color: #08c;
+}
