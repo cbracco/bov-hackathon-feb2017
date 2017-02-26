@@ -1,3 +1,6 @@
+body {
+  margin: 10px;
+}
 .card {
   position: relative;
 	width: 30%;
@@ -43,8 +46,15 @@
   color: white;
   font-size: .6em;
   padding: 1em 1.6em .8em 1.6em;
-  background-color: #00CEEE;
+  background-color: #51d0ef;
+  transition: all .3s ease-out;
   border-radius: 5px;
+}
+
+.cont a:hover {
+  color: #00CEEE;
+  background-color: white;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18); 
 }
 
 
@@ -56,38 +66,38 @@
 
 
 
-.container2 {
+.heading2 {
   position: relative;
-  background: #EEF0F0;
-  padding: 2em 0;
+  background: #f3f5f8;
+  padding: 2.5em 0;
   text-align: center;
 }
 
-.container2 .price{
+.heading2 .price{
   font-size: 2.4em;
-  color: #00CEEE;
+  color: #51d0ef;
   margin: 0;
 }
 
-.container2 p {
+.heading2 p {
   font-size: .7em;
   color: #ABABAB;
   margin: 0;
 }
 
-.cont2 {
+.content2 {
   padding: 1em 1.5em 1.9em;
   text-align: center;
 }
 
-.cont2 p {
+.content2 p {
   margin-bottom: 7px;
   font-size: .7em;
   line-height: 1.8;
   color: #ABABAB;
 }
 
-.cont2 span {
+.content2 span {
   color: #636363;
 }
 
@@ -95,12 +105,19 @@
   margin-top: 20px;
 }
 
-.cont2 a {
+.content2 a {
   text-decoration:none;
   text-align: center;
   color: white;
   font-size: .6em;
-  padding: 1.1em 3em 1.1em 3em;
-  background-color: #00CEEE;
+  padding: 1.1em 3.2em 1.1em 3.2em;
+  background-color: #51d0ef;
+  transition: all .3s ease-out;
   border-radius: 5px;
+}
+
+.content2 a:hover {
+  color: #51d0ef;
+  background-color: white;
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18); 
 }
