@@ -1,9 +1,10 @@
 
-html {
+body {
     font-family: 'Oxygen', sans-serif;
     font-size: 1.2em;
     margin: 0;
     padding: 0;
+    min-width: 655px;
 }
 
 h1, h2, h3, p {
@@ -68,6 +69,10 @@ button:nth-child(even) {
     margin: 0 10px;
 }
 
+button:last-child{
+    margin-right:0;
+}
+
 .blue {
     background-color: #65D8F1;
 }
@@ -82,9 +87,9 @@ button:nth-child(even) {
 }
 
 .basic, .rounded {
-    flex-grow: 6;
+    flex-grow: 1;
     padding: 15px 15px;
-    width: 13%;
+    /* width: 13%; */
 }
 
 .fa {
@@ -124,7 +129,7 @@ button:hover {
 /*******************************/
 
 .codeBox {
-    width: 100%;
+    width: calc(100% - 2px);
     height: 400px;
     background-color: #F5F7FB;
     border: 1px solid #CBD8EA;
@@ -139,4 +144,33 @@ button:hover {
 
 .hide {
     display: none;
+}
+
+
+/*******************************/
+/********* MEDIA QUERY ********/
+/*******************************/
+
+
+@media screen and (max-width:800px) {
+    .btns {
+        margin: 0 auto;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .basic, .rounded {
+        width: 40%;
+        margin: 0 20px 20px 0;
+        max-height: 50px;
+    }
+
+    .code {
+        margin: 60px 0 0 -60px;
+        font-size: 1em;
+    }
+
+    button:last-child{
+        margin-right: 10px;
+    }
 }
