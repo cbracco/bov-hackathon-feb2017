@@ -9,6 +9,9 @@
   float: none;
   list-style: none;
   position: relative;
+  /* scrooge the tabs to the left all the way */
+  margin: 0;
+  padding: 0;
 }
 
 /* to hide the radio button */
@@ -26,27 +29,32 @@
 /* style the tab labels, First Tab, Second Tab, etc */
 .tabs label {
     display: block;
-    padding: 10px 20px;
-    border-radius: 2px 2px 0 0;
-    color: black;
-    font-size: 24px;
+    padding: 14px 22px;
+    border-radius: 2px 2px 2px 2px;
+    color: grey;
+    font-size: 20px;
     font-weight: normal;
     cursor: pointer;
     position: relative;
+    background-color: #eee;
+    margin-right: 2px;
     text-transform: uppercase;
 }
 
 /* effect when you hover over the label */
 .tabs label:hover {
+  /*background: red;*/
   color: #08c;
-  top: 0;
+  /*top: 0;*/
 }
 
 /* effect after you select a tab */
 [id^=tab]:checked + label {
-  /*background: #08C;*/
+  background: white;
   color: #08c;
-  border-bottom: 2px solid #08c;
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  border-right: 2px solid #eee;
 }
 
 /* display the div block content of selected tab */
@@ -65,7 +73,7 @@
   border: 2px solid #eee;
   color: black;
   position: absolute;
-  top: 53px;
+  top: 50px;
   left: 0;
   box-sizing: border-box;
   padding: 15px;
@@ -88,23 +96,19 @@
 }
 
 img {
-	/*border: 2px solid red;*/
 	margin-top: 22px;
-	margin-left: 40px;
+	margin-left: 30px;
 }
 
 .tabs h3 {
-	/*border: 2px solid red;*/
 	text-transform: uppercase;
 }
 
 p {
-	/*border: 2px solid red;*/
 	font-size: 17px;
 }
 
 a {
-	/*border: 2px solid red;*/
 	padding: 5px;
 	text-transform: uppercase;
 	font-size: 14px;
