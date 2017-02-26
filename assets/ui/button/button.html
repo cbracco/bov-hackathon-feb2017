@@ -3,99 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Button</title>
-  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
   <link rel="stylesheet" href="./button.css">
   <script src="https://use.fontawesome.com/8d78942c92.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
-  <div class="content">
-    <h1>Buttons</h1>
-    <p>Commonly used buttons</p>
-
-    <div class="btns-wrapper">
-      <h3>Basic</h3>
-
-      <div class="btns">
-        <button class="btns-general basic blue">PRIMARY</button>
-        <button class="btns-general basic blue">SECONDARY</button>
-        <button class="btns-general basic blue">
-          <i class="fa fa-upload" aria-hidden="true"></i>UPLOAD</button>
-        <button class="btns-general basic blue"><i class="fa fa-pencil" aria-hidden="true"></i>
-          EDIT</button>
-        <button class="btns-general basic gray">PRIMARY</button>
-        <button class="btns-general basic lite-gray">SECONDARY</button>
-      </div>
-    </div>
-
-    <div class="markup">
-      <a href="javascript: window.location='view-source:' + window.location.href"><button class="btns-markup rectangle">Show markup</button></a>
-      <div class="codeBox hide" id="basicCode">
-        <pre class="code"><code>
-          &lt;div class="btns-wrapper"&gt;
-            &lt;h3>Basic&lt;/h3&gt;
-
-            &lt;div class="btns"&gt;
-              &lt;button class="btns-general basic blue">PRIMARY&lt;/button&gt;
-              &lt;button class="btns-general basic blue"&gt;SECONDARY&lt;/button&gt;
-              &lt;button class="btns-general basic blue"&gt;
-                &lt;i class="fa fa-upload" aria-hidden="true"&gt;&lt;/i>UPLOAD&lt;/button&gt;
-              &lt;button class="btns-general basic blue"&gt;&lt;i class="fa fa-pencil" aria-hidden="true"&gt;&lt;/i&gt;
-                  EDIT&lt;/button>
-              &lt;button class="btns-general basic gray">PRIMARY&lt;/button&gt;
-              &lt;button class="btns-general basic lite-gray"&gt;SECONDARY&lt;/button&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        </code></pre>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="btns-wrapper">
-      <h3>Rounded</h3>
-
-      <div class="btns">
-        <button class="btns-general rounded blue">PRIMARY</button>
-        <button class="btns-general rounded blue">SECONDARY</button>
-        <button class="btns-general rounded blue">
-          <i class="fa fa-upload" aria-hidden="true"></i>UPLOAD</button>
-        <button class="btns-general rounded blue"><i class="fa fa-pencil" aria-hidden="true"></i>
-          EDIT</button>
-        <button class="btns-general rounded gray">PRIMARY</button>
-        <button class="btns-general rounded lite-gray">SECONDARY</button>
-      </div>
-    </div>
-
-    <div class="markup">
-      <a href="javascript: window.location='view-source:' + window.location.href"><button class="btns-markup round">Show markup</button></a>
-      <div class="codeBox hide" id="roundedCode">
-        <pre class="code">
-          <code>
-            &lt;div class="btns-wrapper"&gt;
-              &lt;h3>Rounded&lt;/h3&gt;
-
-              &lt;div class="btns"&gt;
-                &lt;button class="btns-general rounded blue">PRIMARY&lt;/button&gt;
-                &lt;button class="btns-general rounded blue">SECONDARY&lt;/button&gt;
-                &lt;button class="btns-general rounded blue"&gt;
-                  &lt;i class="fa fa-upload" aria-hidden="true"&gt;&lt;/i&gt;UPLOAD&lt;/button&gt;
-                &lt;button class="btns-general rounded blue"&gt;&lt;/button&gt;&lt;i class="fa fa-pencil" aria-hidden="true">&lt;/i&gt;
-                  EDIT&lt;/button&gt;
-                &lt;button class="btns-general rounded gray"&gt;PRIMARY&lt;/button&gt;
-                &lt;button class="btns-general rounded lite-gray"&gt;SECONDARY&lt;/button&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          </code>
-        </pre>
-      </div>
-    </div>
-
-    <hr>
-
-  </div>
-
-
-  <script src="myscript.js"></script>
+  <button class="button button-blue">Blue</button>
+  <button class="button button-blue-lightest">Blue Lightest</button>
+  <button class="button button-blue">
+    <i class="button-icon-left fa fa-upload" aria-hidden="true"></i>
+    Upload
+  </button>
+  <button class="button button-blue">
+    <i class="button-icon-left fa fa-pencil" aria-hidden="true"></i>
+    Edit
+  </button>
+  <button class="button button-gray-lighter">Gray Lighter</button>
+  <button class="button button-gray-lightest">Gray Lightest</button>
+  <br>
+  <br>
+  <button class="button button-pill button-blue">Blue</button>
+  <button class="button button-pill button-blue-lightest">Blue Lightest</button>
+  <button class="button button-pill button-gray-lighter">Gray Lighter</button>
+  <button class="button button-pill button-gray-lightest">Gray Lightest</button>
 </body>
 </html>

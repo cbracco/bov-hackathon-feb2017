@@ -13,14 +13,14 @@
   --color-gray-lightest: #f3f5f8;
   --color-white: #ffffff;
   /* Primary (Blue) */
-  --color-primary: #51d0ef;
-  --color-primary-light: #a5cfdb;
-  --color-primary-lighter: #dce8fa;
-  --color-primary-lightest: #f2f5fa;
+  --color-blue: #51d0ef;
+  --color-blue-light: #a5cfdb;
+  --color-blue-lighter: #dce8fa;
+  --color-blue-lightest: #f2f5fa;
   /* Secondary (Pink) */
-  --color-secondary-dark: #d45f94;
-  --color-secondary: #eb74aa;
-  --color-secondary-light: #ffe7f2;
+  --color-pink-dark: #d45f94;
+  --color-pink: #eb74aa;
+  --color-pink-light: #ffe7f2;
   /* Border Radius */
   --border-radius: 4px;
   /* Spacing */
@@ -538,9 +538,18 @@ samp {
   margin-bottom: 0;
 }
 
-/* Visual Demo */
+/* Visual Demos */
 .sw-demo {
   margin-bottom: 24px;
+}
+
+.sw-demo-button {
+  margin-bottom: 12px;
+}
+
+.sw-demo-button .button {
+  margin-right: 4px;
+  margin-bottom: 12px;
 }
 
 /* Markup */
@@ -552,6 +561,7 @@ samp {
   border: 1px solid #dce8fa;
   border-radius: 4px;
   cursor: pointer;
+  user-select: none;
   transition: border 0.33s ease, background-color 0.33s ease, color 0.33s ease;
 }
 
