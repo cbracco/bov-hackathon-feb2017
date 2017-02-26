@@ -1,1 +1,262 @@
-.tilt {}
+.container{
+    position:relative;
+    height:450px;
+    width:300px;
+}
+.grid_layer{
+    position:relative;
+    height:inherit;
+    width:inherit;
+}
+.grid{
+    margin-right: -4px;
+    position:relative;
+    display:inline-block;
+    width:100px;
+    height:150px;
+    z-index:3;
+    opacity: 0.5;
+}
+.background-image{
+    position:absolute;
+    background-image: url("http://www.whudat.de/images/2014/10/New_York_Above_As_Below_Moody_B_W_Photos_of_NYC_by_Alex_Teuscher_2014_02.jpg");
+    margin-top:-450px;
+    height:450px;
+    width:300px;
+    z-index: 1;
+}
+#grid1:hover ~ .background-image{
+    transform:  rotateX(10deg)
+    rotateY(-10deg)
+    rotateZ(0deg);
+    transition-duration: 0.5s
+}
+#grid2:hover ~ .background-image{
+    transform:  rotateX(10deg)
+    rotateY(0deg)
+    rotateZ(0deg);
+    transition-duration: 0.5s
+
+}
+#grid3:hover ~ .background-image{
+    transform:  rotateX(10deg)
+    rotateY(10deg)
+    rotateZ(0deg);
+    transition-duration: 0.5s
+
+}
+#grid4:hover ~ .background-image{
+    transform:  rotateX(0deg)
+    rotateY(-10deg)
+    rotateZ(0deg);
+    transition-duration: 0.5s
+}
+#grid5:hover ~ .background-image{
+    transform:  rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg);
+    transition-duration: 0.5s
+}
+#grid6:hover ~ .background-image{
+    transform:  rotateX(0deg)
+    rotateY(10deg)
+    rotateZ(0deg);
+    transition-duration: 0.5s;
+}
+#grid7:hover ~ .background-image{
+    transform:  rotateX(-10deg)
+    rotateY(-10deg)
+    rotateZ(0deg);
+    transition-duration: 0.5s;
+
+}
+#grid8:hover ~ .background-image{
+    transform:  rotateX(10deg)
+    rotateY(0deg)
+    rotateZ(0deg);
+    transition-duration: 0.5s
+
+}
+#grid9:hover ~ .background-image{
+    transform:  rotateX(-10deg)
+    rotateY(10deg)
+    rotateZ(0deg);
+    transition-duration: 0.5s
+}
+.text-frame{
+    position:absolute;
+    margin-top:-430px;
+    margin-left:20px;
+    height:400px;
+    width:260px;
+    border:solid 2px white;
+    z-index: 2;
+}
+
+#grid1:hover ~ .text-frame{
+    transform:  rotateX(10deg)
+    rotateY(-10deg)
+    rotateZ(0deg)
+    translateX(-10px)
+    translateY(-10px);
+    transition-duration: 0.5s
+}
+
+#grid2:hover ~ .text-frame{
+    transform: rotateX(10deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    translateX(0px)
+    translateY(-10px);
+    transition-duration: 0.5s
+}
+
+#grid3:hover ~ .text-frame{
+    transform: rotateX(10deg)
+    rotateY(10deg)
+    rotateZ(0deg)
+    translateX(10px)
+    translateY(-10px);
+    transition-duration: 0.5s
+}
+
+#grid4:hover ~ .text-frame{
+    transform:  rotateX(0deg)
+    rotateY(-10deg)
+    rotateZ(0deg)
+    translateX(-10px);
+    transition-duration: 0.5s
+}
+#grid5:hover ~ .text-frame{
+    transform:  rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    translateX(0px)
+    translateY(0px);
+    transition-duration: 0.5s;
+}
+#grid6:hover ~ .text-frame{
+    transform:  rotateX(0deg)
+    rotateY(10deg)
+    rotateZ(0deg)
+    translateX(10px)
+    translateY(0px);
+    transition-duration: 0.5s;
+}
+#grid7:hover ~ .text-frame{
+    transform:  rotateX(-10deg)
+    rotateY(-10deg)
+    rotateZ(0deg)
+    translateX(-10px)
+    translateY(10px);
+    transition-duration: 0.5s;
+
+}
+#grid8:hover ~ .text-frame{
+    transform:  rotateX(10deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    translateX(0px)
+    translateY(10px);
+    transition-duration: 0.5s;
+
+}
+#grid9:hover ~ .text-frame{
+    transform:  rotateX(-10deg)
+    rotateY(10deg)
+    rotateZ(0deg)
+    translateX(10px)
+    translateY(10px);
+    transition-duration: 0.5s;
+}
+.name-tag {
+    position:absolute;
+    margin-top:-180px;
+    margin-left:60px;
+    height:400px;
+    width:260px;
+    color:white;
+    z-index: 1;
+}
+
+.title {
+    font-size: 140%;
+}
+
+#grid1:hover ~ .name-tag{
+    transform:  rotateX(10deg)
+    rotateY(-10deg)
+    rotateZ(0deg)
+    translateX(-15px)
+    translateY(-15px);
+    transition-duration: 0.5s
+}
+
+#grid2:hover ~ .name-tag{
+    transform: rotateX(10deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    translateX(0px)
+    translateY(-15px);
+    transition-duration: 0.5s
+}
+
+#grid3:hover ~ .name-tag{
+    transform: rotateX(10deg)
+    rotateY(10deg)
+    rotateZ(0deg)
+    translateX(15px)
+    translateY(-15px);
+    transition-duration: 0.5s
+}
+
+#grid4:hover ~ .name-tag{
+    transform:  rotateX(0deg)
+    rotateY(-10deg)
+    rotateZ(0deg)
+    translateX(-15px);
+    transition-duration: 0.5s
+}
+#grid5:hover ~ .name-tag{
+    transform:  rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    translateX(0px)
+    translateY(0px);
+    transition-duration: 0.5s;
+}
+#grid6:hover ~ .name-tag{
+    transform:  rotateX(0deg)
+    rotateY(10deg)
+    rotateZ(0deg)
+    translateX(15px)
+    translateY(0px);
+    transition-duration: 0.5s;
+}
+#grid7:hover ~ .name-tag{
+    transform:  rotateX(-10deg)
+    rotateY(-10deg)
+    rotateZ(0deg)
+    translateX(-15px)
+    translateY(15px);
+    transition-duration: 0.5s;
+
+}
+#grid8:hover ~ .name-tag{
+    transform:  rotateX(10deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    translateX(0px)
+    translateY(15px);
+    transition-duration: 0.5s;
+
+}
+#grid9:hover ~ .name-tag{
+    transform:  rotateX(-10deg)
+    rotateY(10deg)
+    rotateZ(0deg)
+    translateX(15px)
+    translateY(15px);
+    transition-duration: 0.5s;
+}
+

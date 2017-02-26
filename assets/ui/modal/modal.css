@@ -1,1 +1,146 @@
-.modal {}
+html {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.content {
+    padding: 50px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*******************************/
+/*********** HEADERS ***********/
+/*******************************/
+
+h1 {
+    color: #373E45;
+}
+
+h3, h4 {
+    color: #6E7C8F;
+}
+
+h3 {
+    margin: 30px 0 20px 0;
+}
+
+h4 {
+    display: inline;
+    margin: 0 0 0 10px;
+}
+
+p {
+    color: #A3B5C4;
+    padding: 10px 0;
+}
+
+/*******************************/
+/********* MODAL SAMPLE ********/
+/*******************************/
+
+.modalBoxSample, .modalBox {
+    width: 425px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 20px 3px rgba(37, 24, 24, 0.2);
+}
+
+.fa {
+    color: #FFA961;
+}
+
+.modalContent {
+    padding: 30px 30px 0;
+}
+
+.summary {
+    color: #A6B0BD;
+    font-size: 0.80em;
+    margin: 10px 10px 20px 10px;
+    line-height: 30px;
+}
+
+/*******************************/
+/********* ACTION BTNS *********/
+/*******************************/
+
+.actionCall {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.action.apply {
+    border-right: 1px solid #CBD8EA;
+}
+
+.action {
+    flex-grow: 2;
+    text-align: center;
+    border-top: 1px solid #CBD8EA;
+    padding: 15px;
+}
+
+.apply {
+    color: #65D8F1;
+}
+
+.cancel {
+    color: #6E7C8F;
+}
+
+
+/*******************************/
+/*********** MARKUP ***********/
+/*******************************/
+
+.btns-markup {
+    background-color: #FFFFFF;
+    color: #A7B9C7;
+    border: 1px solid #CBD8EA;
+    width: 100%;
+    margin: 50px 0;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.90em;
+}
+
+/*******************************/
+/********** MODAL POPUP*********/
+/*******************************/
+
+.bkgrd {
+    position: fixed;
+    height: 800px;
+    top: 0%;
+    left: 0%;
+    width: 800px;
+    background: linear-gradient(to bottom right, #1EBEBA, #25C5CD, #37B9E9);
+    visibility: hidden;
+    opacity: 0.95;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.modalBox {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index:999;
+    background-color: #FFF;
+}
+
+.bkgrd:target {
+    visibility: visible;
+    transition: 1s;
+    left: 50%;
+    top: 50%;
+}

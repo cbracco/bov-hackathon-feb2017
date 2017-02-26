@@ -1,0 +1,116 @@
+/* this tabs class is an ul element */
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.tabs {
+  width: 625px;
+  float: none;
+  list-style: none;
+  position: relative;
+}
+
+/* to hide the radio button */
+.tabs input[type=radio] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+/* for horizontal tabs, to keep it inline */
+.tabs li {
+  float: left;
+}
+
+/* style the tab labels, First Tab, Second Tab, etc */
+.tabs label {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 2px 2px 0 0;
+    color: black;
+    font-size: 24px;
+    font-weight: normal;
+    cursor: pointer;
+    position: relative;
+}
+
+/* effect when you hover over the label */
+.tabs label:hover {
+  /*background: red;*/
+  color: #08c;
+  top: 0;
+}
+
+/* effect after you select a tab */
+[id^=tab]:checked + label {
+  /*background: #08C;*/
+  color: #08c;
+  border-bottom: 2px solid #08c;
+}
+
+/* display the div block content of selected tab */
+[id^=tab]:checked ~ [id^=tab-content] {
+    display: block;
+}
+
+/* style of the content */
+.tab-content{
+  z-index: 2;
+  display: none;
+  text-align: left;
+  font-size: 20px;
+  font-family: sans-serif;
+  background: #fff;
+  border: 2px solid #eee;
+  color: black;
+  position: absolute;
+  top: 53px;
+  left: 0;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.left-floater {
+	float: left;
+}
+
+.w195 {
+	width: 195px;
+}
+
+.w395 {
+	width: 395px;
+}
+
+.tab-footer {
+	clear: both;
+}
+
+img {
+	/*border: 2px solid red;*/
+	margin-top: 22px;
+	margin-left: 40px;
+}
+
+.tabs h3 {
+	/*border: 2px solid red;*/
+	text-transform: uppercase;
+}
+
+p {
+	/*border: 2px solid red;*/
+	font-size: 17px;
+}
+
+a {
+	/*border: 2px solid red;*/
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 14px;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-left: 195px;
+	color: white;
+	background-color: #08c;
+}
