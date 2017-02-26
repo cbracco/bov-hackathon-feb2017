@@ -47,6 +47,11 @@
   color: #34383c;
 }
 
+.card-button {
+  padding: 8px 16px;
+  font-size: 87.5%;
+}
+
 /* With Image */
 .card-image .card-header {
   background-color: transparent;
@@ -79,9 +84,4 @@
 
 .card-image .card-desc {
   margin-bottom: 16px;
-}
-
-.card-image .card-button {
-  padding: 8px 16px;
-  font-size: 87.5%;
 }
