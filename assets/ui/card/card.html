@@ -1,11 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Card</title>
-  <link rel="stylesheet" href="./card.css">
-</head>
-<body>
-
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <!-- <link href="normalize.css" rel="stylesheet" type="text/css"> -->
+    <link href="../button/button.css" rel="stylesheet" type="text/css">
+    <link href="./card.css" rel="stylesheet" type="text/css">
+    <style>
+      body {
+        max-width: 480px;
+        margin: 6rem auto;
+      }
+      .card {
+        margin-bottom: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-heading"><span>$15</span>PSD Version</div>
+      </div>
+      <div class="card-body">
+        <ul class="card-list">
+          <li><strong>Photoshop CS6+</strong> Optimized</li>
+          <li><strong>Vector Shapes</strong> Used</li>
+          <li><strong>Well Organized</strong> PSD Files</li>
+          <li><strong>Light & Dark</strong> Theme</li>
+          <li><strong>Free Fonts</strong> Used</li>
+        </ul>
+        <a href="#!" class="card-button button button-blue">Read More</a>
+      </div>
+    </div>
+    <div class="card card-image">
+      <div class="card-header">
+        <img src="./card-image.jpg" alt="Foggy Lake">
+      </div>
+      <div class="card-body">
+        <span class="card-date">Feb 12, 2015</span>
+        <h3 class="card-title">Bendin’ The Wind</h3>
+        <div class="card-desc">Goodbye, friends. I never thought I'd die like this. But I always really hoped. We can't compete with Mom! Her company is big and evil!</div>
+        <a href="#!" class="card-button button button-blue">Read More</a>
+      </div>
+    </div>
+  </body>
 </html>

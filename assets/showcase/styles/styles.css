@@ -13,14 +13,16 @@
   --color-gray-lightest: #f3f5f8;
   --color-white: #ffffff;
   /* Primary (Blue) */
-  --color-primary: #51d0ef;
-  --color-primary-light: #a5cfdb;
-  --color-primary-lighter: #dce8fa;
-  --color-primary-lightest: #f2f5fa;
+  --color-blue: #51d0ef;
+  --color-blue-light: #a5cfdb;
+  --color-blue-lighter: #dce8fa;
+  --color-blue-lightest: #f2f5fa;
   /* Secondary (Pink) */
-  --color-secondary-dark: #d45f94;
-  --color-secondary: #eb74aa;
-  --color-secondary-light: #ffe7f2;
+  --color-pink-dark: #d45f94;
+  --color-pink: #eb74aa;
+  --color-pink-light: #ffe7f2;
+  /* Tertiary (Orange) */
+  --color-orange: #ff9948;
   /* Border Radius */
   --border-radius: 4px;
   /* Spacing */
@@ -56,6 +58,11 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+
+input[type='search'] {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /**
@@ -201,6 +208,8 @@ samp {
 .sw-searchform-input {
   display: block;
   width: 100%;
+  height: 40px;
+  line-height: 1;
   font-size: 100%;
   padding: 12px 12px 12px 36px;
   background-color: #34383c;
@@ -412,7 +421,7 @@ samp {
 
 /* Dark mask to overlay content when sidebar menu is visible */
 .sw-sidebar-mask {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -434,7 +443,16 @@ samp {
 
 @media (min-width: 1140px) {
   .sw-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     width: 20%;
+  }
+
+  .sw-sidebar.is-affixed {
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .sw-sidebar-toggle {
@@ -465,7 +483,7 @@ samp {
     transition: border-color 0.33s ease, color 0.33s ease;
   }
 
-  .sw-sidebar-item.is-current .sw-sidebar-link,
+  .sw-sidebar-link.is-current,
   .sw-sidebar-link:hover {
     background-color: transparent;
     border-right-color: #eb74aa;
@@ -489,31 +507,31 @@ samp {
   margin-bottom: 0;
 }
 
-.sw-section p,
-.sw-section h1,
-.sw-section h2,
-.sw-section h3,
-.sw-section h4,
-.sw-section h5,
-.sw-section h6 {
+.sw-section > p,
+.sw-section > h1,
+.sw-section > h2,
+.sw-section > h3,
+.sw-section > h4,
+.sw-section > h5,
+.sw-section > h6 {
   margin-bottom: 24px;
 }
 
-.sw-section p {
+.sw-section > p {
   margin-top: 0;
 }
 
-.sw-section h1,
-.sw-section h2,
-.sw-section h3,
-.sw-section h4,
-.sw-section h5,
-.sw-section h6 {
+.sw-section > h1,
+.sw-section > h2,
+.sw-section > h3,
+.sw-section > h4,
+.sw-section > h5,
+.sw-section > h6 {
   margin-top: 32px;
   margin-bottom: 12px;
 }
 
-.sw-section hr {
+.sw-section > hr {
   display: block;
   height: 2px;
   border: 0;
@@ -529,9 +547,30 @@ samp {
   margin-bottom: 0;
 }
 
-/* Visual Demo */
+/* Visual Demos */
 .sw-demo {
   margin-bottom: 24px;
+}
+
+.sw-demo-button {
+  margin-bottom: 12px;
+}
+
+.sw-demo-button .button {
+  margin-right: 4px;
+  margin-bottom: 12px;
+}
+
+.sw-demo-card .card {
+  max-width: 400px;
+}
+
+.sw-demo-tabpanel .tabpanel {
+  max-width: 650px;
+}
+
+.sw-demo-tilt .tilt-background {
+  background-image: url(./assets/ui/tilt/tilt-image-1.jpg)
 }
 
 /* Markup */
@@ -543,6 +582,7 @@ samp {
   border: 1px solid #dce8fa;
   border-radius: 4px;
   cursor: pointer;
+  user-select: none;
   transition: border 0.33s ease, background-color 0.33s ease, color 0.33s ease;
 }
 
@@ -559,6 +599,13 @@ samp {
 
 .sw-markup-body {
   display: none;
+  position: relative;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  word-break: normal;
+  tab-size: 4;
+  hyphens: none;
   border: 1px solid #51d0ef;
   border-radius: 0 0 4px 4px;
   background-color: #f2f5fa;

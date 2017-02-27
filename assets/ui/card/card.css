@@ -1,1 +1,90 @@
-.card {}
+/* Default */
+body {
+  font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
+}
+.card {
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #f3f5f8;
+  padding: 48px;
+  text-align: center;
+}
+
+.card-heading {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #76818c;
+}
+
+.card-heading span {
+  display: block;
+  color: #51d0ef;
+  font-size: 60px;
+  margin-bottom: 4px;
+}
+
+.card-body {
+  padding: 24px;
+  color: #76818c;
+  text-align: center;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.card-list li {
+  margin-bottom: 12px;
+}
+
+.card-list li strong {
+  color: #34383c;
+}
+
+.card-button {
+  padding: 8px 16px;
+  font-size: 87.5%;
+}
+
+/* With Image */
+.card-image .card-header {
+  background-color: transparent;
+  padding: 0;
+}
+
+.card-image .card-header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-image .card-body {
+  text-align: left;
+}
+
+.card-image .card-date {
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 87.5%;
+}
+
+.card-image .card-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #34383c;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.card-image .card-desc {
+  margin-bottom: 16px;
+}

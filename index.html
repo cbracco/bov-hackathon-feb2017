@@ -5,10 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Title, desc -->
-  <title>Showcase Website</title>
+  <title>Team 12 UI Framework &bull; Modern Developer Hackathon Feb 24-26 2017</title>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="76x76" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#ffffff">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
+  <script src="https://use.fontawesome.com/8d78942c92.js"></script>
   <!-- Styles -->
+  <link rel="stylesheet" href="./assets/ui/accordion/accordion.css">
+  <link rel="stylesheet" href="./assets/ui/button/button.css">
+  <link rel="stylesheet" href="./assets/ui/card/card.css">
+  <link rel="stylesheet" href="./assets/ui/modal/modal.css">
+  <link rel="stylesheet" href="./assets/ui/tabpanel/tabpanel.css">
+  <link rel="stylesheet" href="./assets/ui/tilt/tilt.css">
   <link rel="stylesheet" href="./assets/showcase/styles/styles.css">
 </head>
 <body>
@@ -20,14 +33,14 @@
     <symbol id="icon-instagram" viewBox="0 0 512 512">
       <path d="m256 47c68 0 77 0 102 2 26 2 39 4 47 9 13 4 22 10 30 19 9 8 15 17 19 30 5 8 9 23 9 47 2 27 2 34 2 102 0 68 0 77-2 102-2 26-4 39-9 47-4 13-10 22-19 30-8 9-17 15-30 19-8 5-23 9-47 9-27 2-34 2-102 2-68 0-77 0-102-2-26-2-39-4-47-9-13-4-22-10-30-19-9-8-15-17-19-30-5-8-9-23-9-47-2-27-2-34-2-102 0-68 0-77 2-102 0-26 4-41 6-49 5-13 11-22 20-30 10-9 19-13 30-20 8-2 23-6 49-8 25 0 34 0 102 0m0-47c-70 0-79 0-105 2-27 0-46 4-64 11-14 6-29 15-44 30-15 15-24 30-30 44-7 18-11 37-11 64-2 26-2 35-2 105 0 70 0 79 2 105 2 27 7 44 13 61 4 17 13 32 28 47 15 15 27 24 44 30 18 7 35 11 62 13 28 0 37 0 107 0 70 0 79 0 105-2 27-2 44-7 61-13 17-6 32-15 45-30 15-15 24-28 30-45 6-17 11-34 13-61 2-26 2-35 2-105 0-70 0-79-2-105-2-27-7-44-13-61-4-17-13-32-28-47-15-15-27-24-44-30-18-7-35-11-62-13-28 0-37 0-107 0z m0 124c-73 0-132 59-132 132 0 73 59 132 132 132 73 0 132-59 132-132 0-73-59-132-132-132z m0 217c-47 0-85-38-85-85 0-47 38-85 85-85 47 0 85 38 85 85 0 47-38 85-85 85z m166-222c0 17-13 30-29 30-17 0-30-13-30-30 0-16 13-29 30-29 16 0 29 13 29 29z"/>
     </symbol>
+    <symbol id="icon-logo" viewBox="0 0 512 512">
+      <path d="m451 135c0 0-1-5-1-7 0-1-1-2-1-2-1 0-2-4-2-5 0-1 0-1-1-2-4-13-10-24-15-32-44-72-133-94-197-85-59 9-104 39-128 85-6 13-10 23-12 32l-1 7c0 0-1 1-1 2l-2 7c-2 13-2 27 0 43l0 4c0 4-1 8-3 12l-31 67c-4 8-3 17 2 26 5 8 13 13 23 13l13 0-6 30c-2 8-1 16 2 23l1 3c4 11 5 22 3 34-2 8 0 16 4 21 4 7 12 11 20 12l45 7 0 73c0 3 2 6 3 7 2 1 4 2 6 2 1 0 2 0 3-1l205-73c2-1 4-3 6-5 0-3 0-5 0-7-14-34-16-62-6-85 6-13 14-21 19-27l2-1c51-51 69-111 50-178z m-125 90c-3 0-6-2-8-4l-9-18-24 67c-2 4-5 6-8 6l-1 0c-4-1-7-3-8-7l-34-155-26 104c-1 4-4 7-8 7l-53 0c-5 0-9-4-9-9 0-5 4-9 9-9l46 0 33-133c1-4 5-6 9-6 4 0 7 3 8 7l36 161 21-58c2-3 4-5 7-5 3-1 7 1 8 4l17 29 63 0c5 0 9 4 9 9 0 5-4 9-9 9l-69 0z"/>
+    </symbol>
     <symbol id="icon-search" viewBox="0 0 512 512">
       <path d="m503 463l-93-94c32-40 49-92 49-141 0-126-103-230-231-230-128 0-230 102-230 230 0 126 102 231 230 231 51 0 103-17 141-49l94 93c6 7 13 9 19 9 7 0 13-2 19-9 13-12 13-29 2-40z m-98-233c0 96-79 175-175 175-96 0-175-79-175-175 0-96 79-175 175-175 99 0 175 79 175 175z"/>
     </symbol>
     <symbol id="icon-twitter" viewBox="0 0 512 512">
       <path d="m160 464c195 0 299-160 299-299 0-4 0-8 0-13 21-15 38-34 53-53-19 9-38 15-59 17 21-13 38-34 47-58-22 13-43 22-67 26-19-21-46-34-76-34-58 0-105 47-105 104 0 9 0 18 2 24-87-4-164-47-215-109-9 15-15 34-15 53 0 37 19 69 47 88-17 0-34-4-47-13 0 0 0 0 0 2 0 51 36 94 85 103-8 2-17 4-28 4-6 0-12 0-19-2 13 42 51 72 98 72-36 28-81 45-130 45-8 0-17 0-25-2 42 28 98 45 155 45"/>
-    </symbol>
-    <symbol id="icon-logo" viewBox="0 0 512 512">
-      <path d="m451 135c0 0-1-5-1-7 0-1-1-2-1-2-1 0-2-4-2-5 0-1 0-1-1-2-4-13-10-24-15-32-44-72-133-94-197-85-59 9-104 39-128 85-6 13-10 23-12 32l-1 7c0 0-1 1-1 2l-2 7c-2 13-2 27 0 43l0 4c0 4-1 8-3 12l-31 67c-4 8-3 17 2 26 5 8 13 13 23 13l13 0-6 30c-2 8-1 16 2 23l1 3c4 11 5 22 3 34-2 8 0 16 4 21 4 7 12 11 20 12l45 7 0 73c0 3 2 6 3 7 2 1 4 2 6 2 1 0 2 0 3-1l205-73c2-1 4-3 6-5 0-3 0-5 0-7-14-34-16-62-6-85 6-13 14-21 19-27l2-1c51-51 69-111 50-178z m-125 90c-3 0-6-2-8-4l-9-18-24 67c-2 4-5 6-8 6l-1 0c-4-1-7-3-8-7l-34-155-26 104c-1 4-4 7-8 7l-53 0c-5 0-9-4-9-9 0-5 4-9 9-9l46 0 33-133c1-4 5-6 9-6 4 0 7 3 8 7l36 161 21-58c2-3 4-5 7-5 3-1 7 1 8 4l17 29 63 0c5 0 9 4 9 9 0 5-4 9-9 9l-69 0z"/>
     </symbol>
   </svg>
   <!-- Checkbox Hack for Off-Canvas Sidebar Effect -->
@@ -68,156 +81,579 @@
     <div class="sw-container">
       <!-- Content -->
       <div class="sw-content">
-        <section class="sw-section" id="sw-section-1">
+        <section class="sw-section js-scrollspy-section" id="sw-section-1">
           <h1>Button</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <p>The Button UI component is a clickable interface element that can trigger an action or state change within the interface.</p>
           <h2>Default</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <p>Four different colors are available for use. Buttons also have built-in support for inline icons.</p>
+          <div class="sw-demo sw-demo-button">
+            <button class="button button-blue">Blue</button>
+            <button class="button button-blue-lightest">Blue Lightest</button>
+            <button class="button button-blue">
+              <i class="button-icon-left fa fa-upload" aria-hidden="true"></i>
+              Upload
+            </button>
+            <button class="button button-blue">
+              <i class="button-icon-left fa fa-pencil" aria-hidden="true"></i>
+              Edit
+            </button>
+            <button class="button button-gray-lighter">Gray Lighter</button>
+            <button class="button button-gray-lightest">Gray Lightest</button>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup1Default">
             <label class="sw-markup-toggle" for="swMarkup1Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;button class="button button-blue"&gt;Blue&lt;/button&gt;
+&lt;button class="button button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
+&lt;button class="button button-blue"&gt;
+  &lt;i class="button-icon-left fa fa-upload" aria-hidden="true"&gt;&lt;/i&gt;
+  Upload
+&lt;/button&gt;
+&lt;button class="button button-blue"&gt;
+  &lt;i class="button-icon-left fa fa-pencil" aria-hidden="true"&gt;&lt;/i&gt;
+  Edit
+&lt;/button&gt;
+&lt;button class="button button-gray-lighter"&gt;Gray Lighter&lt;/button&gt;
+&lt;button class="button button-gray-lightest"&gt;Gray Lightest&lt;/button&gt;</pre>
           </div>
           <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <h2>Pill-Shaped</h2>
+          <p>A pill-shaped Button design is also available for use.</p>
+          <div class="sw-demo sw-demo-button">
+            <button class="button button-pill button-blue">Blue</button>
+            <button class="button button-pill button-blue-lightest">Blue Lightest</button>
+            <button class="button button-pill button-blue">
+              <i class="button-icon-left fa fa-upload" aria-hidden="true"></i>
+              Upload
+            </button>
+            <button class="button button-pill button-blue">
+              <i class="button-icon-left fa fa-pencil" aria-hidden="true"></i>
+              Edit
+            </button>
+            <button class="button button-pill button-gray-lighter">Gray Lighter</button>
+            <button class="button button-pill button-gray-lightest">Gray Lightest</button>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup1Variant1">
             <label class="sw-markup-toggle" for="swMarkup1Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;button class="button button-pill button-blue"&gt;Blue&lt;/button&gt;
+&lt;button class="button button-pill button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
+&lt;button class="button button-pill button-blue"&gt;
+  &lt;i class="button-icon-left fa fa-upload" aria-hidden="true"&gt;&lt;/i&gt;
+  Upload
+&lt;/button&gt;
+&lt;button class="button button-pill button-blue"&gt;
+  &lt;i class="button-icon-left fa fa-pencil" aria-hidden="true"&gt;&lt;/i&gt;
+  Edit
+&lt;/button&gt;
+&lt;button class="button button-pill button-gray-lighter"&gt;Gray Lighter&lt;/button&gt;
+&lt;button class="button button-pill button-gray-lightest"&gt;Gray Lightest&lt;/button&gt;</pre>
           </div>
         </section>
-        <section class="sw-section" id="sw-section-2">
+        <section class="sw-section js-scrollspy-section" id="sw-section-2">
           <h1>Card</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <p>The Card UI component is a way to organize related information in a condensed, reusable format. Cards are typically represented stacked on top of one another, or arranged side-by-side in a grid format.</p>
           <h2>Default</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <p>The default Card styles use enlarged text in the header. This style treatment works nicely for describing the pricing and features for a product.</p>
+          <div class="sw-demo sw-demo-card">
+            <div class="card">
+              <div class="card-header">
+                <div class="card-heading"><span>$15</span>PSD Version</div>
+              </div>
+              <div class="card-body">
+                <ul class="card-list">
+                  <li><strong>Photoshop CS6+</strong> Optimized</li>
+                  <li><strong>Vector Shapes</strong> Used</li>
+                  <li><strong>Well Organized</strong> PSD Files</li>
+                  <li><strong>Light & Dark</strong> Theme</li>
+                  <li><strong>Free Fonts</strong> Used</li>
+                </ul>
+                <a href="#!" class="card-button button button-blue">Read More</a>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Default">
             <label class="sw-markup-toggle" for="swMarkup2Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="card"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;div class="card-heading"&gt;&lt;span&gt;$15&lt;/span&gt;PSD Version&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;ul class="card-list"&gt;
+      &lt;li&gt;&lt;strong&gt;Photoshop CS6+&lt;/strong&gt; Optimized&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Vector Shapes&lt;/strong&gt; Used&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Well Organized&lt;/strong&gt; PSD Files&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Light & Dark&lt;/strong&gt; Theme&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Free Fonts&lt;/strong&gt; Used&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href="#!" class="card-button button button-blue"&gt;Read More&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
           <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <h2>With Image</h2>
+          <p>Alternatively, images can be used as the header. This style treatment works nicely for article excerpts.</p>
+          <div class="sw-demo sw-demo-card">
+            <div class="card card-image">
+              <div class="card-header">
+                <img src="./assets/ui/card/card-image.jpg" alt="Foggy Lake">
+              </div>
+              <div class="card-body">
+                <span class="card-date">Feb 12, 2015</span>
+                <h3 class="card-title">Bendin’ The Wind</h3>
+                <div class="card-desc">Goodbye, friends. I never thought I'd die like this. But I always really hoped. We can't compete with Mom! Her company is big and evil!</div>
+                <a href="#!" class="card-button button button-blue">Read More</a>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Variant1">
             <label class="sw-markup-toggle" for="swMarkup2Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="card card-image"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;img src="./assets/ui/card/card-image.jpg" alt="Foggy Lake"&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;span class="card-date"&gt;Feb 12, 2015&lt;/span&gt;
+    &lt;h3 class="card-title"&gt;Bendin’ The Wind&lt;/h3&gt;
+    &lt;div class="card-desc"&gt;Goodbye, friends. I never thought I'd die like this. But I always really hoped. We can't compete with Mom! Her company is big and evil!&lt;/div&gt;
+    &lt;a href="#!" class="card-button button button-blue"&gt;Read More&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section" id="sw-section-3">
+        <section class="sw-section js-scrollspy-section" id="sw-section-3">
           <h1>Accordion</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <p>The Accordion UI component is used to toggle the visibility of information on a webpage. Accordions help reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please.</p>
           <h2>Default</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <p>The default Accordion styles stack each block of information vertically, and each Accordion item’s visibility can be toggled by clicking.</p>
+          <div class="sw-demo sw-demo-accordion">
+            <div class="accordion">
+              <input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-1" checked>
+              <label class="accordion-label" for="accordion-input-1">
+                <i class="accordion-label-icon" aria-hidden="true"></i> Is today’s hectic lifestyle making you tense and impatient?</label>
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nisi cupiditate, corporis, magnam est nam iusto officia harum illo porro aperiam, tempore id rem cumque asperiores autem quas molestias animi.</p>
+              </div>
+              <input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-2">
+              <label class="accordion-label" for="accordion-input-2">
+                <i class="accordion-label-icon" aria-hidden="true"></i> What are you hacking off? Is it my torso!?</label>
+              <div class="accordion-body">
+                <p>There are too many states nowadays. Please, eliminate three. P.S. I am not a crackpot. Stan Lee never left. I’m afraid his mind is no longer in mint condition.</p>
+              </div>
+              <input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-3">
+              <label class="accordion-label" for="accordion-input-3">
+                <i class="accordion-label-icon" aria-hidden="true"></i> Can we have Bender Burgers again?</label>
+              <div class="accordion-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nisi cupiditate, corporis, magnam est nam iusto officia harum illo porro aperiam, tempore id rem cumque asperiores autem quas molestias animi.</p>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Default">
             <label class="sw-markup-toggle" for="swMarkup3Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
-          </div>
-          <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
-          <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Variant1">
-            <label class="sw-markup-toggle" for="swMarkup3Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="accordion"&gt;
+  &lt;input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-1" checked&gt;
+  &lt;label class="accordion-label" for="accordion-input-1"&gt;
+    &lt;i class="accordion-label-icon" aria-hidden="true"&gt;&lt;/i&gt; Is today’s hectic lifestyle making you tense and impatient?&lt;/label&gt;
+  &lt;div class="accordion-body"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nisi cupiditate, corporis, magnam est nam iusto officia harum illo porro aperiam, tempore id rem cumque asperiores autem quas molestias animi.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-2"&gt;
+  &lt;label class="accordion-label" for="accordion-input-2"&gt;
+    &lt;i class="accordion-label-icon" aria-hidden="true"&gt;&lt;/i&gt; What are you hacking off? Is it my torso!?&lt;/label&gt;
+  &lt;div class="accordion-body"&gt;
+    &lt;p&gt;There are too many states nowadays. Please, eliminate three. P.S. I am not a crackpot. Stan Lee never left. I’m afraid his mind is no longer in mint condition.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-3"&gt;
+  &lt;label class="accordion-label" for="accordion-input-3"&gt;
+    &lt;i class="accordion-label-icon" aria-hidden="true"&gt;&lt;/i&gt; Can we have Bender Burgers again?&lt;/label&gt;
+  &lt;div class="accordion-body"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci nisi cupiditate, corporis, magnam est nam iusto officia harum illo porro aperiam, tempore id rem cumque asperiores autem quas molestias animi.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section" id="sw-section-4">
+        <section class="sw-section js-scrollspy-section" id="sw-section-4">
           <h1>Modal</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <p>The Modal UI component is a popup window whose visibility is triggered by its respective label, which is styled as a Button UI component. It can then be closed by clicking</p>
           <h2>Default</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <p>Click the Button UI component below and a Modal UI component will be displayed on top of the entire page.</p>
+          <div class="sw-demo sw-demo-modal">
+            <input type="checkbox" id="modal1" class="modal-input">
+            <label class="button button-blue" for="modal1">Open Modal</label>
+            <label class="modal-overlay" for="modal1"></label>
+            <div class="modal">
+              <div class="modal-body">
+                <h3 class="modal-heading">
+                  <i class="modal-heading-icon fa fa-exclamation-circle"></i>
+                  Update form Feb 12, 2015
+                </h3>
+                <div class="modal-content">Bender, we’re trying our best. You’ll have all the Slurm you can drink when you’re partying with Slurms McKenzie!</div>
+              </div>
+              <div class="modal-footer">
+                <label class="modal-button modal-button-blue" for="modal1">Apply</label>
+                <label class="modal-button" for="modal1">Cancel</label>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Default">
             <label class="sw-markup-toggle" for="swMarkup4Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
-          </div>
-          <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
-          <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Variant1">
-            <label class="sw-markup-toggle" for="swMarkup4Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;input type="checkbox" id="modal1" class="modal-input"&gt;
+&lt;label class="button button-blue" for="modal1"&gt;Open Modal&lt;/label&gt;
+&lt;label class="modal-overlay" for="modal1"&gt;&lt;/label&gt;
+&lt;div class="modal"&gt;
+  &lt;div class="modal-body"&gt;
+    &lt;h3 class="modal-heading"&gt;
+      &lt;i class="modal-heading-icon fa fa-exclamation-circle"&gt;&lt;/i&gt;
+      Update form Feb 12, 2015
+    &lt;/h3&gt;
+    &lt;div class="modal-content"&gt;Bender, we’re trying our best. You’ll have all the Slurm you can drink when you’re partying with Slurms McKenzie!&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="modal-footer"&gt;
+    &lt;label class="modal-button modal-button-blue" for="modal1"&gt;Apply&lt;/label&gt;
+    &lt;label class="modal-button" for="modal1"&gt;Cancel&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section" id="sw-section-5">
+        <section class="sw-section js-scrollspy-section" id="sw-section-5">
           <h1>Tabpanel</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <p>The Tabpanel UI component is another way to reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please. When a user clicks on a tab, it displays the corresponding tab content.</p>
           <h2>Default</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <p>The default Tabpanel arranges tabs horizontally, with the tab content located directly beneath.</p>
+          <div class="sw-demo sw-demo-tabpanel">
+            <div class="tabpanel" role="tabpanel">
+              <input class="tabpanel-input" type="radio" id="tabpanel-1-input-1" name="tabpanel-1" checked>
+              <input class="tabpanel-input" type="radio" id="tabpanel-1-input-2" name="tabpanel-1">
+              <input class="tabpanel-input" type="radio" id="tabpanel-1-input-3" name="tabpanel-1">
+              <div class="tabpanel-nav">
+                <label class="tabpanel-label" for="tabpanel-1-input-1">First Tab</label>
+                <label class="tabpanel-label" for="tabpanel-1-input-2">Second Tab</label>
+                <label class="tabpanel-label" for="tabpanel-1-input-3">Third Tab</label>
+              </div>
+              <div class="tabpanel-list">
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Hell is Other Robots</h3>
+                    <p class="tabpanel-desc">Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Time Keeps on Slippin’</h3>
+                    <p class="tabpanel-desc">File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Bendin’ in the Wind</h3>
+                    <p class="tabpanel-desc">Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Default">
             <label class="sw-markup-toggle" for="swMarkup5Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="tabpanel" role="tabpanel"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-1" name="tabpanel-1" checked&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-2" name="tabpanel-1"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-3" name="tabpanel-1"&gt;
+  &lt;div class="tabpanel-nav"&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-1-input-1"&gt;First Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-1-input-2"&gt;Second Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-1-input-3"&gt;Third Tab&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="tabpanel-list"&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Hell is Other Robots&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Time Keeps on Slippin’&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Bendin’ in the Wind&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
           <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <h2>Default Alternative</h2>
+          <p>Alternatively, you can change the Tabpanel tab styles to look a bit more like physical tabs. The tab content is still located directly beneath.</p>
+          <div class="sw-demo sw-demo-tabpanel">
+            <div class="tabpanel tabpanel-alt" role="tabpanel">
+              <input class="tabpanel-input" type="radio" id="tabpanel-2-input-1" name="tabpanel-2" checked>
+              <input class="tabpanel-input" type="radio" id="tabpanel-2-input-2" name="tabpanel-2">
+              <input class="tabpanel-input" type="radio" id="tabpanel-2-input-3" name="tabpanel-2">
+              <div class="tabpanel-nav">
+                <label class="tabpanel-label" for="tabpanel-2-input-1">First Tab</label>
+                <label class="tabpanel-label" for="tabpanel-2-input-2">Second Tab</label>
+                <label class="tabpanel-label" for="tabpanel-2-input-3">Third Tab</label>
+              </div>
+              <div class="tabpanel-list">
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Hell is Other Robots</h3>
+                    <p class="tabpanel-desc">Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Time Keeps on Slippin’</h3>
+                    <p class="tabpanel-desc">File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Bendin’ in the Wind</h3>
+                    <p class="tabpanel-desc">Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Variant1">
             <label class="sw-markup-toggle" for="swMarkup5Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-alt" role="tabpanel"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-1" name="tabpanel-2" checked&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-2" name="tabpanel-2"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-3" name="tabpanel-2"&gt;
+  &lt;div class="tabpanel-nav"&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-2-input-1"&gt;First Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-2-input-2"&gt;Second Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-2-input-3"&gt;Third Tab&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="tabpanel-list"&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Hell is Other Robots&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Time Keeps on Slippin’&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Bendin’ in the Wind&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+          <hr>
+          <h2>Vertical Alternative</h2>
+          <p>You can also arrange the tab navigation vertically and to the left of the tab content.</p>
+          <div class="sw-demo sw-demo-tabpanel">
+            <div class="tabpanel tabpanel-vertical" role="tabpanel">
+              <input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked>
+              <input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3">
+              <input class="tabpanel-input" type="radio" id="tabpanel-3-input-3" name="tabpanel-3">
+              <div class="tabpanel-nav">
+                <label class="tabpanel-label" for="tabpanel-3-input-1">First Tab</label>
+                <label class="tabpanel-label" for="tabpanel-3-input-2">Second Tab</label>
+                <label class="tabpanel-label" for="tabpanel-3-input-3">Third Tab</label>
+              </div>
+              <div class="tabpanel-list">
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Hell is Other Robots</h3>
+                    <p class="tabpanel-desc">Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Time Keeps on Slippin’</h3>
+                    <p class="tabpanel-desc">File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+                <div class="tabpanel-item">
+                  <div class="tabpanel-image">
+                    <img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock">
+                  </div>
+                  <div class="tabpanel-content">
+                    <h3 class="tabpanel-heading">Bendin’ in the Wind</h3>
+                    <p class="tabpanel-desc">Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!</p>
+                    <a href="#!" class="tabpanel-button button button-blue">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Variant2">
+            <label class="sw-markup-toggle" for="swMarkup5Variant2">Show Markup</label>
+            <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-vertical" role="tabpanel"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3"&gt;
+  &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-3" name="tabpanel-3"&gt;
+  &lt;div class="tabpanel-nav"&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-3-input-1"&gt;First Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-3-input-2"&gt;Second Tab&lt;/label&gt;
+    &lt;label class="tabpanel-label" for="tabpanel-3-input-3"&gt;Third Tab&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="tabpanel-list"&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Hell is Other Robots&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Stop bickering or I’m going to come back there and change your opinions manually! Robot 1-X, save my friends! And Zoidberg!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Time Keeps on Slippin’&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;File not found. Ask her how her day was. This is the worst kind of discrimination: the kind against me! Say it in Russian! Come. Comrade Bender! We must take to the streets! No! The cat shelter's on to me. Well, then good news! It’s a suppository.&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="tabpanel-item"&gt;
+      &lt;div class="tabpanel-image"&gt;
+        &lt;img src="./assets/ui/tabpanel/tabpanel-image-1.jpg" alt="Timex alarm clock"&gt;
+      &lt;/div&gt;
+      &lt;div class="tabpanel-content"&gt;
+        &lt;h3 class="tabpanel-heading"&gt;Bendin’ in the Wind&lt;/h3&gt;
+        &lt;p class="tabpanel-desc"&gt;Goodbye, friends. I never thought I’d be like this. But I always really hoped. We can’t compete with Mom! Her company is big and evil!&lt;/p&gt;
+        &lt;a href="#!" class="tabpanel-button button button-blue"&gt;Read More&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section" id="sw-section-6">
+        <section class="sw-section js-scrollspy-section" id="sw-section-6">
           <h1>Tilt Hover</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
+          <p>The Tilt Hover UI component adds a “tilting” visual effect to a card-like UI element as the user hovers over the element.</p>
           <h2>Default</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
+          <p>Hover over the element below with your mouse to see how the Tilt Hover UI component changes in response.</p>
+          <div class="sw-demo">
+            <div class="tilt">
+              <div class="tilt-container">
+                <div class="tilt-grid" id="tilt-grid-1">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-2">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-3">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-4">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-5">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-6">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-7">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-8">&nbsp;</div>
+                <div class="tilt-grid" id="tilt-grid-9">&nbsp;</div>
+                <div class="tilt-background"></div>
+                <div class="tilt-frame"></div>
+                <div class="tilt-content">
+                  <h1 class="tilt-heading">Tilt Hover Effect</h1>
+                  <p>Bov Academy</p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Default">
             <label class="sw-markup-toggle" for="swMarkup6Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
-          </div>
-          <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
-          <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Variant1">
-            <label class="sw-markup-toggle" for="swMarkup6Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
-          </div>
-        </section>
-        <section class="sw-section" id="sw-section-7">
-          <h1>Scrollspy</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla excepturi velit eos sapiente reiciendis repudiandae veritatis, animi. Ratione nobis, architecto reiciendis atque odit, fugiat beatae soluta nihil, quia, itaque amet.</p>
-          <h2>Default</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
-          <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Default">
-            <label class="sw-markup-toggle" for="swMarkup7Default">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
-          </div>
-          <hr>
-          <h2>Variant</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <div class="sw-demo">[Demo Goes Here]</div>
-          <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Variant1">
-            <label class="sw-markup-toggle" for="swMarkup7Variant1">Show Markup</label>
-            <pre class="sw-markup-body">[Markup Goes Here]</pre>
+            <pre class="sw-markup-body">&lt;div class="tilt"&gt;
+  &lt;div class="tilt-container"&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-1"&gt;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-2"&gt;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-3"&gt;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-4"&gt;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-5"&gt;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-6"&gt;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-7"&gt;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-8"&gt;&lt;/div&gt;
+    &lt;div class="tilt-grid" id="tilt-grid-9"&gt;&lt;/div&gt;
+    &lt;div class="tilt-background"&gt;&lt;/div&gt;
+    &lt;div class="tilt-frame"&gt;&lt;/div&gt;
+    &lt;div class="tilt-content"&gt;
+      &lt;h1 class="tilt-heading"&gt;Tilt Hover Effect&lt;/h1&gt;
+      &lt;p&gt;Bov Academy&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
           </div>
         </section>
       </div>
       <!-- Sidebar -->
-      <div class="sw-sidebar">
+      <div class="sw-sidebar js-position-sticky">
         <label class="sw-sidebar-toggle" for="swSidebar">
           <span class="sw-sidebar-toggle-icon">
             <span class="sw-sidebar-toggle-line sw-sidebar-toggle-line-1"></span>
@@ -229,25 +665,22 @@
           <h1 class="sw-sidebar-heading">UI Elements</h1>
           <ul class="sw-sidebar-list">
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link" href="#sw-section-1">Button</a>
+              <a class="sw-sidebar-link js-scrollspy-link is-current" href="#sw-section-1">Button</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link" href="#sw-section-2">Card</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-2">Card</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link" href="#sw-section-3">Accordion</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-3">Accordion</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link" href="#sw-section-4">Modal</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-4">Modal</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link" href="#sw-section-5">Tabpanel</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-5">Tabpanel</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link" href="#sw-section-6">Tilt Hover</a>
-            </li>
-            <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link" href="#sw-section-7">Scrollspy</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Tilt Hover</a>
             </li>
           </ul>
         </nav>
@@ -341,6 +774,13 @@
     </div>
   </footer>
   <!-- Scripts -->
+  <script src="./assets/ui/scrollspy/scrollspy.js"></script>
+  <script src="./assets/showcase/scripts/libs/stickyfill.min.js"></script>
   <script src="./assets/showcase/scripts/scripts.js"></script>
+  <script>
+    // Initialize Modules
+    scrollSpy.init();
+    positionSticky.init('.js-position-sticky');
+  </script>
 </body>
 </html>
