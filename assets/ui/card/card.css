@@ -1,4 +1,7 @@
 /* Default */
+body {
+  font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
+}
 .card {
   display: block;
   width: 100%;
