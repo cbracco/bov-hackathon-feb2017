@@ -60,6 +60,11 @@ img {
   height: auto;
 }
 
+input[type='search'] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 /**
  * TYPOGRAPHY
  */
@@ -203,6 +208,8 @@ samp {
 .sw-searchform-input {
   display: block;
   width: 100%;
+  height: 40px;
+  line-height: 1;
   font-size: 100%;
   padding: 12px 12px 12px 36px;
   background-color: #34383c;

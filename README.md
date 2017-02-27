@@ -2,7 +2,7 @@
 
 > The repository for Team 12’s February 2017 Hackathon for Modern Developer!
 
-[View Website](https://cbracco.github.io/md-hackathon-team12)
+[View the finished product!](https://cbracco.github.io/md-hackathon-team12/)
 
 # Goals
 
