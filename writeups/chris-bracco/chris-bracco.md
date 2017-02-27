@@ -10,11 +10,20 @@ We used the Trello board to break up the project into smaller tasks, and assigne
 
 ![Team 12 Trello Board](./chris-bracco-trello.png)
 
-I broke up the Trello board into several lists: **Resources**, **Backlog**, **Next Up**, **Doing**, and **Done**. This way we had one place to go for all of the information we needed for the hackathon, and we could keep track of our progress throughout the weekend.I also created labels to use for each card, so we could categorize tasks.
+I broke up the Trello board into several lists: **Resources**, **Backlog**, **Next Up**, **Doing**, and **Done**. This way we had one place to go for all of the information we needed for the hackathon, and we could keep track of our progress throughout the weekend. I also created labels to use for each card, so we could categorize tasks.
 
 ![Team 12 Trello Board Labels](./chris-bracco-trello-2.png)
 
-Once we were organized and the work was split up, each team member began working on their respective tasks. I volunteered to build the showcase website, and got to work immediately on the website frame and layout design so that when the time came I could easily drop in the UI components that everyone else was working on.
+Once we were organized and the work was split up, each team member began working on their respective tasks.
+
+- **Chris Bracco (Project Manager, Developer):** Showcase website, Refinement of UI components
+- **Chenfeng Lai (Product Manager, Developer):** Tilt Hover Effects
+- **Jason Rivera (Developer):** Card UI Component
+- **Jennifer Chiang (Developer):** Button UI Component, Modal UI Component
+- **Leonardo De Leon (Developer):** Tabpanel UI Component
+- **Chris Feltus (Developer):** Accordion UI Component
+
+I volunteered to build the showcase website, and got to work immediately on the website frame and layout design so that when the time came I could easily drop in the UI components that everyone else was working on.
 
 Despite the fact that the provided designs focus on larger screen sizes, I used a “mobile-first” responsive design approach to build the website. The sidebar navigation begins as an off-canvas menu using the CSS checkbox hack to toggle its visibility. As the screen gets larger, the sidebar navigation becomes visible and sticks to the viewport as the user scrolls. It also uses a barebones “scrollspy” functionality, written in JS, to indicate which section the user is viewing as they scroll up and down the page.
 
