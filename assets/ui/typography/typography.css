@@ -2,14 +2,33 @@
  * TYPOGRAPHY
  */
 
-/* Default body text styles */
+/* Bodt Text */
 body {
-  font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
   font-size: 100%;
   line-height: 1.5;
-  background-color: #f3f5f8;
-  color: #76818c;
-  overflow-x: hidden;
+}
+
+/* Vertical Rhythm */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 24px;
 }
 
 /* Headings */
@@ -22,13 +41,28 @@ h6 {
   font-weight: 400;
   line-height: 1.2;
   color: #1e2226;
+  margin-top: 32px;
 }
 
 h1 {
   font-size: 32px;
 }
 
-/* Specify the font for code display */
+/* Paragraphs */
+p {
+  margin-top: 0;
+}
+
+/* Horizontal Rules */
+hr {
+  display: block;
+  height: 2px;
+  border: 0;
+  background-color: #f2f5fa;
+  margin: 32px 0 24px;
+}
+
+/* Syntax */
 code,
 kbd,
 pre,

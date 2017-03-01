@@ -38,6 +38,17 @@
 }
 
 /**
+ * TYPOGRAPHY
+ */
+
+body {
+  font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f3f5f8;
+  color: #76818c;
+  overflow-x: hidden;
+}
+
+/**
  * ICONS
  */
 
