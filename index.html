@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="./assets/ui/accordion/accordion.css">
   <link rel="stylesheet" href="./assets/ui/button/button.css">
   <link rel="stylesheet" href="./assets/ui/card/card.css">
+  <link rel="stylesheet" href="./assets/ui/container/container.css">
   <link rel="stylesheet" href="./assets/ui/modal/modal.css">
   <link rel="stylesheet" href="./assets/ui/tabpanel/tabpanel.css">
   <link rel="stylesheet" href="./assets/ui/tilt/tilt.css">
@@ -47,7 +48,7 @@
   <input class="sw-sidebar-input visuallyhidden" id="swSidebar" type="checkbox">
   <!-- Header -->
   <header class="sw-header">
-    <div class="sw-container">
+    <div class="container">
       <a class="sw-logo" href="#sw-top">
         <span class="sw-logo-image">
           <svg class="sw-logo-icon sw-icon-logo sw-icon-large"><use xlink:href="#icon-logo"></use></svg>
@@ -78,7 +79,7 @@
   <main class="sw-body" role="main">
     <!-- Mask for Off-Canvas Sidebar Effect -->
     <label class="sw-sidebar-mask" for="swSidebar"></label>
-    <div class="sw-container">
+    <div class="container">
       <!-- Content -->
       <div class="sw-content">
         <section class="sw-section js-scrollspy-section" id="sw-section-1">
@@ -115,6 +116,20 @@
           <div class="sw-swatch sw-swatch-orange">#ff9948</div>
         </section>
         <section class="sw-section js-scrollspy-section" id="sw-section-2">
+          <h1>Container</h1>
+          <p>The Container UI component sets a maximum width for its child content, and can be used to help create layout on a webpage. This website itself uses Containers to set a maximum width for the header, body, and footer contents.</p>
+          <h2>Default</h2>
+          <p>The default maximum width for a Container is `1280px`.</p>
+          <div class="sw-demo sw-demo-container">
+            <div class="container">I am contained!</div>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Default">
+            <label class="sw-markup-toggle" for="swMarkup2Default">Show Markup</label>
+            <pre class="sw-markup-body">&lt;div class="container"&gt;I am contained!&lt;/div&gt;</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-3">
           <h1>Button</h1>
           <p>The Button UI component is a clickable interface element that can trigger an action or state change within the interface.</p>
           <h2>Default</h2>
@@ -134,8 +149,8 @@
             <button class="button button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Default">
-            <label class="sw-markup-toggle" for="swMarkup2Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Default">
+            <label class="sw-markup-toggle" for="swMarkup3Default">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-blue"&gt;
@@ -167,8 +182,8 @@
             <button class="button button-pill button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Variant1">
-            <label class="sw-markup-toggle" for="swMarkup2Variant1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Variant1">
+            <label class="sw-markup-toggle" for="swMarkup3Variant1">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-pill button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-pill button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-pill button-blue"&gt;
@@ -183,7 +198,7 @@
 &lt;button class="button button-pill button-gray-lightest"&gt;Gray Lightest&lt;/button&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-3">
+        <section class="sw-section js-scrollspy-section" id="sw-section-4">
           <h1>Card</h1>
           <p>The Card UI component is a way to organize related information in a condensed, reusable format. Cards are typically represented stacked on top of one another, or arranged side-by-side in a grid format.</p>
           <h2>Default</h2>
@@ -206,8 +221,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Default">
-            <label class="sw-markup-toggle" for="swMarkup3Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Default">
+            <label class="sw-markup-toggle" for="swMarkup4Default">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card"&gt;
   &lt;div class="card-header"&gt;
     &lt;div class="card-heading"&gt;&lt;span&gt;$15&lt;/span&gt;PSD Version&lt;/div&gt;
@@ -241,8 +256,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Variant1">
-            <label class="sw-markup-toggle" for="swMarkup3Variant1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Variant1">
+            <label class="sw-markup-toggle" for="swMarkup4Variant1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card card-image"&gt;
   &lt;div class="card-header"&gt;
     &lt;img src="./assets/ui/card/card-image.jpg" alt="Foggy Lake"&gt;
@@ -256,7 +271,7 @@
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-4">
+        <section class="sw-section js-scrollspy-section" id="sw-section-5">
           <h1>Accordion</h1>
           <p>The Accordion UI component is used to toggle the visibility of information on a webpage. Accordions help reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please.</p>
           <h2>Default</h2>
@@ -284,8 +299,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Default">
-            <label class="sw-markup-toggle" for="swMarkup4Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Default">
+            <label class="sw-markup-toggle" for="swMarkup5Default">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="accordion"&gt;
   &lt;input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-1" checked&gt;
   &lt;label class="accordion-label" for="accordion-input-1"&gt;
@@ -308,7 +323,7 @@
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-5">
+        <section class="sw-section js-scrollspy-section" id="sw-section-6">
           <h1>Modal</h1>
           <p>The Modal UI component is a popup window whose visibility is triggered by its respective label, which is styled as a Button UI component. It can then be closed by clicking</p>
           <h2>Default</h2>
@@ -332,8 +347,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Default">
-            <label class="sw-markup-toggle" for="swMarkup5Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Default">
+            <label class="sw-markup-toggle" for="swMarkup6Default">Show Markup</label>
             <pre class="sw-markup-body">&lt;input type="checkbox" id="modal1" class="modal-input"&gt;
 &lt;label class="button button-blue" for="modal1"&gt;Open Modal&lt;/label&gt;
 &lt;label class="modal-overlay" for="modal1"&gt;&lt;/label&gt;
@@ -352,7 +367,7 @@
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-6">
+        <section class="sw-section js-scrollspy-section" id="sw-section-7">
           <h1>Tabpanel</h1>
           <p>The Tabpanel UI component is another way to reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please. When a user clicks on a tab, it displays the corresponding tab content.</p>
           <h2>Default</h2>
@@ -402,8 +417,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Default">
-            <label class="sw-markup-toggle" for="swMarkup6Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Default">
+            <label class="sw-markup-toggle" for="swMarkup7Default">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-1" name="tabpanel-1" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-2" name="tabpanel-1"&gt;
@@ -495,8 +510,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Variant1">
-            <label class="sw-markup-toggle" for="swMarkup6Variant1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Variant1">
+            <label class="sw-markup-toggle" for="swMarkup7Variant1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-alt" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-1" name="tabpanel-2" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-2" name="tabpanel-2"&gt;
@@ -588,8 +603,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Variant2">
-            <label class="sw-markup-toggle" for="swMarkup6Variant2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Variant2">
+            <label class="sw-markup-toggle" for="swMarkup7Variant2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-vertical" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3"&gt;
@@ -634,7 +649,7 @@
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-7">
+        <section class="sw-section js-scrollspy-section" id="sw-section-8">
           <h1>Tilt Hover</h1>
           <p>The Tilt Hover UI component adds a “tilting” visual effect to a card-like UI element as the user hovers over the element.</p>
           <h2>Default</h2>
@@ -661,8 +676,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Default">
-            <label class="sw-markup-toggle" for="swMarkup7Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Default">
+            <label class="sw-markup-toggle" for="swMarkup8Default">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tilt"&gt;
   &lt;div class="tilt-container"&gt;
     &lt;div class="tilt-grid" id="tilt-grid-1"&gt;&lt;/div&gt;
@@ -701,22 +716,25 @@
               <a class="sw-sidebar-link js-scrollspy-link is-current" href="#sw-section-1">Color Palette</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-2">Button</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-2">Container</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-3">Card</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-3">Button</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-4">Accordion</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-4">Card</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-5">Modal</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-5">Accordion</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Tabpanel</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Modal</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">Tilt Hover</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">Tabpanel</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-8">Tilt Hover</a>
             </li>
           </ul>
         </nav>
@@ -725,7 +743,7 @@
   </main>
   <!-- Footer -->
   <footer class="sw-footer" role="contentinfo">
-    <div class="sw-container">
+    <div class="container">
       <nav class="sw-footer-nav" role="navigation">
         <ul class="sw-footer-nav-list">
           <li class="sw-footer-nav-item">
