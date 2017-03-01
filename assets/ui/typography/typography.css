@@ -18,6 +18,8 @@ body {
     sans-serif;
   font-size: 100%;
   line-height: 1.5;
+  background-color: #f3f5f8;
+  color: #76818c;
 }
 
 /* Vertical Rhythm */
@@ -53,19 +55,59 @@ p {
   margin-top: 0;
 }
 
+/* Inline Elements */
+/* TBD */
+
 /* Horizontal Rules */
 hr {
   display: block;
-  height: 2px;
+  padding: 0;
   border: 0;
-  background-color: #f2f5fa;
+  border-top: 2px solid #f2f5fa;
   margin: 32px 0 24px;
 }
 
-/* Syntax */
+/* Preformatted Text */
 code,
 kbd,
 pre,
 samp {
   font-family: Monaco, Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 14px;
+  background-color: #f2f5fa;
+  border: 1px solid #c3ced9;
+  border-radius: 4px;
+  margin: 0;
+}
+
+code,
+kbd,
+samp {
+  white-space: nowrap;
+  padding: 2px 8px;
+}
+
+pre {
+  position: relative;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  word-break: normal;
+  tab-size: 4;
+  hyphens: none;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+pre code {
+  display: block;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  background: transparent;
 }

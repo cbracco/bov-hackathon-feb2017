@@ -43,8 +43,6 @@
 
 body {
   font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f3f5f8;
-  color: #76818c;
   overflow-x: hidden;
 }
 
@@ -589,19 +587,8 @@ body {
 
 .sw-markup-body {
   display: none;
-  position: relative;
-  overflow: auto;
-  white-space: pre;
-  word-wrap: normal;
-  word-break: normal;
-  tab-size: 4;
-  hyphens: none;
-  border: 1px solid #51d0ef;
   border-radius: 0 0 4px 4px;
-  background-color: #f2f5fa;
-  margin: 0;
-  font-size: 14px;
-  padding: 24px;
+  border-color: #51d0ef;
 }
 
 .sw-markup-input:checked ~ .sw-markup-body {
