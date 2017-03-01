@@ -38,73 +38,6 @@
 }
 
 /**
- * RESET
- */
-
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
-}
-
-@media ()
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-input[type='search'] {
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-/**
- * TYPOGRAPHY
- */
-
-/* Default body text styles */
-body {
-  font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 100%;
-  line-height: 1.5;
-  background-color: #f3f5f8;
-  color: #76818c;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-/* Headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-  line-height: 1.2;
-  color: #1e2226;
-}
-
-h1 {
-  font-size: 32px;
-}
-
-/* Specify the font for code display */
-code,
-kbd,
-pre,
-samp {
-  font-family: Monaco, Consolas, "Liberation Mono", Courier, monospace;
-}
-
-/**
  * ICONS
  */
 
@@ -143,6 +76,7 @@ samp {
   background-color: #ffffff;
   border: 1px solid #c3ced9;
   text-align: center;
+  box-sizing: content-box;
 }
 
 .sw-swatch:after {
