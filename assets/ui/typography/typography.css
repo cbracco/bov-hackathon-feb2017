@@ -1,0 +1,165 @@
+/**
+ * TYPOGRAPHY
+ */
+
+/* Body Text */
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  background-color: #f3f5f8;
+  color: #58616b;
+}
+
+/* Vertical Rhythm */
+blockquote,
+dl,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+menu,
+ol,
+p,
+pre,
+summary,
+table,
+ul {
+  margin-bottom: 24px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.2;
+  color: #1e2226;
+  margin-top: 32px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+/* Paragraphs */
+p {
+  margin-top: 0;
+}
+
+/* Lists */
+dl dt {
+  font-weight: 700;
+  color: #34383c;
+}
+
+dl dd {
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+ol li,
+ul li {
+  margin-left: 18px;
+}
+
+ol {
+  list-style-: decimal;
+}
+
+ol ol {
+  list-style: upper-alpha;
+}
+
+ol ol ol {
+  list-style: lower-roman;
+}
+
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+
+ol ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+/* Inline Elements */
+/* TBD */
+
+/* Horizontal Rules */
+hr {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-top: 2px solid #f2f5fa;
+  margin-top: 32px;
+}
+
+/* Preformatted Text */
+code,
+kbd,
+pre,
+samp {
+  font-family: Monaco, Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 14px;
+  background-color: #f2f5fa;
+  border: 1px solid #c3ced9;
+  border-radius: 4px;
+}
+
+code,
+kbd,
+samp {
+  white-space: nowrap;
+  padding: 1px 8px;
+  margin: 0;
+}
+
+pre {
+  position: relative;
+  overflow: auto;
+  white-space: pre;
+  word-wrap: normal;
+  word-break: normal;
+  tab-size: 4;
+  hyphens: none;
+  border-radius: 4px;
+  padding: 24px;
+  margin-top: 0;
+}
+
+pre code {
+  display: block;
+  overflow: auto;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+}

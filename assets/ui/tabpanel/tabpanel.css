@@ -1,3 +1,7 @@
+/**
+ * TABPANEL
+ */
+
 /* Default */
 .tabpanel {
   display: block;
@@ -6,7 +10,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  color: #76818c;
+  color: #58616b;
 }
 
 .tabpanel:after {

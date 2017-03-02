@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Title, desc -->
-  <title>Team 12 UI Framework &bull; Modern Developer Hackathon Feb 24-26 2017</title>
+  <title>Orchestra UI Framework</title>
+  <meta name="description" content="A collection of reusable user interface (UI) components made with HTML and CSS for websites and web applications.">
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="76x76" href="./apple-touch-icon.png">
   <link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
@@ -16,9 +17,14 @@
   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
   <script src="https://use.fontawesome.com/8d78942c92.js"></script>
   <!-- Styles -->
+  <link rel="stylesheet" href="./assets/ui/base/base.css">
+  <link rel="stylesheet" href="./assets/ui/typography/typography.css">
   <link rel="stylesheet" href="./assets/ui/accordion/accordion.css">
   <link rel="stylesheet" href="./assets/ui/button/button.css">
   <link rel="stylesheet" href="./assets/ui/card/card.css">
+  <link rel="stylesheet" href="./assets/ui/color-palette/color-palette.css">
+  <link rel="stylesheet" href="./assets/ui/container/container.css">
+  <link rel="stylesheet" href="./assets/ui/list/list.css">
   <link rel="stylesheet" href="./assets/ui/modal/modal.css">
   <link rel="stylesheet" href="./assets/ui/tabpanel/tabpanel.css">
   <link rel="stylesheet" href="./assets/ui/tilt/tilt.css">
@@ -47,12 +53,12 @@
   <input class="sw-sidebar-input visuallyhidden" id="swSidebar" type="checkbox">
   <!-- Header -->
   <header class="sw-header">
-    <div class="sw-container">
+    <div class="container">
       <a class="sw-logo" href="#sw-top">
         <span class="sw-logo-image">
           <svg class="sw-logo-icon sw-icon-logo sw-icon-large"><use xlink:href="#icon-logo"></use></svg>
         </span>
-        <h1 class="sw-logo-text">Team Twelve <span>UI Framework</span></h1>
+        <h1 class="sw-logo-text">Orchestra <span>UI Framework</span></h1>
       </a>
       <form action="#!" class="sw-searchform">
         <label for="swSearchform" class="sw-searchform-label visuallyhidden">Search this Website</label>
@@ -60,15 +66,15 @@
         <svg class="sw-searchform-icon sw-icon-search sw-icon-small"><use xlink:href="#icon-search"></use></svg>
       </form>
       <nav class="sw-header-nav" role="navigation">
-        <ul class="sw-header-nav-list clearfix">
+        <ul class="sw-header-nav-list list-unstyled clearfix">
           <li class="sw-header-nav-item is-current">
-            <a class="sw-header-nav-link" href="#!">UI Elements</a>
+            <a class="sw-header-nav-link" href="#!">Documentation</a>
           </li>
           <li class="sw-header-nav-item">
             <a class="sw-header-nav-link" href="#!">Maintainers</a>
           </li>
           <li class="sw-header-nav-item">
-            <a class="sw-header-nav-link" href="#!">About Team Twelve</a>
+            <a class="sw-header-nav-link" href="#!">About Orchestra UI</a>
           </li>
         </ul>
       </nav>
@@ -78,10 +84,514 @@
   <main class="sw-body" role="main">
     <!-- Mask for Off-Canvas Sidebar Effect -->
     <label class="sw-sidebar-mask" for="swSidebar"></label>
-    <div class="sw-container">
+    <div class="container">
       <!-- Content -->
       <div class="sw-content">
         <section class="sw-section js-scrollspy-section" id="sw-section-1">
+          <h1>Overview</h1>
+          <p>Welcome to Orchestra UI! This framework is a collection of reusable user interface (UI) components built with HTML and CSS. It is the result of a weekend hackathon by a group of students enrolled in the <a href="https://bovacademy.com/" target="_blank">Bov Academy</a>. This framework was created as a learning experience. It is a proof-of-concept, and a work-in-progress. We do not recommend using it in a real-life web application at this time.</p>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-2">
+          <h1>Color Palette</h1>
+          <p>This is a reference guide for all of the colors used in this UI framework.</p>
+          <h2>Grayscale</h2>
+          <p>Several shades of gray, from white to black, are available for use.</p>
+          <div class="sw-demo sw-demo-color">
+            <div class="color-palette color-palette-white">#ffffff</div>
+            <div class="color-palette color-palette-gray-lightest">#f3f5f8</div>
+            <div class="color-palette color-palette-gray-lighter">#c3ced9</div>
+            <div class="color-palette color-palette-gray-light">#acb6bf</div>
+            <div class="color-palette color-palette-gray">#76818c</div>
+            <div class="color-palette color-palette-gray-dark">#58616b</div>
+            <div class="color-palette color-palette-gray-darker">#34383c</div>
+            <div class="color-palette color-palette-gray-darkest">#1e2226</div>
+            <div class="color-palette color-palette-black">#000000</div>
+          </div>
+          <hr>
+          <h2>Colors</h2>
+          <p>Several colors with varying shades are available for use.</p>
+          <h3>Blue</h3>
+          <div class="sw-demo sw-demo-color">
+            <div class="color-palette color-palette-blue">#51d0ef</div>
+            <div class="color-palette color-palette-blue-light">#a5cfdb</div>
+            <div class="color-palette color-palette-blue-lighter">#dce8fa</div>
+            <div class="color-palette color-palette-blue-lightest">#f2f5fa</div>
+          </div>
+          <h3>Pink</h3>
+          <div class="sw-demo sw-demo-color">
+            <div class="color-palette color-palette-pink">#eb74aa</div>
+            <div class="color-palette color-palette-pink-dark">#d45f94</div>
+            <div class="color-palette color-palette-pink-light">#ffe7f2</div>
+          </div>
+          <h3>Orange</h3>
+          <div class="sw-demo sw-demo-color">
+            <div class="color-palette color-palette-orange">#ff9948</div>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-3">
+          <h1>Base</h1>
+          <p>The bedrock of this UI framework includes a few basic but integral styling decisions.</p>
+          <h2>Box-Sizing</h2>
+          <p>We reset the CSS <code>box-sizing</code> property to <code>border-box</code> for all elements. This makes it easier to calculate sizing and spacing for the rest of the elements in the framework.</p>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Example1">
+            <label class="sw-markup-toggle" for="swMarkup3Example1">Show Markup</label>
+            <pre class="sw-markup-body">html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}</pre>
+          </div>
+          <hr>
+          <h2>Text</h2>
+          <p>To prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS, we include some minimal reset styles to keep the experience more consistent.</p>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Example2">
+            <label class="sw-markup-toggle" for="swMarkup3Example2">Show Markup</label>
+            <pre class="sw-markup-body">html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}</pre>
+          </div>
+          <hr>
+          <h2>Images</h2>
+          <p>Inline images (<code>&lt;img&gt;</code>) are set to be “responsive” by default, using <a href="https://www.w3schools.com/css/css_rwd_images.asp">this very simple technique</a>. Setting <code>max-width</code> to <code>100%</code> and <code>height</code> to <code>auto</code> allows inline images maintain their aspect ratio and only ever be as wide as their parent elements.</p>
+          <div class="sw-demo sw-demo-base">
+            <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=I%20am%20a%20responsive%20image!&w=1000&h=500" alt="">
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Example3">
+            <label class="sw-markup-toggle" for="swMarkup3Example3">Show Markup</label>
+            <pre class="sw-markup-body">img {
+  max-width: 100%;
+  height: auto;
+}</pre>
+          </div>
+          <hr>
+          <h2>Form Elements</h2>
+          <p>Form elements are really difficult to tame, which is why it’s important for any UI framework to set some ground rules to normalize the user experience of them across browsers. This framework includes some opinionated base styling decisions that make it easier to build form-related UI components with a consistent cross-browser experience.</p>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Example4">
+            <label class="sw-markup-toggle" for="swMarkup3Example4">Show Markup</label>
+            <pre class="sw-markup-body">input[type='search'] {
+  -webkit-appearance: none;
+  appearance: none;
+}</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-4">
+          <h1>Typography</h1>
+          <p>This UI framework makes some basic, opinionated decisions about text-related elements that ensure text is easy-to-read and visually appealing. These styles also make it easier to build UI components that are reusable, easy to maintain, and look visually consistent with the rest of the elements in the UI framework.</p>
+          <h2>Body Text</h2>
+          <p>Better default <code>font-family</code>, <code>font-size</code>, and <code>line-height</code> styles are set for the entire framework, to be used as the basis for the rest of the UI elements. These styles can be overwritten on a per-project basis (e.g. if you would like to use a custom web font instead of our defaults).</p>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example1">
+            <label class="sw-markup-toggle" for="swMarkup4Example1">Show Markup</label>
+            <pre class="sw-markup-body">body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Roboto",
+    "Oxygen",
+    "Ubuntu",
+    "Cantarell",
+    "Fira Sans",
+    "Droid Sans",
+    "Helvetica Neue",
+    sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+}</pre>
+          </div>
+          <hr>
+          <h2>Vertical Rhythm</h2>
+          <p>Consistent spacing between elements in a UI framework is essential to provide a pleasing user experience. This UI framework is built upon a <strong>4 pixel</strong> baseline spacing value. This simply means that wherever possible, the styles for all UI components in this framework should use values that are a multiple of the baseline spacing value. Following this basic rule helps to create visual harmony and consistency within the framework.</p>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example2">
+            <label class="sw-markup-toggle" for="swMarkup4Example2">Show Markup</label>
+            <pre class="sw-markup-body">p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 24px;
+}</pre>
+          </div>
+          <hr>
+          <h2>Headings</h2>
+          <p>Headings help create visual and logical separation between large blocks of text. They can also represent the name of a webpage, and sections within that webpage. By default, headings are given some extra top margin to create better separation between the elements that come before and its related elements beneath.</p>
+          <div class="sw-demo sw-demo-typography">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example3">
+            <label class="sw-markup-toggle" for="swMarkup4Example3">Show Markup</label>
+            <pre class="sw-markup-body">&lt;h1>Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
+          </div>
+          <hr>
+          <h2>Paragraphs</h2>
+          <p>The paragraph (<code>&lt;p&gt;</code>) element is one of the most basic building blocks of an HTML page. </p>
+          <div class="sw-demo sw-demo-typography">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae amet sit quos assumenda tempora accusamus illo sed qui aut? Beatae ipsam maiores blanditiis a vitae eum ut repellendus sed ullam.</p>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example4">
+            <label class="sw-markup-toggle" for="swMarkup4Example4">Show Markup</label>
+            <pre class="sw-markup-body">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae amet sit quos assumenda tempora accusamus illo sed qui aut? Beatae ipsam maiores blanditiis a vitae eum ut repellendus sed ullam.&lt;/p&gt;</pre>
+          </div>
+          <hr>
+          <h2>Lists</h2>
+          <p>This UI framework add some sensible default styles to common HTML list elements like <code>&lt;dl&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;ul&gt;</code>.</p>
+          <h3>Definition Lists</h3>
+          <div class="sw-demo sw-demo-typography">
+            <dl>
+              <dt>Definition List Title 1</dt>
+              <dd>This is a definition list division.</dd>
+              <dt>Definition List Title 2</dt>
+              <dd>This is a definition list division.</dd>
+              <dt>Definition List Title 3</dt>
+              <dd>This is a definition list division.</dd>
+            </dl>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example5">
+            <label class="sw-markup-toggle" for="swMarkup4Example5">Show Markup</label>
+            <pre class="sw-markup-body">&lt;dl&gt;
+  &lt;dt&gt;Definition List Title 1&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Definition List Title 2&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Definition List Title 3&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+          </div>
+          <h3>Ordered Lists</h3>
+          <div class="sw-demo sw-demo-typography">
+            <ol>
+              <li>List Item 1</li>
+              <li>
+                List Item 2
+                <ol>
+                  <li>Child List Item 1</li>
+                  <li>
+                    Child List Item 2
+                    <ol>
+                      <li>Grandchild List Item 1</li>
+                      <li>Grandchild List Item 2</li>
+                      <li>Grandchild List Item 3</li>
+                    </ol>
+                  </li>
+                  <li>Child List Item 3</li>
+                </ol>
+              </li>
+              <li>List Item 3</li>
+            </ol>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example6">
+            <label class="sw-markup-toggle" for="swMarkup4Example6">Show Markup</label>
+            <pre class="sw-markup-body">&lt;ol&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;
+    List Item 2
+    &lt;ol&gt;
+      &lt;li&gt;Child List Item 1&lt;/li&gt;
+      &lt;li&gt;
+        Child List Item 2
+        &lt;ol&gt;
+          &lt;li&gt;Grandchild List Item 1&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 2&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 3&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Child List Item 3&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;</pre>
+          </div>
+          <h3>Unordered Lists</h3>
+          <div class="sw-demo sw-demo-typography">
+            <ul>
+              <li>List Item 1</li>
+              <li>
+                List Item 2
+                <ul>
+                  <li>Child List Item 1</li>
+                  <li>
+                    Child List Item 2
+                    <ul>
+                      <li>Grandchild List Item 1</li>
+                      <li>Grandchild List Item 2</li>
+                      <li>Grandchild List Item 3</li>
+                    </ul>
+                  </li>
+                  <li>Child List Item 3</li>
+                </ul>
+              </li>
+              <li>List Item 3</li>
+            </ul>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example8">
+            <label class="sw-markup-toggle" for="swMarkup4Example8">Show Markup</label>
+            <pre class="sw-markup-body">&lt;ul&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;
+    List Item 2
+    &lt;ul&gt;
+      &lt;li&gt;Child List Item 1&lt;/li&gt;
+      &lt;li&gt;
+        Child List Item 2
+        &lt;ul&gt;
+          &lt;li&gt;Grandchild List Item 1&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 2&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Child List Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          </div>
+          <hr>
+          <h2>Inline Elements</h2>
+          <p>There are many inline HTML elements available to use, and this UI framework sets some opinionated default styles for better consistency and flexibility.</p>
+          <div class="sw-demo sw-demo-typography">
+            <a href="#!">This is a text link</a>
+            <br>
+            <strong>Strong is used to indicate strong importance</strong>
+            <br>
+            <em>This text has added emphasis</em>
+            <br>
+            The <b>b element</b> is stylistically different text from normal text, without any special importance
+            <br>
+            The <i>i element</i> is text that is set off from the normal text
+            <br>
+            The <u>u element</u> is text with an unarticulated, though explicitly rendered, non-textual annotation
+            <br>
+            <del>This text is deleted</del> and <ins>This text is inserted</ins>
+            <br>
+            <s>This text has a strikethrough</s>
+            <br>
+            Superscript<sup>®</sup>
+            <br>
+            Subscript for things like H<sub>2</sub>O
+            <br>
+            <small>This small text is small for for fine print, etc.</small>
+            <br>
+            Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr>
+            <br>
+            <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation</q> <cite>This is a citation</cite>
+            <br>
+            The <dfn>dfn element</dfn> indicates a definition.
+            <br>
+            The <mark>mark element</mark> indicates a highlight
+            <br>
+            The <var>variable element</var>, such as <var>x</var> = <var>y</var>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example59">
+            <label class="sw-markup-toggle" for="swMarkup4Example59">Show Markup</label>
+            <pre class="sw-markup-body">&lt;a href="#!"&gt;This is a text link&lt;/a&gt;
+&lt;br&gt;
+&lt;strong&gt;Strong is used to indicate strong importance&lt;/strong&gt;
+&lt;br&gt;
+&lt;em&gt;This text has added emphasis&lt;/em&gt;
+&lt;br&gt;
+The &lt;b&gt;b element&lt;/b&gt; is stylistically different text from normal text, without any special importance
+&lt;br&gt;
+The &lt;i&gt;i element&lt;/i&gt; is text that is set off from the normal text
+&lt;br&gt;
+The &lt;u&gt;u element&lt;/u&gt; is text with an unarticulated, though explicitly rendered, non-textual annotation
+&lt;br&gt;
+&lt;del&gt;This text is deleted&lt;/del&gt; and &lt;ins&gt;This text is inserted&lt;/ins&gt;
+&lt;br&gt;
+&lt;s&gt;This text has a strikethrough&lt;/s&gt;
+&lt;br&gt;
+Superscript&lt;sup&gt;®&lt;/sup&gt;
+&lt;br&gt;
+Subscript for things like H&lt;sub&gt;2&lt;/sub&gt;O
+&lt;br&gt;
+&lt;small&gt;This small text is small for for fine print, etc.&lt;/small&gt;
+&lt;br&gt;
+Abbreviation: &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;
+&lt;br&gt;
+&lt;q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q"&gt;This text is a short inline quotation&lt;/q&gt; &lt;cite&gt;This is a citation&lt;/cite&gt;
+&lt;br&gt;
+The &lt;dfn&gt;dfn element&lt;/dfn&gt; indicates a definition.
+&lt;br&gt;
+The &lt;mark&gt;mark element&lt;/mark&gt; indicates a highlight
+&lt;br&gt;
+The &lt;var&gt;variable element&lt;/var&gt;, such as &lt;var&gt;x&lt;/var&gt; = &lt;var&gt;y&lt;/var&gt;</pre>
+          </div>
+          <hr>
+          <h2>Horizontal Rules</h2>
+          <p>Horizontal rules (<code>&lt;hr&gt;</code>) are used on webpages to break up elements into visual and logical sections. This UI framework includes some basic default styles for this HTML element.</p>
+          <div class="sw-demo sw-demo-typography">
+            <hr>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example10">
+            <label class="sw-markup-toggle" for="swMarkup4Example10">Show Markup</label>
+            <pre class="sw-markup-body">&lt;hr&gt;</pre>
+          </div>
+          <hr>
+          <h2>Preformatted Text</h2>
+          <p>Preformatted text is often used on webpages to display software code in a visually-friendly format. This UI framework includes some basic styles for these elements.</p>
+          <div class="sw-demo sw-demo-typography">
+            Keyboard input: <kbd>Cmd</kbd>
+            <br><br>
+            <code>This is what inline code looks like.</code>
+            <br><br>
+            <samp>This is sample output from a computer program</samp>
+            <br><br>
+            <pre>P R E F O R M A T T E D T E X T
+! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~</pre>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example11">
+            <label class="sw-markup-toggle" for="swMarkup4Example11">Show Markup</label>
+            <pre class="sw-markup-body">Keyboard input: &lt;kbd>Cmd&lt;/kbd&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;code&gt;This is what inline code looks like.&lt;/code&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;samp&gt;This is sample output from a computer program&lt;/samp&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;pre&gt;P R E F O R M A T T E D T E X T
+! " # $ % &amp; ' ( ) * + , - . /
+0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+@ A B C D E F G H I J K L M N O
+P Q R S T U V W X Y Z [ \ ] ^ _
+` a b c d e f g h i j k l m n o
+p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-5">
+          <h1>Container</h1>
+          <p>The Container UI component sets a maximum width for its child content, and can be used to help create layout on a webpage. This website itself uses Containers to set a maximum width for the header, body, and footer contents.</p>
+          <h2>Default</h2>
+          <p>The default maximum width for a Container is <code>1280px</code>.</p>
+          <div class="sw-demo sw-demo-container">
+            <div class="container">I am contained!</div>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Example1">
+            <label class="sw-markup-toggle" for="swMarkup5Example1">Show Markup</label>
+            <pre class="sw-markup-body">&lt;div class="container"&gt;I am contained!&lt;/div&gt;</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-6">
+          <h1>List</h1>
+          <p>The List UI component provides a few simple variations from the default list styles introduced by Typography.</p>
+          <h2>Unstyled</h2>
+          <p>This modifier strips a list of all its default styles. This is useful if you plan on styling a list to look very different from the default, and want to start from scratch.</p>
+          <div class="sw-demo sw-demo-list">
+            <ul class="list-unstyled">
+              <li>List Item 1</li>
+              <li>
+                List Item 2
+                <ul>
+                  <li>Child List Item 1</li>
+                  <li>
+                    Child List Item 2
+                    <ul>
+                      <li>Grandchild List Item 1</li>
+                      <li>Grandchild List Item 2</li>
+                      <li>Grandchild List Item 3</li>
+                    </ul>
+                  </li>
+                  <li>Child List Item 3</li>
+                </ul>
+              </li>
+              <li>List Item 3</li>
+            </ul>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example1">
+            <label class="sw-markup-toggle" for="swMarkup6Example1">Show Markup</label>
+            <pre class="sw-markup-body">&lt;ul class="list-unstyled"&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;
+    List Item 2
+    &lt;ul&gt;
+      &lt;li&gt;Child List Item 1&lt;/li&gt;
+      &lt;li&gt;
+        Child List Item 2
+        &lt;ul&gt;
+          &lt;li&gt;Grandchild List Item 1&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 2&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Child List Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          </div>
+          <hr>
+          <h2>Inline</h2>
+          <p>This modifier sets each list item to <code>display: inline-block;</code> so that they are arranged side-by-side. This is useful for situations where you need a list to render horizontal instead of vertical.</p>
+          <div class="sw-demo sw-demo-list">
+            <dl class="list-inline">
+              <dt>Definition List Title 1</dt>
+              <dd>This is a definition list division.</dd>
+              <dt>Definition List Title 2</dt>
+              <dd>This is a definition list division.</dd>
+            </dl>
+            <ul class="list-inline">
+              <li>List Item 1</li>
+              <li>List Item 2</li>
+              <li>List Item 3</li>
+              <li>List Item 4</li>
+              <li>List Item 5</li>
+              <li>List Item 6</li>
+            </ul>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example2">
+            <label class="sw-markup-toggle" for="swMarkup6Example2">Show Markup</label>
+            <pre class="sw-markup-body">&lt;dl class="list-inline"&gt;
+  &lt;dt&gt;Definition List Title 1&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Definition List Title 2&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;ul class="list-inline"&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+  &lt;li&gt;List Item 4&lt;/li&gt;
+  &lt;li&gt;List Item 5&lt;/li&gt;
+  &lt;li&gt;List Item 6&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-7">
           <h1>Button</h1>
           <p>The Button UI component is a clickable interface element that can trigger an action or state change within the interface.</p>
           <h2>Default</h2>
@@ -101,8 +611,8 @@
             <button class="button button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup1Default">
-            <label class="sw-markup-toggle" for="swMarkup1Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example1">
+            <label class="sw-markup-toggle" for="swMarkup7Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-blue"&gt;
@@ -134,8 +644,8 @@
             <button class="button button-pill button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup1Variant1">
-            <label class="sw-markup-toggle" for="swMarkup1Variant1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example2">
+            <label class="sw-markup-toggle" for="swMarkup7Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-pill button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-pill button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-pill button-blue"&gt;
@@ -150,7 +660,7 @@
 &lt;button class="button button-pill button-gray-lightest"&gt;Gray Lightest&lt;/button&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-2">
+        <section class="sw-section js-scrollspy-section" id="sw-section-8">
           <h1>Card</h1>
           <p>The Card UI component is a way to organize related information in a condensed, reusable format. Cards are typically represented stacked on top of one another, or arranged side-by-side in a grid format.</p>
           <h2>Default</h2>
@@ -173,8 +683,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Default">
-            <label class="sw-markup-toggle" for="swMarkup2Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example1">
+            <label class="sw-markup-toggle" for="swMarkup8Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card"&gt;
   &lt;div class="card-header"&gt;
     &lt;div class="card-heading"&gt;&lt;span&gt;$15&lt;/span&gt;PSD Version&lt;/div&gt;
@@ -208,8 +718,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup2Variant1">
-            <label class="sw-markup-toggle" for="swMarkup2Variant1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example2">
+            <label class="sw-markup-toggle" for="swMarkup8Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card card-image"&gt;
   &lt;div class="card-header"&gt;
     &lt;img src="./assets/ui/card/card-image.jpg" alt="Foggy Lake"&gt;
@@ -223,7 +733,7 @@
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-3">
+        <section class="sw-section js-scrollspy-section" id="sw-section-9">
           <h1>Accordion</h1>
           <p>The Accordion UI component is used to toggle the visibility of information on a webpage. Accordions help reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please.</p>
           <h2>Default</h2>
@@ -251,8 +761,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup3Default">
-            <label class="sw-markup-toggle" for="swMarkup3Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example1">
+            <label class="sw-markup-toggle" for="swMarkup9Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="accordion"&gt;
   &lt;input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-1" checked&gt;
   &lt;label class="accordion-label" for="accordion-input-1"&gt;
@@ -275,7 +785,7 @@
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-4">
+        <section class="sw-section js-scrollspy-section" id="sw-section-10">
           <h1>Modal</h1>
           <p>The Modal UI component is a popup window whose visibility is triggered by its respective label, which is styled as a Button UI component. It can then be closed by clicking</p>
           <h2>Default</h2>
@@ -299,8 +809,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Default">
-            <label class="sw-markup-toggle" for="swMarkup4Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example1">
+            <label class="sw-markup-toggle" for="swMarkup10Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;input type="checkbox" id="modal1" class="modal-input"&gt;
 &lt;label class="button button-blue" for="modal1"&gt;Open Modal&lt;/label&gt;
 &lt;label class="modal-overlay" for="modal1"&gt;&lt;/label&gt;
@@ -319,7 +829,7 @@
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-5">
+        <section class="sw-section js-scrollspy-section" id="sw-section-11">
           <h1>Tabpanel</h1>
           <p>The Tabpanel UI component is another way to reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please. When a user clicks on a tab, it displays the corresponding tab content.</p>
           <h2>Default</h2>
@@ -369,8 +879,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Default">
-            <label class="sw-markup-toggle" for="swMarkup5Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example1">
+            <label class="sw-markup-toggle" for="swMarkup11Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-1" name="tabpanel-1" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-2" name="tabpanel-1"&gt;
@@ -462,8 +972,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Variant1">
-            <label class="sw-markup-toggle" for="swMarkup5Variant1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example2">
+            <label class="sw-markup-toggle" for="swMarkup11Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-alt" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-1" name="tabpanel-2" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-2" name="tabpanel-2"&gt;
@@ -555,8 +1065,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Variant2">
-            <label class="sw-markup-toggle" for="swMarkup5Variant2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example3">
+            <label class="sw-markup-toggle" for="swMarkup11Example3">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-vertical" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3"&gt;
@@ -601,7 +1111,7 @@
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-6">
+        <section class="sw-section js-scrollspy-section" id="sw-section-12">
           <h1>Tilt Hover</h1>
           <p>The Tilt Hover UI component adds a “tilting” visual effect to a card-like UI element as the user hovers over the element.</p>
           <h2>Default</h2>
@@ -628,8 +1138,8 @@
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Default">
-            <label class="sw-markup-toggle" for="swMarkup6Default">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup12Example1">
+            <label class="sw-markup-toggle" for="swMarkup12Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tilt"&gt;
   &lt;div class="tilt-container"&gt;
     &lt;div class="tilt-grid" id="tilt-grid-1"&gt;&lt;/div&gt;
@@ -662,25 +1172,43 @@
           </span>
         </label>
         <nav class="sw-sidebar-nav" role="navigation">
-          <h1 class="sw-sidebar-heading">UI Elements</h1>
+          <h1 class="sw-sidebar-heading">Documentation</h1>
           <ul class="sw-sidebar-list">
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link is-current" href="#sw-section-1">Button</a>
+              <a class="sw-sidebar-link js-scrollspy-link is-current" href="#sw-section-1">Overview</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-2">Card</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-2">Color Palette</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-3">Accordion</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-3">Base</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-4">Modal</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-4">Typography</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-5">Tabpanel</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-5">Container</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Tilt Hover</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">List</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">Button</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-8">Card</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-9">Accordion</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-10">Modal</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-11">Tabpanel</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-12">Tilt Hover</a>
             </li>
           </ul>
         </nav>
@@ -689,7 +1217,7 @@
   </main>
   <!-- Footer -->
   <footer class="sw-footer" role="contentinfo">
-    <div class="sw-container">
+    <div class="container">
       <nav class="sw-footer-nav" role="navigation">
         <ul class="sw-footer-nav-list">
           <li class="sw-footer-nav-item">
@@ -731,42 +1259,42 @@
       </nav>
       <hr>
       <p>Developed by Bov Academy Students</p>
-      <nav class="sw-footer-credits">
-        <ul class="sw-footer-credits-list">
-          <li class="sw-footer-credits-item">
-            <a class="sw-footer-credits-link" href="https://github.com/bluehabit" target="_blank">
-              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-chris-feltus.jpg" alt="Chris Feltus">
-              <span class="sw-footer-credits-text">Chris Feltus</span>
+      <nav class="sw-credits">
+        <ul class="sw-credits-list list-inline">
+          <li class="sw-credits-item">
+            <a class="sw-credits-link" href="https://github.com/bluehabit" target="_blank">
+              <img class="sw-credits-image" src="./assets/showcase/images/avatar-chris-feltus.jpg" alt="Chris Feltus">
+              <span class="sw-credits-text">Chris Feltus</span>
             </a>
           </li>
-          <li class="sw-footer-credits-item">
-            <a class="sw-footer-credits-link" href="https://github.com/kubbafox" target="_blank">
-              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-chenfeng-lai.jpg" alt="Chenfeng Lai">
-              <span class="sw-footer-credits-text">Chenfeng Lai</span>
+          <li class="sw-credits-item">
+            <a class="sw-credits-link" href="https://github.com/kubbafox" target="_blank">
+              <img class="sw-credits-image" src="./assets/showcase/images/avatar-chenfeng-lai.jpg" alt="Chenfeng Lai">
+              <span class="sw-credits-text">Chenfeng Lai</span>
             </a>
           </li>
-          <li class="sw-footer-credits-item">
-            <a class="sw-footer-credits-link" href="https://github.com/jchiang7874" target="_blank">
-              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-jennifer-chiang.jpg" alt="Jennifer Chiang">
-              <span class="sw-footer-credits-text">Jennifer Chiang</span>
+          <li class="sw-credits-item">
+            <a class="sw-credits-link" href="https://github.com/jchiang7874" target="_blank">
+              <img class="sw-credits-image" src="./assets/showcase/images/avatar-jennifer-chiang.jpg" alt="Jennifer Chiang">
+              <span class="sw-credits-text">Jennifer Chiang</span>
             </a>
           </li>
-          <li class="sw-footer-credits-item">
-            <a class="sw-footer-credits-link" href="https://github.com/bruceLeeO" target="_blank">
-              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-leonardo-deleon.jpg" alt="Leonardo Deleon">
-              <span class="sw-footer-credits-text">Leonardo Deleon</span>
+          <li class="sw-credits-item">
+            <a class="sw-credits-link" href="https://github.com/bruceLeeO" target="_blank">
+              <img class="sw-credits-image" src="./assets/showcase/images/avatar-leonardo-deleon.jpg" alt="Leonardo Deleon">
+              <span class="sw-credits-text">Leonardo Deleon</span>
             </a>
           </li>
-          <li class="sw-footer-credits-item">
-            <a class="sw-footer-credits-link" href="https://github.com/rivera1294" target="_blank">
-              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-jason-rivera.jpg" alt="Jason Rivera">
-              <span class="sw-footer-credits-text">Jason Rivera</span>
+          <li class="sw-credits-item">
+            <a class="sw-credits-link" href="https://github.com/rivera1294" target="_blank">
+              <img class="sw-credits-image" src="./assets/showcase/images/avatar-jason-rivera.jpg" alt="Jason Rivera">
+              <span class="sw-credits-text">Jason Rivera</span>
             </a>
           </li>
-          <li class="sw-footer-credits-item">
-            <a class="sw-footer-credits-link" href="https://github.com/cbracco" target="_blank">
-              <img class="sw-footer-credits-image" src="./assets/showcase/images/avatar-chris-bracco.jpg" alt="Chris Bracco">
-              <span class="sw-footer-credits-text">Chris Bracco</span>
+          <li class="sw-credits-item">
+            <a class="sw-credits-link" href="https://github.com/cbracco" target="_blank">
+              <img class="sw-credits-image" src="./assets/showcase/images/avatar-chris-bracco.jpg" alt="Chris Bracco">
+              <span class="sw-credits-text">Chris Bracco</span>
             </a>
           </li>
         </ul>

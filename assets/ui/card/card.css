@@ -1,3 +1,7 @@
+/**
+ * CARD
+ */
+
 /* Default */
 body {
   font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
@@ -19,7 +23,7 @@ body {
 .card-heading {
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: #76818c;
+  color: #58616b;
 }
 
 .card-heading span {
@@ -31,7 +35,7 @@ body {
 
 .card-body {
   padding: 24px;
-  color: #76818c;
+  color: #58616b;
   text-align: center;
 }
 
@@ -74,6 +78,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-size: 87.5%;
+  color: #76818c;
 }
 
 .card-image .card-title {
