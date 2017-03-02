@@ -4,10 +4,15 @@
 
 /* Unstyled */
 .list-unstyled,
+.list-unstyled ol,
 .list-unstyled ul {
-  margin-left: 0;
   padding-left: 0;
   list-style: none;
+}
+
+.list-unstyled li,
+.list-unstyled dd {
+  margin-left: 0;
 }
 
 /* Inline */
@@ -17,8 +22,22 @@
   list-style: none;
 }
 
+.list-inline dt,
+.list-inline dd,
 .list-inline li {
   display: inline-block;
+}
+
+.list-inline dt {
+  margin-right: 4px;
+}
+
+.list-inline dd {
+  margin-left: 0;
+  margin-right: 24px;
+}
+
+.list-inline li {
   margin-left: 8px;
 }
 

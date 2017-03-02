@@ -552,50 +552,41 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
   &lt;li&gt;List Item 3&lt;/li&gt;
 &lt;/ul&gt;</pre>
           </div>
+          <hr>
           <h2>Inline</h2>
-          <p>This modifier sets each list item to `display: inline-block;` so that they are arranged side-by-side. This is useful for situations where you need a list to run horizontal instead of vertical.</p>
+          <p>This modifier sets each list item to <code>display: inline-block;</code> so that they are arranged side-by-side. This is useful for situations where you need a list to render horizontal instead of vertical.</p>
           <div class="sw-demo sw-demo-list">
+            <dl class="list-inline">
+              <dt>Definition List Title 1</dt>
+              <dd>This is a definition list division.</dd>
+              <dt>Definition List Title 2</dt>
+              <dd>This is a definition list division.</dd>
+            </dl>
             <ul class="list-inline">
               <li>List Item 1</li>
-              <li>
-                List Item 2
-                <ul>
-                  <li>Child List Item 1</li>
-                  <li>
-                    Child List Item 2
-                    <ul>
-                      <li>Grandchild List Item 1</li>
-                      <li>Grandchild List Item 2</li>
-                      <li>Grandchild List Item 3</li>
-                    </ul>
-                  </li>
-                  <li>Child List Item 3</li>
-                </ul>
-              </li>
+              <li>List Item 2</li>
               <li>List Item 3</li>
+              <li>List Item 4</li>
+              <li>List Item 5</li>
+              <li>List Item 6</li>
             </ul>
           </div>
           <div class="sw-markup">
             <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example2">
             <label class="sw-markup-toggle" for="swMarkup6Example2">Show Markup</label>
-            <pre class="sw-markup-body">&lt;ul class="list-inline"&gt;
+            <pre class="sw-markup-body">&lt;dl class="list-inline"&gt;
+  &lt;dt&gt;Definition List Title 1&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Definition List Title 2&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;ul class="list-inline"&gt;
   &lt;li&gt;List Item 1&lt;/li&gt;
-  &lt;li&gt;
-    List Item 2
-    &lt;ul&gt;
-      &lt;li&gt;Child List Item 1&lt;/li&gt;
-      &lt;li&gt;
-        Child List Item 2
-        &lt;ul&gt;
-          &lt;li&gt;Grandchild List Item 1&lt;/li&gt;
-          &lt;li&gt;Grandchild List Item 2&lt;/li&gt;
-          &lt;li&gt;Grandchild List Item 3&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;Child List Item 3&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
+  &lt;li&gt;List Item 2&lt;/li&gt;
   &lt;li&gt;List Item 3&lt;/li&gt;
+  &lt;li&gt;List Item 4&lt;/li&gt;
+  &lt;li&gt;List Item 5&lt;/li&gt;
+  &lt;li&gt;List Item 6&lt;/li&gt;
 &lt;/ul&gt;</pre>
           </div>
         </section>
