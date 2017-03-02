@@ -74,52 +74,6 @@ body {
 }
 
 /**
- * SWATCHES
- */
-
-.sw-swatch {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  padding: 116px 8px 8px 8px;
-  background-color: #ffffff;
-  border: 1px solid #c3ced9;
-  text-align: center;
-  box-sizing: content-box;
-}
-
-.sw-swatch:after {
-  position: absolute;
-  content: '';
-  width: 100px;
-  height: 100px;
-  top: 8px;
-  left: 8px;
-  background-color: currentColor;
-}
-
-.sw-swatch-white:after { background-color: #ffffff; }
-.sw-swatch-gray-lightest:after { background-color: #f3f5f8; }
-.sw-swatch-gray-lighter:after { background-color: #c3ced9; }
-.sw-swatch-gray-light:after { background-color: #acb6bf; }
-.sw-swatch-gray:after { background-color: #76818c; }
-.sw-swatch-gray-dark:after { background-color: #58616b; }
-.sw-swatch-gray-darker:after { background-color: #34383c; }
-.sw-swatch-gray-darkest:after { background-color: #1e2226; }
-.sw-swatch-black:after { background-color: #000000; }
-
-.sw-swatch-blue:after { background-color: #51d0ef; }
-.sw-swatch-blue-light:after { background-color: #a5cfdb; }
-.sw-swatch-blue-lighter:after { background-color: #dce8fa; }
-.sw-swatch-blue-lightest:after { background-color: #f2f5fa; }
-
-.sw-swatch-pink:after { background-color: #eb74aa; }
-.sw-swatch-pink-dark:after { background-color: #d45f94; }
-.sw-swatch-pink-light:after { background-color: #ffe7f2; }
-
-.sw-swatch-orange:after { background-color: #ff9948; }
-
-/**
  * HEADER
  */
 
@@ -571,7 +525,7 @@ body {
   flex-wrap: wrap;
 }
 
-.sw-demo-color .sw-swatch {
+.sw-demo-color .color-palette {
   margin-right: 12px;
   margin-bottom: 12px;
 }

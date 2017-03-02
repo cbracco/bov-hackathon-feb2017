@@ -1,0 +1,70 @@
+/**
+ * COLOR PALETTE
+ */
+
+/* For reference only */
+:root {
+  /* Grayscale */
+  --color-gray-darkest: #1e2226;
+  --color-gray-darker: #34383c;
+  --color-gray-dark: #58616b;
+  --color-gray: #76818c;
+  --color-gray-light: #acb6bf;
+  --color-gray-lighter: #c3ced9;
+  --color-gray-lightest: #f3f5f8;
+  --color-white: #ffffff;
+  /* Primary (Blue) */
+  --color-blue: #51d0ef;
+  --color-blue-light: #a5cfdb;
+  --color-blue-lighter: #dce8fa;
+  --color-blue-lightest: #f2f5fa;
+  /* Secondary (Pink) */
+  --color-pink-dark: #d45f94;
+  --color-pink: #eb74aa;
+  --color-pink-light: #ffe7f2;
+  /* Tertiary (Orange) */
+  --color-orange: #ff9948;
+}
+
+/* Swatches */
+.color-palette {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  padding: 116px 8px 8px 8px;
+  background-color: #ffffff;
+  border: 1px solid #c3ced9;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+.color-palette:after {
+  position: absolute;
+  content: '';
+  width: 100px;
+  height: 100px;
+  top: 8px;
+  left: 8px;
+  background-color: currentColor;
+}
+
+.color-palette-white:after { background-color: #ffffff; }
+.color-palette-gray-lightest:after { background-color: #f3f5f8; }
+.color-palette-gray-lighter:after { background-color: #c3ced9; }
+.color-palette-gray-light:after { background-color: #acb6bf; }
+.color-palette-gray:after { background-color: #76818c; }
+.color-palette-gray-dark:after { background-color: #58616b; }
+.color-palette-gray-darker:after { background-color: #34383c; }
+.color-palette-gray-darkest:after { background-color: #1e2226; }
+.color-palette-black:after { background-color: #000000; }
+
+.color-palette-blue:after { background-color: #51d0ef; }
+.color-palette-blue-light:after { background-color: #a5cfdb; }
+.color-palette-blue-lighter:after { background-color: #dce8fa; }
+.color-palette-blue-lightest:after { background-color: #f2f5fa; }
+
+.color-palette-pink:after { background-color: #eb74aa; }
+.color-palette-pink-dark:after { background-color: #d45f94; }
+.color-palette-pink-light:after { background-color: #ffe7f2; }
+
+.color-palette-orange:after { background-color: #ff9948; }
