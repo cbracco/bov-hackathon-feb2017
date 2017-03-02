@@ -626,6 +626,7 @@ body {
   display: none;
   border-radius: 0 0 4px 4px;
   border-color: #51d0ef;
+  margin-bottom: 0;
 }
 
 .sw-markup-input:checked ~ .sw-markup-body {

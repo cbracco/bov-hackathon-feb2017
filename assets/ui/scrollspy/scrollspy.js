@@ -1,7 +1,8 @@
 /**
- * Scrollspy
+ * SCROLLSPY
  * @author Chris Bracco
  */
+
 var scrollSpy = (function () {
   // STRICT MODE
   'use strict';

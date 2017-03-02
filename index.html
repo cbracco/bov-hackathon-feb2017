@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="./assets/ui/button/button.css">
   <link rel="stylesheet" href="./assets/ui/card/card.css">
   <link rel="stylesheet" href="./assets/ui/container/container.css">
+  <link rel="stylesheet" href="./assets/ui/list/list.css">
   <link rel="stylesheet" href="./assets/ui/modal/modal.css">
   <link rel="stylesheet" href="./assets/ui/tabpanel/tabpanel.css">
   <link rel="stylesheet" href="./assets/ui/tilt/tilt.css">
@@ -255,6 +256,122 @@ h6 {
             <pre class="sw-markup-body">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae amet sit quos assumenda tempora accusamus illo sed qui aut? Beatae ipsam maiores blanditiis a vitae eum ut repellendus sed ullam.&lt;/p&gt;</pre>
           </div>
           <hr>
+          <h2>Lists</h2>
+          <p>This UI framework add some sensible default styles to common HTML list elements like <code>&lt;dl&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;ul&gt;</code>.</p>
+          <h3>Definition Lists</h3>
+          <div class="sw-demo sw-demo-typography">
+            <dl>
+              <dt>Definition List Title 1</dt>
+              <dd>This is a definition list division.</dd>
+              <dt>Definition List Title 2</dt>
+              <dd>This is a definition list division.</dd>
+              <dt>Definition List Title 3</dt>
+              <dd>This is a definition list division.</dd>
+            </dl>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example5">
+            <label class="sw-markup-toggle" for="swMarkup4Example5">Show Markup</label>
+            <pre class="sw-markup-body">&lt;dl&gt;
+  &lt;dt&gt;Definition List Title 1&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Definition List Title 2&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+  &lt;dt&gt;Definition List Title 3&lt;/dt&gt;
+  &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+          </div>
+          <h3>Ordered Lists</h3>
+          <div class="sw-demo sw-demo-typography">
+            <ol>
+              <li>List Item 1</li>
+              <li>
+                List Item 2
+                <ol>
+                  <li>Child List Item 1</li>
+                  <li>
+                    Child List Item 2
+                    <ol>
+                      <li>Grandchild List Item 1</li>
+                      <li>Grandchild List Item 2</li>
+                      <li>Grandchild List Item 3</li>
+                    </ol>
+                  </li>
+                  <li>Child List Item 3</li>
+                </ol>
+              </li>
+              <li>List Item 3</li>
+            </ol>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example6">
+            <label class="sw-markup-toggle" for="swMarkup4Example6">Show Markup</label>
+            <pre class="sw-markup-body">&lt;ol&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;
+    List Item 2
+    &lt;ol&gt;
+      &lt;li&gt;Child List Item 1&lt;/li&gt;
+      &lt;li&gt;
+        Child List Item 2
+        &lt;ol&gt;
+          &lt;li&gt;Grandchild List Item 1&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 2&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 3&lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Child List Item 3&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;</pre>
+          </div>
+          <h3>Unordered Lists</h3>
+          <div class="sw-demo sw-demo-typography">
+            <ul>
+              <li>List Item 1</li>
+              <li>
+                List Item 2
+                <ul>
+                  <li>Child List Item 1</li>
+                  <li>
+                    Child List Item 2
+                    <ul>
+                      <li>Grandchild List Item 1</li>
+                      <li>Grandchild List Item 2</li>
+                      <li>Grandchild List Item 3</li>
+                    </ul>
+                  </li>
+                  <li>Child List Item 3</li>
+                </ul>
+              </li>
+              <li>List Item 3</li>
+            </ul>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example8">
+            <label class="sw-markup-toggle" for="swMarkup4Example8">Show Markup</label>
+            <pre class="sw-markup-body">&lt;ul&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;
+    List Item 2
+    &lt;ul&gt;
+      &lt;li&gt;Child List Item 1&lt;/li&gt;
+      &lt;li&gt;
+        Child List Item 2
+        &lt;ul&gt;
+          &lt;li&gt;Grandchild List Item 1&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 2&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Child List Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          </div>
+          <hr>
           <h2>Inline Elements</h2>
           <p>There are many inline HTML elements available to use, and this UI framework sets some opinionated default styles for better consistency and flexibility.</p>
           <div class="sw-demo sw-demo-typography">
@@ -291,8 +408,8 @@ h6 {
             The <var>variable element</var>, such as <var>x</var> = <var>y</var>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example5">
-            <label class="sw-markup-toggle" for="swMarkup4Example5">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example59">
+            <label class="sw-markup-toggle" for="swMarkup4Example59">Show Markup</label>
             <pre class="sw-markup-body">&lt;a href="#!"&gt;This is a text link&lt;/a&gt;
 &lt;br&gt;
 &lt;strong&gt;Strong is used to indicate strong importance&lt;/strong&gt;
@@ -332,8 +449,8 @@ The &lt;var&gt;variable element&lt;/var&gt;, such as &lt;var&gt;x&lt;/var&gt; = 
             <hr>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example6">
-            <label class="sw-markup-toggle" for="swMarkup4Example6">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example10">
+            <label class="sw-markup-toggle" for="swMarkup4Example10">Show Markup</label>
             <pre class="sw-markup-body">&lt;hr&gt;</pre>
           </div>
           <hr>
@@ -355,8 +472,8 @@ P Q R S T U V W X Y Z [ \ ] ^ _
 p q r s t u v w x y z { | } ~</pre>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example7">
-            <label class="sw-markup-toggle" for="swMarkup4Example7">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup4Example11">
+            <label class="sw-markup-toggle" for="swMarkup4Example11">Show Markup</label>
             <pre class="sw-markup-body">Keyboard input: &lt;kbd>Cmd&lt;/kbd&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;code&gt;This is what inline code looks like.&lt;/code&gt;
@@ -387,6 +504,102 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
           </div>
         </section>
         <section class="sw-section js-scrollspy-section" id="sw-section-6">
+          <h1>List</h1>
+          <p>The List UI component provides a few simple variations from the default list styles introduced by Typography.</p>
+          <h2>Unstyled</h2>
+          <p>This modifier strips a list of all its default styles. This is useful if you plan on styling a list to look very different from the default, and want to start from scratch.</p>
+          <div class="sw-demo sw-demo-list">
+            <ul class="list-unstyled">
+              <li>List Item 1</li>
+              <li>
+                List Item 2
+                <ul>
+                  <li>Child List Item 1</li>
+                  <li>
+                    Child List Item 2
+                    <ul>
+                      <li>Grandchild List Item 1</li>
+                      <li>Grandchild List Item 2</li>
+                      <li>Grandchild List Item 3</li>
+                    </ul>
+                  </li>
+                  <li>Child List Item 3</li>
+                </ul>
+              </li>
+              <li>List Item 3</li>
+            </ul>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example1">
+            <label class="sw-markup-toggle" for="swMarkup6Example1">Show Markup</label>
+            <pre class="sw-markup-body">&lt;ul class="list-unstyled"&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;
+    List Item 2
+    &lt;ul&gt;
+      &lt;li&gt;Child List Item 1&lt;/li&gt;
+      &lt;li&gt;
+        Child List Item 2
+        &lt;ul&gt;
+          &lt;li&gt;Grandchild List Item 1&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 2&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Child List Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          </div>
+          <h2>Inline</h2>
+          <p>This modifier sets each list item to `display: inline-block;` so that they are arranged side-by-side. This is useful for situations where you need a list to run horizontal instead of vertical.</p>
+          <div class="sw-demo sw-demo-list">
+            <ul class="list-inline">
+              <li>List Item 1</li>
+              <li>
+                List Item 2
+                <ul>
+                  <li>Child List Item 1</li>
+                  <li>
+                    Child List Item 2
+                    <ul>
+                      <li>Grandchild List Item 1</li>
+                      <li>Grandchild List Item 2</li>
+                      <li>Grandchild List Item 3</li>
+                    </ul>
+                  </li>
+                  <li>Child List Item 3</li>
+                </ul>
+              </li>
+              <li>List Item 3</li>
+            </ul>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example2">
+            <label class="sw-markup-toggle" for="swMarkup6Example2">Show Markup</label>
+            <pre class="sw-markup-body">&lt;ul class="list-inline"&gt;
+  &lt;li&gt;List Item 1&lt;/li&gt;
+  &lt;li&gt;
+    List Item 2
+    &lt;ul&gt;
+      &lt;li&gt;Child List Item 1&lt;/li&gt;
+      &lt;li&gt;
+        Child List Item 2
+        &lt;ul&gt;
+          &lt;li&gt;Grandchild List Item 1&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 2&lt;/li&gt;
+          &lt;li&gt;Grandchild List Item 3&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Child List Item 3&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-7">
           <h1>Button</h1>
           <p>The Button UI component is a clickable interface element that can trigger an action or state change within the interface.</p>
           <h2>Default</h2>
@@ -406,8 +619,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <button class="button button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example1">
-            <label class="sw-markup-toggle" for="swMarkup6Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example1">
+            <label class="sw-markup-toggle" for="swMarkup7Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-blue"&gt;
@@ -439,8 +652,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <button class="button button-pill button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example2">
-            <label class="sw-markup-toggle" for="swMarkup6Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example2">
+            <label class="sw-markup-toggle" for="swMarkup7Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-pill button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-pill button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-pill button-blue"&gt;
@@ -455,7 +668,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;button class="button button-pill button-gray-lightest"&gt;Gray Lightest&lt;/button&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-7">
+        <section class="sw-section js-scrollspy-section" id="sw-section-8">
           <h1>Card</h1>
           <p>The Card UI component is a way to organize related information in a condensed, reusable format. Cards are typically represented stacked on top of one another, or arranged side-by-side in a grid format.</p>
           <h2>Default</h2>
@@ -478,8 +691,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example1">
-            <label class="sw-markup-toggle" for="swMarkup7Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example1">
+            <label class="sw-markup-toggle" for="swMarkup8Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card"&gt;
   &lt;div class="card-header"&gt;
     &lt;div class="card-heading"&gt;&lt;span&gt;$15&lt;/span&gt;PSD Version&lt;/div&gt;
@@ -513,8 +726,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example2">
-            <label class="sw-markup-toggle" for="swMarkup7Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example2">
+            <label class="sw-markup-toggle" for="swMarkup8Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card card-image"&gt;
   &lt;div class="card-header"&gt;
     &lt;img src="./assets/ui/card/card-image.jpg" alt="Foggy Lake"&gt;
@@ -528,7 +741,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-8">
+        <section class="sw-section js-scrollspy-section" id="sw-section-9">
           <h1>Accordion</h1>
           <p>The Accordion UI component is used to toggle the visibility of information on a webpage. Accordions help reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please.</p>
           <h2>Default</h2>
@@ -556,8 +769,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example1">
-            <label class="sw-markup-toggle" for="swMarkup8Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example1">
+            <label class="sw-markup-toggle" for="swMarkup9Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="accordion"&gt;
   &lt;input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-1" checked&gt;
   &lt;label class="accordion-label" for="accordion-input-1"&gt;
@@ -580,7 +793,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-9">
+        <section class="sw-section js-scrollspy-section" id="sw-section-10">
           <h1>Modal</h1>
           <p>The Modal UI component is a popup window whose visibility is triggered by its respective label, which is styled as a Button UI component. It can then be closed by clicking</p>
           <h2>Default</h2>
@@ -604,8 +817,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example1">
-            <label class="sw-markup-toggle" for="swMarkup9Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example1">
+            <label class="sw-markup-toggle" for="swMarkup10Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;input type="checkbox" id="modal1" class="modal-input"&gt;
 &lt;label class="button button-blue" for="modal1"&gt;Open Modal&lt;/label&gt;
 &lt;label class="modal-overlay" for="modal1"&gt;&lt;/label&gt;
@@ -624,7 +837,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-10">
+        <section class="sw-section js-scrollspy-section" id="sw-section-11">
           <h1>Tabpanel</h1>
           <p>The Tabpanel UI component is another way to reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please. When a user clicks on a tab, it displays the corresponding tab content.</p>
           <h2>Default</h2>
@@ -674,8 +887,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example1">
-            <label class="sw-markup-toggle" for="swMarkup10Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example1">
+            <label class="sw-markup-toggle" for="swMarkup11Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-1" name="tabpanel-1" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-2" name="tabpanel-1"&gt;
@@ -767,8 +980,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example2">
-            <label class="sw-markup-toggle" for="swMarkup10Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example2">
+            <label class="sw-markup-toggle" for="swMarkup11Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-alt" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-1" name="tabpanel-2" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-2" name="tabpanel-2"&gt;
@@ -860,8 +1073,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example3">
-            <label class="sw-markup-toggle" for="swMarkup10Example3">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example3">
+            <label class="sw-markup-toggle" for="swMarkup11Example3">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-vertical" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3"&gt;
@@ -906,7 +1119,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-11">
+        <section class="sw-section js-scrollspy-section" id="sw-section-12">
           <h1>Tilt Hover</h1>
           <p>The Tilt Hover UI component adds a “tilting” visual effect to a card-like UI element as the user hovers over the element.</p>
           <h2>Default</h2>
@@ -933,8 +1146,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example1">
-            <label class="sw-markup-toggle" for="swMarkup11Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup12Example1">
+            <label class="sw-markup-toggle" for="swMarkup12Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tilt"&gt;
   &lt;div class="tilt-container"&gt;
     &lt;div class="tilt-grid" id="tilt-grid-1"&gt;&lt;/div&gt;
@@ -985,22 +1198,25 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
               <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-5">Container</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Button</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">List</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">Card</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">Button</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-8">Accordion</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-8">Card</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-9">Modal</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-9">Accordion</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-10">Tabpanel</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-10">Modal</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-11">Tilt Hover</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-11">Tabpanel</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-12">Tilt Hover</a>
             </li>
           </ul>
         </nav>

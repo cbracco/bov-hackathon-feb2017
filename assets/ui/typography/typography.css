@@ -2,7 +2,7 @@
  * TYPOGRAPHY
  */
 
-/* Bodt Text */
+/* Body Text */
 body {
   font-family:
     -apple-system,
@@ -23,13 +23,23 @@ body {
 }
 
 /* Vertical Rhythm */
-p,
+blockquote,
+dl,
+figure,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+hr,
+menu,
+ol,
+p,
+pre,
+summary,
+table,
+ul {
   margin-bottom: 24px;
 }
 
@@ -55,6 +65,47 @@ p {
   margin-top: 0;
 }
 
+/* Lists */
+dl dt {
+  font-weight: 700;
+  color: #34383c;
+}
+
+dl dd {
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+ol li,
+ul li {
+  margin-left: 18px;
+}
+
+ol {
+  list-style-: decimal;
+}
+
+ol ol {
+  list-style: upper-alpha;
+}
+
+ol ol ol {
+  list-style: lower-roman;
+}
+
+ol ol ol ol {
+  list-style: lower-alpha;
+}
+
+ol ol,
+ul ul {
+  margin-bottom: 0;
+}
+
 /* Inline Elements */
 /* TBD */
 
@@ -64,7 +115,7 @@ hr {
   padding: 0;
   border: 0;
   border-top: 2px solid #f2f5fa;
-  margin: 32px 0 24px;
+  margin-top: 32px;
 }
 
 /* Preformatted Text */
@@ -77,14 +128,14 @@ samp {
   background-color: #f2f5fa;
   border: 1px solid #c3ced9;
   border-radius: 4px;
-  margin: 0;
 }
 
 code,
 kbd,
 samp {
   white-space: nowrap;
-  padding: 2px 8px;
+  padding: 1px 8px;
+  margin: 0;
 }
 
 pre {
@@ -97,6 +148,7 @@ pre {
   hyphens: none;
   border-radius: 4px;
   padding: 24px;
+  margin-top: 0;
 }
 
 pre code {
