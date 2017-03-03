@@ -91,7 +91,7 @@ body {
 
 .sw-logo-image {
   display: inline-block;
-  padding: 12px;
+  padding: 20px;
   background-color: #51d0ef;
   border-radius: 50%;
   line-height: 0;
@@ -517,6 +517,7 @@ body {
 
 /* Visual Demos */
 .sw-demo {
+  position: relative;
   margin-bottom: 24px;
 }
 
@@ -541,6 +542,37 @@ body {
 
 .sw-demo-card .card {
   max-width: 400px;
+}
+
+/* Grid Overlay (for demo purposes only) */
+.sw-demo-grid-overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sw-demo-grid-overlay .grid,
+.sw-demo-grid-overlay .grid-row,
+.sw-demo-grid-overlay [class^="grid-col-"],
+.sw-demo-grid-overlay [class*=" grid-col-"],
+.sw-demo-grid-overlay .sw-demo-grid-overlay-col {
+  height: 100%;
+}
+
+.sw-demo-grid-overlay-col {
+  background-color: #f3f5f8;
+}
+
+.sw-demo-grid-col {
+  padding: 12px 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: rgba(172, 182, 191, 0.33);
+  border: 1px solid #acb6bf;
 }
 
 .sw-demo-tabpanel .tabpanel {
