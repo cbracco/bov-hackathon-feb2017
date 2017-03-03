@@ -22,6 +22,22 @@ body {
   color: #58616b;
 }
 
+/* Anchor Links */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  color: #ff9948;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
 /* Vertical Rhythm */
 blockquote,
 dl,
