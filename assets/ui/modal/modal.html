@@ -5,17 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Modal</title>
   <link rel="stylesheet" href="../button/button.css">
+  <link rel="stylesheet" href="../icon/icon.css">
   <link rel="stylesheet" href="./modal.css">
-  <script src="https://use.fontawesome.com/8d78942c92.js"></script>
 </head>
 <body>
+  <!-- SVG Icons -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="icon-exclamation-circle" viewBox="0 0 512 512">
+      <path d="m256 37c40 0 77 9 110 29 34 20 60 46 80 80 20 33 29 70 29 110 0 40-9 77-29 110-20 34-46 60-80 80-33 20-70 29-110 29-40 0-77-9-110-29-34-20-60-46-80-80-20-33-29-70-29-110 0-40 9-77 29-110 20-34 46-60 80-80 33-20 70-29 110-29z m37 356l0-54c0-3-1-5-3-7-2-2-4-3-6-3l-55 0c-3 0-5 1-7 3-2 2-3 4-3 7l0 54c0 2 1 5 3 6 2 2 4 3 7 3l55 0c2 0 4-1 6-2 2-2 3-4 3-7z m-1-98l5-178c0-2-1-4-3-5-2-2-4-2-7-2l-62 0c-3 0-5 0-7 2-2 1-3 3-3 5l5 178c0 1 1 3 3 5 1 1 4 2 6 2l53 0c3 0 5-1 7-2 2-2 3-4 3-5z"/>
+    </symbol>
+  </svg>
   <input type="checkbox" id="modal1" class="modal-input">
   <label class="button button-blue" for="modal1">Open Modal</label>
   <label class="modal-overlay" for="modal1"></label>
   <div class="modal">
     <div class="modal-body">
       <h3 class="modal-heading">
-        <i class="modal-heading-icon fa fa-exclamation-circle"></i>
+        <svg class="modal-heading-icon icon-exclamation-circle icon-left"><use xlink:href="#icon-exclamation-circle"></use></svg>
         Update form Feb 12, 2015
       </h3>
       <div class="modal-content">Bender, we’re trying our best. You’ll have all the Slurm you can drink when you’re partying with Slurms McKenzie!</div>

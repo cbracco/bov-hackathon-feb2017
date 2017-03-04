@@ -138,6 +138,7 @@ pre,
 samp {
   font-family: Monaco, Consolas, "Liberation Mono", Courier, monospace;
   font-size: 14px;
+  font-weight: 400;
   background-color: #f2f5fa;
   border: 1px solid #c3ced9;
   border-radius: 4px;
