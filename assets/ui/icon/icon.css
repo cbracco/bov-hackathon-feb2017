@@ -1,0 +1,41 @@
+/**
+ * ICON
+ */
+
+/* Default */
+[class^="icon-"], [class*=" icon-"] {
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  fill: currentColor;
+}
+
+/* Sizes */
+.icon-small {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+.icon-medium {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.icon-large {
+  width: 2em;
+  height: 2em;
+}
+
+/* Alignment */
+.icon-left,
+.icon-right {
+  vertical-align: -0.125em;
+}
+
+.icon-left {
+  margin-right: 0.25em;
+}
+
+.icon-right {
+  margin-left: 0.25em;
+}

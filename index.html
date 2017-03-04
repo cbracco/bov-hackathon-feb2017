@@ -15,7 +15,6 @@
   <meta name="theme-color" content="#ffffff">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
-  <script src="https://use.fontawesome.com/8d78942c92.js"></script>
   <!-- Styles -->
   <link rel="stylesheet" href="./assets/ui/base/base.css">
   <link rel="stylesheet" href="./assets/ui/typography/typography.css">
@@ -25,6 +24,7 @@
   <link rel="stylesheet" href="./assets/ui/color-palette/color-palette.css">
   <link rel="stylesheet" href="./assets/ui/container/container.css">
   <link rel="stylesheet" href="./assets/ui/grid/grid.css">
+  <link rel="stylesheet" href="./assets/ui/icon/icon.css">
   <link rel="stylesheet" href="./assets/ui/list/list.css">
   <link rel="stylesheet" href="./assets/ui/modal/modal.css">
   <link rel="stylesheet" href="./assets/ui/tabpanel/tabpanel.css">
@@ -37,17 +37,26 @@
     <symbol id="icon-book" viewBox="0 0 512 512">
       <path d="m499 92l0-34c0-9-8-17-19-13 0 0-30 10-58 0-85-34-145 0-166 15-21-17-81-49-166-15-28 10-58 0-58 0-11-4-19 4-19 13l0 34c-7 0-13 6-13 13l0 364c0 7 6 13 13 13l484 0c6 0 13-6 13-13l0-364c2-7-4-13-11-13z m-85-22c21 9 45 7 57 5l0 343c-10 2-29 7-49-2-79-32-134-6-160 11l0-337c28-26 84-45 152-20z m-373 7c14 2 36 4 57-4 64-26 120-11 149 19l0 337c-40-28-96-36-160-11-19 7-38 4-49 2z"/>
     </symbol>
+    <symbol id="icon-exclamation-circle" viewBox="0 0 512 512">
+      <path d="m256 37c40 0 77 9 110 29 34 20 60 46 80 80 20 33 29 70 29 110 0 40-9 77-29 110-20 34-46 60-80 80-33 20-70 29-110 29-40 0-77-9-110-29-34-20-60-46-80-80-20-33-29-70-29-110 0-40 9-77 29-110 20-34 46-60 80-80 33-20 70-29 110-29z m37 356l0-54c0-3-1-5-3-7-2-2-4-3-6-3l-55 0c-3 0-5 1-7 3-2 2-3 4-3 7l0 54c0 2 1 5 3 6 2 2 4 3 7 3l55 0c2 0 4-1 6-2 2-2 3-4 3-7z m-1-98l5-178c0-2-1-4-3-5-2-2-4-2-7-2l-62 0c-3 0-5 0-7 2-2 1-3 3-3 5l5 178c0 1 1 3 3 5 1 1 4 2 6 2l53 0c3 0 5-1 7-2 2-2 3-4 3-5z"/>
+    </symbol>
     <symbol id="icon-instagram" viewBox="0 0 512 512">
       <path d="m256 47c68 0 77 0 102 2 26 2 39 4 47 9 13 4 22 10 30 19 9 8 15 17 19 30 5 8 9 23 9 47 2 27 2 34 2 102 0 68 0 77-2 102-2 26-4 39-9 47-4 13-10 22-19 30-8 9-17 15-30 19-8 5-23 9-47 9-27 2-34 2-102 2-68 0-77 0-102-2-26-2-39-4-47-9-13-4-22-10-30-19-9-8-15-17-19-30-5-8-9-23-9-47-2-27-2-34-2-102 0-68 0-77 2-102 0-26 4-41 6-49 5-13 11-22 20-30 10-9 19-13 30-20 8-2 23-6 49-8 25 0 34 0 102 0m0-47c-70 0-79 0-105 2-27 0-46 4-64 11-14 6-29 15-44 30-15 15-24 30-30 44-7 18-11 37-11 64-2 26-2 35-2 105 0 70 0 79 2 105 2 27 7 44 13 61 4 17 13 32 28 47 15 15 27 24 44 30 18 7 35 11 62 13 28 0 37 0 107 0 70 0 79 0 105-2 27-2 44-7 61-13 17-6 32-15 45-30 15-15 24-28 30-45 6-17 11-34 13-61 2-26 2-35 2-105 0-70 0-79-2-105-2-27-7-44-13-61-4-17-13-32-28-47-15-15-27-24-44-30-18-7-35-11-62-13-28 0-37 0-107 0z m0 124c-73 0-132 59-132 132 0 73 59 132 132 132 73 0 132-59 132-132 0-73-59-132-132-132z m0 217c-47 0-85-38-85-85 0-47 38-85 85-85 47 0 85 38 85 85 0 47-38 85-85 85z m166-222c0 17-13 30-29 30-17 0-30-13-30-30 0-16 13-29 30-29 16 0 29 13 29 29z"/>
     </symbol>
     <symbol id="icon-logo" viewBox="0 0 512 512">
       <path d="m495 0c-10 0-17 7-17 17l0 323c-19-16-43-26-68-26-57 0-103 44-103 99 0 55 46 99 103 99 56 0 102-44 102-99l0-396c0-10-9-17-17-17z m-85 478c-38 0-69-29-69-65 0-36 31-65 69-65 37 0 68 29 68 65 0 36-31 65-68 65z m-393-324l369 0c10 0 17-7 17-17 0-11-7-18-17-18l-369 0c-10 0-17 7-17 18 0 10 9 17 17 17z m201 204l-201 0c-10 0-17 7-17 17 0 11 7 18 17 18l201 0c11 0 18-7 18-18 0-10-7-17-18-17z m-201-324l369 0c10 0 17-7 17-17 0-10-7-17-17-17l-369 0c-10 0-17 7-17 17 0 10 9 17 17 17z m300 222c0-10-6-17-17-17l-283 0c-10 0-17 7-17 17 0 10 7 17 17 17l283 0c11 0 17-7 17-17z m-99 222l-201 0c-10 0-17 7-17 17 0 10 7 17 17 17l201 0c11 0 18-7 18-17 0-10-7-17-18-17z"/>
     </symbol>
+    <symbol id="icon-pencil" viewBox="0 0 512 512">
+      <path d="m140 439l26-26-67-67-26 26 0 30 37 0 0 37z m150-265c0-4-2-7-7-7-1 0-3 1-4 2l-155 155c-2 2-2 3-2 5 0 4 2 6 6 6 2 0 4 0 5-2l155-154c1-2 2-3 2-5z m-16-55l119 119-238 237-118 0 0-118z m195 27c0 10-3 19-10 26l-48 47-118-118 47-48c7-7 15-10 26-10 10 0 18 3 26 10l67 67c7 8 10 16 10 26z"/>
+    </symbol>
     <symbol id="icon-search" viewBox="0 0 512 512">
       <path d="m503 463l-93-94c32-40 49-92 49-141 0-126-103-230-231-230-128 0-230 102-230 230 0 126 102 231 230 231 51 0 103-17 141-49l94 93c6 7 13 9 19 9 7 0 13-2 19-9 13-12 13-29 2-40z m-98-233c0 96-79 175-175 175-96 0-175-79-175-175 0-96 79-175 175-175 99 0 175 79 175 175z"/>
     </symbol>
     <symbol id="icon-twitter" viewBox="0 0 512 512">
       <path d="m160 464c195 0 299-160 299-299 0-4 0-8 0-13 21-15 38-34 53-53-19 9-38 15-59 17 21-13 38-34 47-58-22 13-43 22-67 26-19-21-46-34-76-34-58 0-105 47-105 104 0 9 0 18 2 24-87-4-164-47-215-109-9 15-15 34-15 53 0 37 19 69 47 88-17 0-34-4-47-13 0 0 0 0 0 2 0 51 36 94 85 103-8 2-17 4-28 4-6 0-12 0-19-2 13 42 51 72 98 72-36 28-81 45-130 45-8 0-17 0-25-2 42 28 98 45 155 45"/>
+    </symbol>
+    <symbol id="icon-upload" viewBox="0 0 512 512">
+      <path d="m384 421c0-5-2-10-5-13-4-4-8-6-13-6-5 0-10 2-13 6-4 3-6 8-6 13 0 5 2 9 6 12 3 4 8 6 13 6 5 0 9-2 13-6 3-3 5-7 5-12z m73 0c0-5-2-10-5-13-4-4-8-6-13-6-5 0-9 2-13 6-4 3-5 8-5 13 0 5 1 9 5 12 4 4 8 6 13 6 5 0 9-2 13-6 3-3 5-7 5-12z m37-64l0 91c0 8-3 14-8 19-6 6-12 8-20 8l-420 0c-8 0-14-2-20-8-5-5-8-11-8-19l0-91c0-8 3-15 8-20 6-5 12-8 20-8l122 0c4 11 10 20 20 26 9 7 20 11 31 11l74 0c11 0 22-4 31-11 10-6 16-15 20-26l122 0c8 0 14 3 20 8 5 5 8 12 8 20z m-93-186c-3 8-9 12-17 12l-73 0 0 128c0 5-2 9-6 13-3 3-7 5-12 5l-74 0c-5 0-9-2-12-5-4-4-6-8-6-13l0-128-73 0c-8 0-14-4-17-12-3-7-2-14 4-19l128-128c4-4 8-6 13-6 5 0 9 2 13 6l128 128c6 5 7 12 4 19z"/>
     </symbol>
   </svg>
   <!-- Checkbox Hack for Off-Canvas Sidebar Effect -->
@@ -56,15 +65,15 @@
   <header class="sw-header">
     <div class="container">
       <a class="sw-logo" href="#sw-top">
-        <span class="sw-logo-image">
-          <svg class="sw-logo-icon sw-icon-logo sw-icon-medium"><use xlink:href="#icon-logo"></use></svg>
+        <span class="sw-logo-icon">
+          <svg class="icon-logo icon-medium"><use xlink:href="#icon-logo"></use></svg>
         </span>
         <h1 class="sw-logo-text">Orchestra <span>UI Framework</span></h1>
       </a>
       <form action="#!" class="sw-searchform">
         <label for="swSearchform" class="sw-searchform-label visuallyhidden">Search this Website</label>
         <input class="sw-searchform-input" type="search" id="swSearchform" placeholder="Search">
-        <svg class="sw-searchform-icon sw-icon-search sw-icon-small"><use xlink:href="#icon-search"></use></svg>
+        <svg class="sw-searchform-icon icon-search"><use xlink:href="#icon-search"></use></svg>
       </form>
       <nav class="sw-header-nav" role="navigation">
         <ul class="sw-header-nav-list list-unstyled clearfix">
@@ -492,6 +501,76 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
           </div>
         </section>
         <section class="sw-section js-scrollspy-section" id="sw-section-5">
+          <h1>Icon</h1>
+          <p>The Icon UI component displays an icon from an <a href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/" target="_blank">SVG sprite</a> that is included at the top of the webpage.</p>
+          <h2>Default</h2>
+          <p>The default size for an Icon is <code>1em</code>. This means the icon will inherit its width and height based on the <code>font-size</code> of its parent. The default color, or fill, is set to <code>currentColor</code>. This means the icon will inherit its color based on the <code>color</code> or <code>fill</code> of its parent.</p>
+          <div class="sw-demo sw-demo-icon">
+            <svg class="icon-book"><use xlink:href="#icon-book"></use></svg>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Example1">
+            <label class="sw-markup-toggle" for="swMarkup5Example1">Show Markup</label>
+            <pre class="sw-markup-body">&lt;svg class="icon-book"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;</pre>
+          </div>
+          <hr>
+          <h2>Sizes</h2>
+          <p>You can change the default size of an icon by attaching modifier classes. This is useful for icons that stand alone. <strong>It is not recommended to use sizing and alignment classes together. Instead, modify the <code>font-size</code> of the parent element, and the icon will scale accordingly with the text beside it.</strong></p>
+          <div class="sw-demo sw-demo-icon">
+            <svg class="icon-book icon-small"><use xlink:href="#icon-book"></use></svg>
+            <svg class="icon-book icon-medium"><use xlink:href="#icon-book"></use></svg>
+            <svg class="icon-book icon-large"><use xlink:href="#icon-book"></use></svg>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Example2">
+            <label class="sw-markup-toggle" for="swMarkup5Example2">Show Markup</label>
+            <pre class="sw-markup-body">&lt;svg class="icon-book icon-small"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;svg class="icon-book icon-medium"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;svg class="icon-book icon-large"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;</pre>
+          </div>
+          <hr>
+          <h2>Alignment</h2>
+          <p>If you want to align an icon next to text or some other inline element, you can attach modifier classes that will provide some extra styling to make sure they align properly. <strong>It is not recommended to use sizing and alignment classes together. Instead, modify the <code>font-size</code> of the parent element, and the icon will scale accordingly with the text beside it.</strong></p>
+          <div class="sw-demo sw-demo-icon">
+            <p>
+              <svg class="icon-book icon-left"><use xlink:href="#icon-book"></use></svg>
+              Left-aligned
+            </p>
+            <p>
+              Right-aligned
+              <svg class="icon-book icon-right"><use xlink:href="#icon-book"></use></svg>
+            </p>
+            <button class="button button-blue">
+              <svg class="icon-book icon-left"><use xlink:href="#icon-book"></use></svg>
+              Inside a Button
+            </button>
+            <h2>
+              <svg class="icon-book icon-left"><use xlink:href="#icon-book"></use></svg>
+              Inside a heading!
+            </h2>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Example3">
+            <label class="sw-markup-toggle" for="swMarkup5Example3">Show Markup</label>
+            <pre class="sw-markup-body">&lt;p&gt;
+  &lt;svg class="icon-book icon-left"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;
+  Left-aligned
+&lt;/p&gt;
+&lt;p&gt;
+  Right-aligned
+  &lt;svg class="icon-book icon-right"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;
+&lt;/p&gt;
+&lt;button class="button button-blue"&gt;
+  &lt;svg class="icon-book icon-left"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;
+  Inside a Button
+&lt;/button&gt;
+&lt;h2&gt;
+  &lt;svg class="icon-book icon-left"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;
+  Inside a heading!
+&lt;/h2&gt;</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-6">
           <h1>Container</h1>
           <p>The Container UI component sets a maximum width for its child content, and can be used to help create layout on a webpage. This website itself uses Containers to set a maximum width for the header, body, and footer contents.</p>
           <h2>Default</h2>
@@ -500,12 +579,12 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <div class="container">I am contained!</div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup5Example1">
-            <label class="sw-markup-toggle" for="swMarkup5Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example1">
+            <label class="sw-markup-toggle" for="swMarkup6Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="container"&gt;I am contained!&lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-6">
+        <section class="sw-section js-scrollspy-section" id="sw-section-7">
           <h1>Grid</h1>
           <p>The Grid UI component provides row-column functionality that can be used to create more complex layouts on a webpage.</p>
           <h2>Default</h2>
@@ -582,8 +661,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example1">
-            <label class="sw-markup-toggle" for="swMarkup6Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example1">
+            <label class="sw-markup-toggle" for="swMarkup7Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="grid"&gt;
   &lt;div class="grid-row"&gt;
     &lt;div class="grid-col-12"&gt;&lt;div class="sw-demo-grid-col"&gt;12&lt;/div&gt;&lt;/div&gt;
@@ -688,8 +767,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example2">
-            <label class="sw-markup-toggle" for="swMarkup6Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example2">
+            <label class="sw-markup-toggle" for="swMarkup7Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="grid"&gt;
   &lt;div class="grid-row"&gt;
     &lt;div class="grid-col-4"&gt;
@@ -749,8 +828,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example3">
-            <label class="sw-markup-toggle" for="swMarkup6Example3">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example3">
+            <label class="sw-markup-toggle" for="swMarkup7Example3">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="grid"&gt;
   &lt;div class="grid-row"&gt;
     &lt;div class="grid-col-2 grid-push-1"&gt;2.grid-push-1&lt;/div&gt;
@@ -840,8 +919,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example4">
-            <label class="sw-markup-toggle" for="swMarkup6Example4">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example4">
+            <label class="sw-markup-toggle" for="swMarkup7Example4">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="grid"&gt;
   &lt;div class="grid-row grid-gapless"&gt;
     &lt;div class="grid-col-12"&gt;12&lt;/div&gt;
@@ -896,7 +975,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-7">
+        <section class="sw-section js-scrollspy-section" id="sw-section-8">
           <h1>List</h1>
           <p>The List UI component provides a few simple variations from the default list styles introduced by Typography.</p>
           <h2>Unstyled</h2>
@@ -923,8 +1002,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </ul>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example1">
-            <label class="sw-markup-toggle" for="swMarkup7Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example1">
+            <label class="sw-markup-toggle" for="swMarkup8Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;ul class="list-unstyled"&gt;
   &lt;li&gt;List Item 1&lt;/li&gt;
   &lt;li&gt;
@@ -965,8 +1044,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </ul>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example2">
-            <label class="sw-markup-toggle" for="swMarkup7Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example2">
+            <label class="sw-markup-toggle" for="swMarkup8Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;dl class="list-inline"&gt;
   &lt;dt&gt;Definition List Title 1&lt;/dt&gt;
   &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
@@ -983,7 +1062,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/ul&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-8">
+        <section class="sw-section js-scrollspy-section" id="sw-section-9">
           <h1>Button</h1>
           <p>The Button UI component is a clickable interface element that can trigger an action or state change within the interface.</p>
           <h2>Default</h2>
@@ -992,27 +1071,27 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <button class="button button-blue">Blue</button>
             <button class="button button-blue-lightest">Blue Lightest</button>
             <button class="button button-blue">
-              <i class="button-icon-left fa fa-upload" aria-hidden="true"></i>
+              <svg class="icon-upload icon-left" aria-hidden="true"><use xlink:href="#icon-upload"></use></svg>
               Upload
             </button>
             <button class="button button-blue">
-              <i class="button-icon-left fa fa-pencil" aria-hidden="true"></i>
+              <svg class="icon-pencil icon-left" aria-hidden="true"><use xlink:href="#icon-pencil"></use></svg>
               Edit
             </button>
             <button class="button button-gray-lighter">Gray Lighter</button>
             <button class="button button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example1">
-            <label class="sw-markup-toggle" for="swMarkup8Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example1">
+            <label class="sw-markup-toggle" for="swMarkup9Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-blue"&gt;
-  &lt;i class="button-icon-left fa fa-upload" aria-hidden="true"&gt;&lt;/i&gt;
+  &lt;svg class="icon-upload icon-left" aria-hidden="true"&gt;&lt;use xlink:href="#icon-upload"&gt;&lt;/use&gt;&lt;/svg&gt;
   Upload
 &lt;/button&gt;
 &lt;button class="button button-blue"&gt;
-  &lt;i class="button-icon-left fa fa-pencil" aria-hidden="true"&gt;&lt;/i&gt;
+  &lt;svg class="icon-pencil icon-left" aria-hidden="true"&gt;&lt;use xlink:href="#icon-pencil"&gt;&lt;/use&gt;&lt;/svg&gt;
   Edit
 &lt;/button&gt;
 &lt;button class="button button-gray-lighter"&gt;Gray Lighter&lt;/button&gt;
@@ -1025,34 +1104,34 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <button class="button button-pill button-blue">Blue</button>
             <button class="button button-pill button-blue-lightest">Blue Lightest</button>
             <button class="button button-pill button-blue">
-              <i class="button-icon-left fa fa-upload" aria-hidden="true"></i>
+              <svg class="icon-upload icon-left" aria-hidden="true"><use xlink:href="#icon-upload"></use></svg>
               Upload
             </button>
             <button class="button button-pill button-blue">
-              <i class="button-icon-left fa fa-pencil" aria-hidden="true"></i>
+              <svg class="icon-pencil icon-left" aria-hidden="true"><use xlink:href="#icon-pencil"></use></svg>
               Edit
             </button>
             <button class="button button-pill button-gray-lighter">Gray Lighter</button>
             <button class="button button-pill button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example2">
-            <label class="sw-markup-toggle" for="swMarkup8Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example2">
+            <label class="sw-markup-toggle" for="swMarkup9Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-pill button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-pill button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-pill button-blue"&gt;
-  &lt;i class="button-icon-left fa fa-upload" aria-hidden="true"&gt;&lt;/i&gt;
+  &lt;svg class="icon-upload icon-left" aria-hidden="true"&gt;&lt;use xlink:href="#icon-upload"&gt;&lt;/use&gt;&lt;/svg&gt;
   Upload
 &lt;/button&gt;
 &lt;button class="button button-pill button-blue"&gt;
-  &lt;i class="button-icon-left fa fa-pencil" aria-hidden="true"&gt;&lt;/i&gt;
+  &lt;svg class="icon-pencil icon-left" aria-hidden="true"&gt;&lt;use xlink:href="#icon-pencil"&gt;&lt;/use&gt;&lt;/svg&gt;
   Edit
 &lt;/button&gt;
 &lt;button class="button button-pill button-gray-lighter"&gt;Gray Lighter&lt;/button&gt;
 &lt;button class="button button-pill button-gray-lightest"&gt;Gray Lightest&lt;/button&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-9">
+        <section class="sw-section js-scrollspy-section" id="sw-section-10">
           <h1>Card</h1>
           <p>The Card UI component is a way to organize related information in a condensed, reusable format. Cards are typically represented stacked on top of one another, or arranged side-by-side in a grid format.</p>
           <h2>Default</h2>
@@ -1075,8 +1154,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example1">
-            <label class="sw-markup-toggle" for="swMarkup9Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example1">
+            <label class="sw-markup-toggle" for="swMarkup10Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card"&gt;
   &lt;div class="card-header"&gt;
     &lt;div class="card-heading"&gt;&lt;span&gt;$15&lt;/span&gt;PSD Version&lt;/div&gt;
@@ -1110,8 +1189,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example2">
-            <label class="sw-markup-toggle" for="swMarkup9Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example2">
+            <label class="sw-markup-toggle" for="swMarkup10Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card card-image"&gt;
   &lt;div class="card-header"&gt;
     &lt;img src="./assets/ui/card/card-image.jpg" alt="Foggy Lake"&gt;
@@ -1125,7 +1204,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-10">
+        <section class="sw-section js-scrollspy-section" id="sw-section-11">
           <h1>Accordion</h1>
           <p>The Accordion UI component is used to toggle the visibility of information on a webpage. Accordions help reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please.</p>
           <h2>Default</h2>
@@ -1153,8 +1232,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example1">
-            <label class="sw-markup-toggle" for="swMarkup10Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example1">
+            <label class="sw-markup-toggle" for="swMarkup11Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="accordion"&gt;
   &lt;input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-1" checked&gt;
   &lt;label class="accordion-label" for="accordion-input-1"&gt;
@@ -1177,7 +1256,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-11">
+        <section class="sw-section js-scrollspy-section" id="sw-section-12">
           <h1>Modal</h1>
           <p>The Modal UI component is a popup window whose visibility is triggered by its respective label, which is styled as a Button UI component. It can then be closed by clicking</p>
           <h2>Default</h2>
@@ -1189,7 +1268,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <div class="modal">
               <div class="modal-body">
                 <h3 class="modal-heading">
-                  <i class="modal-heading-icon fa fa-exclamation-circle"></i>
+                  <svg class="modal-heading-icon icon-exclamation-circle icon-left" aria-hidden="true"><use xlink:href="#icon-exclamation-circle"></use></svg>
                   Update form Feb 12, 2015
                 </h3>
                 <div class="modal-content">Bender, we’re trying our best. You’ll have all the Slurm you can drink when you’re partying with Slurms McKenzie!</div>
@@ -1201,15 +1280,15 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example1">
-            <label class="sw-markup-toggle" for="swMarkup11Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup12Example1">
+            <label class="sw-markup-toggle" for="swMarkup12Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;input type="checkbox" id="modal1" class="modal-input"&gt;
 &lt;label class="button button-blue" for="modal1"&gt;Open Modal&lt;/label&gt;
 &lt;label class="modal-overlay" for="modal1"&gt;&lt;/label&gt;
 &lt;div class="modal"&gt;
   &lt;div class="modal-body"&gt;
     &lt;h3 class="modal-heading"&gt;
-      &lt;i class="modal-heading-icon fa fa-exclamation-circle"&gt;&lt;/i&gt;
+      &lt;svg class="modal-heading-icon icon-exclamation-circle icon-left" aria-hidden="true"&gt;&lt;use xlink:href="#icon-exclamation-circle"&gt;&lt;/use&gt;&lt;/svg&gt;
       Update form Feb 12, 2015
     &lt;/h3&gt;
     &lt;div class="modal-content"&gt;Bender, we’re trying our best. You’ll have all the Slurm you can drink when you’re partying with Slurms McKenzie!&lt;/div&gt;
@@ -1221,7 +1300,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-12">
+        <section class="sw-section js-scrollspy-section" id="sw-section-13">
           <h1>Tabpanel</h1>
           <p>The Tabpanel UI component is another way to reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please. When a user clicks on a tab, it displays the corresponding tab content.</p>
           <h2>Default</h2>
@@ -1271,8 +1350,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup12Example1">
-            <label class="sw-markup-toggle" for="swMarkup12Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup13Example1">
+            <label class="sw-markup-toggle" for="swMarkup13Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-1" name="tabpanel-1" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-2" name="tabpanel-1"&gt;
@@ -1364,8 +1443,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup12Example2">
-            <label class="sw-markup-toggle" for="swMarkup12Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup13Example2">
+            <label class="sw-markup-toggle" for="swMarkup13Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-alt" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-1" name="tabpanel-2" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-2" name="tabpanel-2"&gt;
@@ -1457,8 +1536,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup12Example3">
-            <label class="sw-markup-toggle" for="swMarkup12Example3">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup13Example3">
+            <label class="sw-markup-toggle" for="swMarkup13Example3">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-vertical" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3"&gt;
@@ -1503,7 +1582,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-13">
+        <section class="sw-section js-scrollspy-section" id="sw-section-14">
           <h1>Tilt Hover</h1>
           <p>The Tilt Hover UI component adds a “tilting” visual effect to a card-like UI element as the user hovers over the element.</p>
           <h2>Default</h2>
@@ -1530,8 +1609,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup13Example1">
-            <label class="sw-markup-toggle" for="swMarkup13Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup14Example1">
+            <label class="sw-markup-toggle" for="swMarkup14Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tilt"&gt;
   &lt;div class="tilt-container"&gt;
     &lt;div class="tilt-grid" id="tilt-grid-1"&gt;&lt;/div&gt;
@@ -1579,31 +1658,34 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
               <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-4">Typography</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-5">Container</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-5">Icon</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Grid</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Container</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">List</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">Grid</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-8">Button</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-8">List</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-9">Card</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-9">Button</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-10">Accordion</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-10">Card</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-11">Modal</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-11">Accordion</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-12">Tabpanel</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-12">Modal</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-13">Tilt Hover</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-13">Tabpanel</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-14">Tilt Hover</a>
             </li>
           </ul>
         </nav>
@@ -1636,17 +1718,20 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
         <ul class="sw-footer-nav-list">
           <li class="sw-footer-nav-item">
             <a class="sw-footer-nav-link" href="https://twitter.com/bovacademy" title="Bov Academy on Twitter">
-              <svg class="sw-icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
+              <svg class="icon-twitter icon-medium" aria-hidden="true"><use xlink:href="#icon-twitter"></use></svg>
+              <span class="visuallyhidden">Twitter</span>
             </a>
           </li>
           <li class="sw-footer-nav-item">
             <a class="sw-footer-nav-link" href="https://www.instagram.com/bovacademy/" title="Bov Academy on Instagram">
-              <svg class="sw-icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+              <svg class="icon-instagram icon-medium" aria-hidden="true"><use xlink:href="#icon-instagram"></use></svg>
+              <span class="visuallyhidden">Instagram</span>
             </a>
           </li>
           <li class="sw-footer-nav-item">
             <a class="sw-footer-nav-link" href="https://bovacademy.com/" title="Bov Academy">
-              <svg class="sw-icon-book"><use xlink:href="#icon-book"></use></svg>
+              <svg class="icon-book icon-medium" aria-hidden="true"><use xlink:href="#icon-book"></use></svg>
+              <span class="visuallyhidden">Bov Academy</span>
             </a>
           </li>
           </li>

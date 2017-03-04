@@ -47,33 +47,6 @@ body {
 }
 
 /**
- * ICONS
- */
-
-[class^="sw-icon-"],
-[class*=" sw-icon-"] {
-    height: 24px;
-    width: 24px;
-    display: inline-block;
-    fill: currentColor;
-}
-
-.sw-icon-small {
-  width: 16px;
-  height: 16px;
-}
-
-.sw-icon-medium {
-  width: 32px;
-  height: 32px;
-}
-
-.sw-icon-large {
-  width: 48px;
-  height: 48px;
-}
-
-/**
  * HEADER
  */
 
@@ -87,18 +60,17 @@ body {
 .sw-logo {
   display: block;
   text-decoration: none;
+  color: #ffffff;
 }
 
-.sw-logo-image {
+.sw-logo-icon {
   display: inline-block;
+  vertical-align: middle;
   padding: 20px;
   background-color: #51d0ef;
   border-radius: 50%;
   line-height: 0;
-}
-
-.sw-logo-icon {
-  fill: #ffffff;
+  margin-right: 10px;
 }
 
 .sw-logo-text {
@@ -112,7 +84,7 @@ body {
 @media (min-width: 1140px) {
   .sw-logo {
     float: left;
-    margin-top: 8px;
+    margin-top: 22px;
   }
   .sw-logo-image {
     vertical-align: middle;

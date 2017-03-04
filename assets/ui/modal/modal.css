@@ -61,12 +61,7 @@
 }
 
 .modal-heading .modal-heading-icon {
-  position: relative;
-  top: -2px;
-  vertical-align: top;
-  font-size: 32px;
   color: #ff9948;
-  margin-right: 4px;
 }
 
 .modal-content {
