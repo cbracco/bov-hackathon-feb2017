@@ -1,0 +1,152 @@
+
+/**************************/
+/****** DIV CONTAINER *****/
+/**************************/
+
+.carousel {
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+    padding: 10px;
+    max-width: 600px;
+    min-width: 600px;
+    min-height: 320px;
+}
+
+.bottom {
+    margin-top: 100px;
+}
+
+
+/**************************/
+/******* IMG SLIDER********/
+/**************************/
+
+img {
+    width: 600px;
+    height: 300px;
+    float: left;
+    padding: 0;
+    margin-right: -100%;
+    border-radius: 5px;
+}
+
+.slider-top input[type="radio"]:not(:checked) ~ img {
+    opacity: 0;
+}
+
+.slider-top input[type="radio"]:checked ~ label {
+    background-color: #3f3f3f;
+}
+
+.slider-top input[type="radio"]:checked ~ img  {
+    animation: fade 1s ease-in;
+    -webkit-animation: fade 1s ease-in;
+}
+
+/******** BOTTOM *******/
+
+.slider-bottom input[type="radio"]:not(:checked) ~ img {
+    opacity: 0;
+}
+
+.slider-bottom input[type="radio"]:checked ~ img {
+    animation: fade 1s ease-in;
+    -webkit-animation: fade 1s ease-in;
+}
+
+.slider-bottom input[type="radio"]:checked ~ label {
+    z-index: -1;
+}
+
+
+/**************************/
+/****** CONTROL BTNS ******/
+/**************************/
+
+
+input[type="radio"] {
+    display: none;
+}
+
+/********** TOP *********/
+
+.label-top {
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+    width: 30px;
+    background: #bec4ca;
+    cursor: pointer;
+}
+
+.label1 {
+    left: 250px;
+}
+
+.label2 {
+    left: 290px;
+}
+
+.label3 {
+    left: 330px;
+}
+
+.label4 {
+    left: 370px;
+}
+
+/******** BOTTOM *******/
+
+.label-btm {
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.label-btm, .fa {
+    position: absolute;
+    color: #280405;
+    top: 140px;
+    z-index: 1;
+}
+
+.label5, .fa-chevron-circle-left {
+    left: 15px;
+}
+
+.label7, .right, .fa-chevron-circle-right {
+    right: 15px;
+}
+
+.label7, .right {
+    margin-left: 245px;
+    z-index: 2;
+}
+
+
+/**************************/
+/****** CONTROL BTNS ******/
+/**************************/
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
