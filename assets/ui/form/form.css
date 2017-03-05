@@ -99,7 +99,6 @@ select:focus{
     color: #51D0EF;
     border-bottom: 1px solid #51D0EF;
     transition: ease-in-out, 0.5s ease-in-out;
-
 }
 
 .birthday p {
