@@ -1,26 +1,31 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Breadcrumbs ...</title>
 	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+	<meta name="viewport" content="width=device-width">
 </head>
 <body>
 
-<ul class='breadcrumbs'>
-	<li><a href='#'>Orchestra</a></li>
-	<li><a href='#'>Instrumentation</a></li>
-	<li><a href='#'>Woodwinds</a></li>
-	<li class='currentLink'>Flutes</li>
-</ul>
+<div class='container'>
+	<ul class='breadcrumbs'>
+		<li><a href='#'>Orchestra</a></li>
+		<li><a href='#'>Instrumentation</a></li>
+		<li><a href='#'>Woodwinds</a></li>
+		<li class='currentLink'>Flutes</li>
+	</ul>
+</div>
 
 </body>
 
 <style>
-
 body{
 	font-family: 'Karla', sans-serif;
+}
+
+.container {
+	width: 75%;
 }
 
 .breadcrumbs {
@@ -33,6 +38,7 @@ body{
 ul.breadcrumbs li {
 	display: inline;
 	margin-left: 1.2em;
+	padding-bottom: 2em;
 }
 
 ul.breadcrumbs a {
@@ -40,6 +46,7 @@ ul.breadcrumbs a {
 	color: #acb6bf;
 	font-weight: bold;
 	transition: all .35s ease-in;
+	line-height: 1.5em;
 }
 
 ul.breadcrumbs a:hover {
@@ -59,7 +66,6 @@ ul.breadcrumbs li+li:before {
 	color: #51d0ef;
 	font-weight: bold;
 }
-
 </style>
 
 </html>
