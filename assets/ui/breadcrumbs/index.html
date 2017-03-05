@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Breadcrumbs ...</title>
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+<ul class='breadcrumbs'>
+	<li><a href='#'>Orchestra</a></li>
+	<li><a href='#'>Instrumentation</a></li>
+	<li><a href='#'>Woodwinds</a></li>
+	<li class='currentLink'>Flutes</li>
+</ul>
+
+</body>
+
+<style>
+
+body{
+	font-family: 'Karla', sans-serif;
+}
+
+.breadcrumbs {
+	list-style: none;
+	background-color: #f3f5f7;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+ul.breadcrumbs li {
+	display: inline;
+	margin-left: 1.2em;
+}
+
+ul.breadcrumbs a {
+	text-decoration: none;
+	color: #acb6bf;
+	font-weight: bold;
+	transition: all .35s ease-in;
+}
+
+ul.breadcrumbs a:hover {
+	color: black;
+}
+
+ul.breadcrumbs li+li:before {
+    padding: 8px;
+    color: black;
+    font-family: FontAwesome;
+   	content: "\f105";
+   	font-weight: bold;
+   	font-size: 1.1em;
+}
+
+.currentLink {
+	color: #51d0ef;
+	font-weight: bold;
+}
+
+</style>
+
+</html>
