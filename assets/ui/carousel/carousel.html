@@ -1,65 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel</title>
-    <link rel="stylesheet" href="./carousel.css">
-    <script src="https://use.fontawesome.com/8d78942c92.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carousel</title>
+  <link rel="stylesheet" href="./carousel.css">
+  <style>
+    .carousel {
+      margin: 3rem auto;
+      max-width: 600px;
+    }
+  </style>
 </head>
 <body>
+  <div class="carousel">
+    <div class="carousel-item">
+      <input class="carousel-input" type="radio" name="carousel1" id="carousel1Item1" checked>
+      <label class="carousel-label carousel-label-1" for="carousel1Item1"></label>
+      <img class="carousel-image" src="carousel-image-1.png" alt="sky">
+    </div>
+    <div class="carousel-item">
+      <input class="carousel-input" type="radio" name="carousel1" id="carousel1Item2">
+      <label class="carousel-label carousel-label-2" for="carousel1Item2"></label>
+      <img class="carousel-image" src="carousel-image-2.png" alt="lantern">
+    </div>
+    <div class="carousel-item">
+      <input class="carousel-input" type="radio" name="carousel1" id="carousel1Item3">
+      <label class="carousel-label carousel-label-3" for="carousel1Item3"></label>
+      <img class="carousel-image" src="carousel-image-3.png" alt="beach">
+    </div>
+    <div class="carousel-item">
+      <input class="carousel-input" type="radio" name="carousel1" id="carousel1Item4">
+      <label class="carousel-label carousel-label-4" for="carousel1Item4"></label>
+      <img class="carousel-image" src="carousel-image-4.png" alt="sand">
+    </div>
+  </div>
 
-    <div class="carousel top">
-        <div class="slider slider-top">
-            <input type="radio" name ="img-slide" id="slide1" checked="checked">
-            <label for="slide1" class="label-top label1"></label>
-            <img src="imgs/img1.png" alt="sky">
-        </div>
+  <div class="carousel carousel-arrows">
+    <div class="carousel-item">
+      <input class="carousel-input" type="radio" name="carousel2" id="carousel2Item1" checked>
+      <span class="carousel-arrow carousel-arrow-left" aria-hidden="true"></span>
+      <label class="carousel-label carousel-label-1" for="carousel2Item4"></label>
+      <label class="carousel-label carousel-label-right carousel-label-1" for="carousel2Item2"></label>
+      <img class="carousel-image" src="carousel-image-1.png" alt="sky">
+    </div>
+    <div class="carousel-item">
+      <input class="carousel-input" type="radio" name="carousel2" id="carousel2Item2">
+      <label class="carousel-label carousel-label-2" for="carousel2Item1"></label>
+      <label class="carousel-label carousel-label-right carousel-label-2" for="carousel2Item3"></label>
+      <img class="carousel-image" src="carousel-image-2.png" alt="lantern">
+    </div>
+    <div class="carousel-item">
+      <input class="carousel-input" type="radio" name="carousel2" id="carousel2Item3">
+      <label class="carousel-label carousel-label-3" for="carousel2Item2"></label>
+      <label class="carousel-label carousel-label-right carousel-label-3" for="carousel2Item4"></label>
+      <img class="carousel-image" src="carousel-image-3.png" alt="beach">
+    </div>
+    <div class="carousel-item">
+      <input class="carousel-input" type="radio" name="carousel2" id="carousel2Item4">
+      <span class="carousel-arrow carousel-arrow-right" aria-hidden="true"></span>
+      <label class="carousel-label carousel-label-4" for="carousel2Item3"></label>
+      <label class="carousel-label carousel-label-right carousel-label-3" for="carousel2Item1"></label>
+      <img class="carousel-image" src="carousel-image-4.png" alt="sand">
+    </div>
+  </div>
 
-        <div class="slider slider-top">
-            <input type="radio" name ="img-slide" id="slide2">
-            <label for="slide2" class="label-top label2"></label>
-            <img src="imgs/img2.png" alt="lantern">
-        </div>
-
-        <div class="slider slider-top">
-            <input type="radio" name ="img-slide" id="slide3">
-            <label for="slide3" class="label-top label3"></label>
-            <img src="imgs/img3.png" alt="beach">
-        </div>
-
-        <div class="slider slider-top">
-            <input type="radio" name ="img-slide" id="slide4">
-            <label for="slide4" class="label-top label4"></label>
-            <img src="imgs/img4.png" alt="sand">
-        </div>
+  <!-- <div class="carousel top">
+    <div class="slider slider-top">
+      <input type="radio" name ="img-slide" id="slide1" checked="checked">
+      <label for="slide1" class="label-top label1"></label>
+      <img src="imgs/img1.png" alt="sky">
     </div>
 
-
-    <div class="carousel bottom">
-        <div class="slider slider-bottom">
-            <input type="radio" name ="slide-bottom" id="slide5">
-           <i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i>
-            <label for="slide5" class="label-btm label5"></label>
-            <label for="slide5" class="label-btm label5 right"></label>
-            <img src="imgs/img1.png" alt="sky">
-        </div>
-
-        <div class="slider slider-bottom">
-            <input type="radio" name ="slide-bottom" id="slide6" checked="checked">
-            <label for="slide6" class="label-btm label6"></label>
-            <label for="slide6" class="label-btm label6 right"></label>
-            <img src="imgs/img2.png" alt="lantern">
-        </div>
-
-        <div class="slider slider-bottom">
-            <input type="radio" name ="slide-bottom" id="slide7">
-            <i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i>
-            <label for="slide7" class="label-btm label7"></label>
-            <label for="slide7" class="label-btm label7 right"></label>
-            <img src="imgs/img3.png" alt="beach">
-        </div>
+    <div class="slider slider-top">
+      <input type="radio" name ="img-slide" id="slide2">
+      <label for="slide2" class="label-top label2"></label>
+      <img src="imgs/img2.png" alt="lantern">
     </div>
+
+    <div class="slider slider-top">
+      <input type="radio" name ="img-slide" id="slide3">
+      <label for="slide3" class="label-top label3"></label>
+      <img src="imgs/img3.png" alt="beach">
+    </div>
+
+    <div class="slider slider-top">
+      <input type="radio" name ="img-slide" id="slide4">
+      <label for="slide4" class="label-top label4"></label>
+      <img src="imgs/img4.png" alt="sand">
+    </div>
+  </div>
+
+
+  <div class="carousel bottom">
+    <div class="slider slider-bottom">
+      <input type="radio" name ="slide-bottom" id="slide5">
+       <i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i>
+      <label for="slide5" class="label-btm label5"></label>
+      <label for="slide5" class="label-btm label5 right"></label>
+      <img src="imgs/img1.png" alt="sky">
+    </div>
+
+    <div class="slider slider-bottom">
+      <input type="radio" name ="slide-bottom" id="slide6" checked="checked">
+      <label for="slide6" class="label-btm label6"></label>
+      <label for="slide6" class="label-btm label6 right"></label>
+      <img src="imgs/img2.png" alt="lantern">
+    </div>
+
+    <div class="slider slider-bottom">
+      <input type="radio" name ="slide-bottom" id="slide7">
+      <i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i>
+      <label for="slide7" class="label-btm label7"></label>
+      <label for="slide7" class="label-btm label7 right"></label>
+      <img src="imgs/img3.png" alt="beach">
+    </div>
+  </div> -->
 
 
 </body>
