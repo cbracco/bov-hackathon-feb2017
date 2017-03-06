@@ -1,1 +1,141 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>alertbox</title>
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+<div id='alert1'>
+	<div class='alertBox'>
+		<a href='#'></a>
+		<h2>Alert Box</h2>
+		<p>Hey, you clicked it</p>
+	</div>
+</div>
+
+
+<a class='button button-blue' href='#alert1'>Click Me</a>
+
+
+<!-- <div class='test'>
+<p>hey</p>
+</div> -->
+
+</body>
+
+<style>
+
+body{
+	font-family: 'Karla', sans-serif;
+	background-color: #e3e3e3;
+}
+
+
+
+.alertBox h2 {
+	color: #2e2e2e;
+	text-align: center;
+}
+
+.alertBox p {
+	text-align: center;
+}
+
+.alertBox {
+	background-color: white;
+	padding: 25px;
+	width: 30%;
+	border-radius: 5px;
+	transition: .25s cubic-bezier(.5,2.05,.83,.67);
+	margin: 0 auto;
+	margin-top: 90px;
+	transform: scale(.05);
+}
+
+.alertBox a:after {
+	float: right;
+    color: #2e2e2e;
+    font-family: FontAwesome;
+   	content: "\f00d";
+   	font-size: 1.1em;
+   	cursor: pointer;
+}
+
+#alert1 {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+/*  transition: opacity 500ms;*/
+  transition: all 500ms ease;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#alert1:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*CSS equivalent to AND statement by selecting
+both of these together*/
+#alert1:target .alertBox {
+	transform: scale(1);
+}
+
+/*Button CSS*/
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: #c3ced9;
+  color: #ffffff;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  cursor: pointer;
+  font-size: 100%;
+  font-family: inherit;
+  line-height: 1.5;
+  padding: 12px 32px;
+  border-radius: 4px;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.button:hover {
+  background-color: #b0bcc7;
+}
+
+/* Colors */
+.button-blue {
+  background-color: #51d0ef;
+  color: #ffffff;
+}
+
+
+/*testing ignore*/
+/*.test {
+	background-color: red;
+	width: 50%;
+	padding: 15px;
+	transform: scale(.1);
+	transition: .25s all ease;
+}
+
+.test:hover {
+	transform: scale(1);
+}*/
+
+
+</style>
+
+</html>
