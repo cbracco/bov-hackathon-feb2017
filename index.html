@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="./assets/ui/accordion/accordion.css">
   <link rel="stylesheet" href="./assets/ui/button/button.css">
   <link rel="stylesheet" href="./assets/ui/card/card.css">
+  <link rel="stylesheet" href="./assets/ui/carousel/carousel.css">
   <link rel="stylesheet" href="./assets/ui/color-palette/color-palette.css">
   <link rel="stylesheet" href="./assets/ui/container/container.css">
   <link rel="stylesheet" href="./assets/ui/grid/grid.css">
@@ -1660,6 +1661,127 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
           </div>
         </section>
         <section class="sw-section js-scrollspy-section" id="sw-section-15">
+          <h1>Carousel</h1>
+          <p>The Carousel UI component lets a user navigate through a set of images using different types of navigation.</p>
+          <h2>Default</h2>
+          <p>Click on the rectangle shapes beneath the images to navigate to the corresponding image in the carousel.</p>
+          <div class="sw-demo sw-demo-carousel">
+            <div class="carousel">
+              <div class="carousel-item">
+                <input class="carousel-input" type="radio" name="carousel1" id="carousel1Item1" checked>
+                <label class="carousel-label carousel-label-1" for="carousel1Item1"></label>
+                <img class="carousel-image" src="./assets/ui/carousel/carousel-image-1.png" alt="sky">
+              </div>
+              <div class="carousel-item">
+                <input class="carousel-input" type="radio" name="carousel1" id="carousel1Item2">
+                <label class="carousel-label carousel-label-2" for="carousel1Item2"></label>
+                <img class="carousel-image" src="./assets/ui/carousel/carousel-image-2.png" alt="lantern">
+              </div>
+              <div class="carousel-item">
+                <input class="carousel-input" type="radio" name="carousel1" id="carousel1Item3">
+                <label class="carousel-label carousel-label-3" for="carousel1Item3"></label>
+                <img class="carousel-image" src="./assets/ui/carousel/carousel-image-3.png" alt="beach">
+              </div>
+              <div class="carousel-item">
+                <input class="carousel-input" type="radio" name="carousel1" id="carousel1Item4">
+                <label class="carousel-label carousel-label-4" for="carousel1Item4"></label>
+                <img class="carousel-image" src="./assets/ui/carousel/carousel-image-4.png" alt="sand">
+              </div>
+            </div>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup15Example1">
+            <label class="sw-markup-toggle" for="swMarkup15Example1">Show Markup</label>
+            <pre class="sw-markup-body">&lt;div class="carousel"&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;input class="carousel-input" type="radio" name="carousel1" id="carousel1Item1" checked&gt;
+    &lt;label class="carousel-label carousel-label-1" for="carousel1Item1"&gt;&lt;/label&gt;
+    &lt;img class="carousel-image" src="carousel-image-1.png" alt="sky"&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;input class="carousel-input" type="radio" name="carousel1" id="carousel1Item2"&gt;
+    &lt;label class="carousel-label carousel-label-2" for="carousel1Item2"&gt;&lt;/label&gt;
+    &lt;img class="carousel-image" src="carousel-image-2.png" alt="lantern"&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;input class="carousel-input" type="radio" name="carousel1" id="carousel1Item3"&gt;
+    &lt;label class="carousel-label carousel-label-3" for="carousel1Item3"&gt;&lt;/label&gt;
+    &lt;img class="carousel-image" src="carousel-image-3.png" alt="beach"&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;input class="carousel-input" type="radio" name="carousel1" id="carousel1Item4"&gt;
+    &lt;label class="carousel-label carousel-label-4" for="carousel1Item4"&gt;&lt;/label&gt;
+    &lt;img class="carousel-image" src="carousel-image-4.png" alt="sand"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+          <hr>
+          <h2>Arrows</h2>
+          <p>Instead of rectangular pagination, this carousel uses left and right arrow icons to navigate to the next or previous image in the carousel.</p>
+          <div class="sw-demo sw-demo-carousel">
+            <div class="carousel carousel-arrows">
+              <div class="carousel-item">
+                <input class="carousel-input" type="radio" name="carousel2" id="carousel2Item1" checked>
+                <span class="carousel-arrow carousel-arrow-left" aria-hidden="true"></span>
+                <label class="carousel-label carousel-label-1" for="carousel2Item4"></label>
+                <label class="carousel-label carousel-label-right carousel-label-1" for="carousel2Item2"></label>
+                <img class="carousel-image" src="./assets/ui/carousel/carousel-image-1.png" alt="sky">
+              </div>
+              <div class="carousel-item">
+                <input class="carousel-input" type="radio" name="carousel2" id="carousel2Item2">
+                <label class="carousel-label carousel-label-2" for="carousel2Item1"></label>
+                <label class="carousel-label carousel-label-right carousel-label-2" for="carousel2Item3"></label>
+                <img class="carousel-image" src="./assets/ui/carousel/carousel-image-2.png" alt="lantern">
+              </div>
+              <div class="carousel-item">
+                <input class="carousel-input" type="radio" name="carousel2" id="carousel2Item3">
+                <label class="carousel-label carousel-label-3" for="carousel2Item2"></label>
+                <label class="carousel-label carousel-label-right carousel-label-3" for="carousel2Item4"></label>
+                <img class="carousel-image" src="./assets/ui/carousel/carousel-image-3.png" alt="beach">
+              </div>
+              <div class="carousel-item">
+                <input class="carousel-input" type="radio" name="carousel2" id="carousel2Item4">
+                <span class="carousel-arrow carousel-arrow-right" aria-hidden="true"></span>
+                <label class="carousel-label carousel-label-4" for="carousel2Item3"></label>
+                <label class="carousel-label carousel-label-right carousel-label-3" for="carousel2Item1"></label>
+                <img class="carousel-image" src="./assets/ui/carousel/carousel-image-4.png" alt="sand">
+              </div>
+            </div>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup15Example2">
+            <label class="sw-markup-toggle" for="swMarkup15Example2">Show Markup</label>
+            <pre class="sw-markup-body">&lt;div class="carousel carousel-arrows"&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;input class="carousel-input" type="radio" name="carousel2" id="carousel2Item1" checked&gt;
+    &lt;span class="carousel-arrow carousel-arrow-left" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;label class="carousel-label carousel-label-1" for="carousel2Item4"&gt;&lt;/label&gt;
+    &lt;label class="carousel-label carousel-label-right carousel-label-1" for="carousel2Item2"&gt;&lt;/label&gt;
+    &lt;img class="carousel-image" src="carousel-image-1.png" alt="sky"&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;input class="carousel-input" type="radio" name="carousel2" id="carousel2Item2"&gt;
+    &lt;label class="carousel-label carousel-label-2" for="carousel2Item1"&gt;&lt;/label&gt;
+    &lt;label class="carousel-label carousel-label-right carousel-label-2" for="carousel2Item3"&gt;&lt;/label&gt;
+    &lt;img class="carousel-image" src="carousel-image-2.png" alt="lantern"&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;input class="carousel-input" type="radio" name="carousel2" id="carousel2Item3"&gt;
+    &lt;label class="carousel-label carousel-label-3" for="carousel2Item2"&gt;&lt;/label&gt;
+    &lt;label class="carousel-label carousel-label-right carousel-label-3" for="carousel2Item4"&gt;&lt;/label&gt;
+    &lt;img class="carousel-image" src="carousel-image-3.png" alt="beach"&gt;
+  &lt;/div&gt;
+  &lt;div class="carousel-item"&gt;
+    &lt;input class="carousel-input" type="radio" name="carousel2" id="carousel2Item4"&gt;
+    &lt;span class="carousel-arrow carousel-arrow-right" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;label class="carousel-label carousel-label-4" for="carousel2Item3"&gt;&lt;/label&gt;
+    &lt;label class="carousel-label carousel-label-right carousel-label-3" for="carousel2Item1"&gt;&lt;/label&gt;
+    &lt;img class="carousel-image" src="carousel-image-4.png" alt="sand"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-16">
           <h1>Tilt Hover</h1>
           <p>The Tilt Hover UI component adds a “tilting” visual effect to a card-like UI element as the user hovers over the element.</p>
           <h2>Default</h2>
@@ -1686,8 +1808,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup15Example1">
-            <label class="sw-markup-toggle" for="swMarkup15Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup16Example1">
+            <label class="sw-markup-toggle" for="swMarkup16Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tilt"&gt;
   &lt;div class="tilt-container"&gt;
     &lt;div class="tilt-grid" id="tilt-grid-1"&gt;&lt;/div&gt;
@@ -1765,7 +1887,10 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
               <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-14">Tabpanel</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-15">Tilt Hover</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-15">Carousel</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-16">Tilt Hover</a>
             </li>
           </ul>
         </nav>
