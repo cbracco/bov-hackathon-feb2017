@@ -380,6 +380,8 @@ body {
   }
 
   .sw-sidebar-link {
+    padding-top: 8px;
+    padding-bottom: 8px;
     color: #76818c;
     background-color: transparent;
     border-right: 4px solid #f3f5f8;
