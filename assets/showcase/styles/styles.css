@@ -518,6 +518,10 @@ body {
   max-width: 400px;
 }
 
+.sw-demo-form .form {
+  max-width: 320px;
+}
+
 /* Grid Overlay (for demo purposes only) */
 .sw-demo-grid-overlay {
   position: absolute;
