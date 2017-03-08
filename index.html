@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="./assets/ui/list/list.css">
   <link rel="stylesheet" href="./assets/ui/modal/modal.css">
   <link rel="stylesheet" href="./assets/ui/pagination/pagination.css">
+  <link rel="stylesheet" href="./assets/ui/table/table.css">
   <link rel="stylesheet" href="./assets/ui/tabpanel/tabpanel.css">
   <link rel="stylesheet" href="./assets/ui/tilt/tilt.css">
   <link rel="stylesheet" href="./assets/showcase/styles/styles.css">
@@ -742,6 +743,579 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
           </div>
         </section>
         <section class="sw-section js-scrollspy-section" id="sw-section-6">
+          <h1>Table</h1>
+          <p>The Table UI component adds sensible default styles to HTML <code>&lt;table&gt;</code> elements, which are used to display data in a tabular format.</p>
+          <h2>Default</h2>
+          <p>The default styles for a Table are fairly sparse, adding some consistent padding and colors to the entire table.</p>
+          <div class="sw-demo sw-demo-table">
+            <table class="table">
+              <caption>.table</caption>
+              <tbody>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Thing 1</th>
+                  <th scope="col">Thing 2</th>
+                  <th scope="col">Thing 3</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1246</td>
+                  <td>Hello</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>4652</td>
+                  <td>Goodbye</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1657</td>
+                  <td>Cheers</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>1498</td>
+                  <td>Beers</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>3286</td>
+                  <td>Awesome</td>
+                  <td>true</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example1">
+            <label class="sw-markup-toggle" for="swMarkup6Example1">Show Markup</label>
+            <pre class="sw-markup-body">&lt;table class="table"&gt;
+  &lt;caption&gt;.table&lt;/caption&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;#&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 1&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 2&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1246&lt;/td&gt;
+      &lt;td&gt;Hello&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;4652&lt;/td&gt;
+      &lt;td&gt;Goodbye&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;1657&lt;/td&gt;
+      &lt;td&gt;Cheers&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;1498&lt;/td&gt;
+      &lt;td&gt;Beers&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;3286&lt;/td&gt;
+      &lt;td&gt;Awesome&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+          </div>
+          <hr>
+          <h2>Responsive Tables</h2>
+          <p>You can wrap a <code>.table</code> element in a <code>&lt;div&gt;</code> with the class <code>.table-responsive</code>, and it will add scrollbars to the table in case the table is larger than its parent element. Resize the browser to see this behavior in action.</p>
+          <div class="sw-demo sw-demo-table">
+            <div class="table-responsive">
+              <table class="table">
+                <caption>.table</caption>
+                <tbody>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Thing 1</th>
+                    <th scope="col">Thing 2</th>
+                    <th scope="col">Thing 3</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1246</td>
+                    <td>Hello</td>
+                    <td>true</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>4652</td>
+                    <td>Goodbye</td>
+                    <td>false</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>1657</td>
+                    <td>Cheers</td>
+                    <td>false</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>1498</td>
+                    <td>Beers</td>
+                    <td>true</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>3286</td>
+                    <td>Awesome</td>
+                    <td>true</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example2">
+            <label class="sw-markup-toggle" for="swMarkup6Example2">Show Markup</label>
+            <pre class="sw-markup-body">&lt;div class="table-responsive"&gt;
+  &lt;table class="table"&gt;
+    &lt;caption&gt;.table&lt;/caption&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;th scope="col"&gt;#&lt;/th&gt;
+        &lt;th scope="col"&gt;Thing 1&lt;/th&gt;
+        &lt;th scope="col"&gt;Thing 2&lt;/th&gt;
+        &lt;th scope="col"&gt;Thing 3&lt;/th&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;1246&lt;/td&gt;
+        &lt;td&gt;Hello&lt;/td&gt;
+        &lt;td&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;4652&lt;/td&gt;
+        &lt;td&gt;Goodbye&lt;/td&gt;
+        &lt;td&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;1657&lt;/td&gt;
+        &lt;td&gt;Cheers&lt;/td&gt;
+        &lt;td&gt;false&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;4&lt;/td&gt;
+        &lt;td&gt;1498&lt;/td&gt;
+        &lt;td&gt;Beers&lt;/td&gt;
+        &lt;td&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;5&lt;/td&gt;
+        &lt;td&gt;3286&lt;/td&gt;
+        &lt;td&gt;Awesome&lt;/td&gt;
+        &lt;td&gt;true&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;</pre>
+          </div>
+          <hr>
+          <h2>Outer Border</h2>
+          <p>A Table UI element with a border around the outside of the entire table.</p>
+          <div class="sw-demo sw-demo-table">
+            <table class="table table-border">
+              <caption>.table-border</caption>
+              <tbody>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Thing 1</th>
+                  <th scope="col">Thing 2</th>
+                  <th scope="col">Thing 3</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1246</td>
+                  <td>Hello</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>4652</td>
+                  <td>Goodbye</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1657</td>
+                  <td>Cheers</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>1498</td>
+                  <td>Beers</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>3286</td>
+                  <td>Awesome</td>
+                  <td>true</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example3">
+            <label class="sw-markup-toggle" for="swMarkup6Example3">Show Markup</label>
+            <pre class="sw-markup-body">&lt;table class="table table-border"&gt;
+  &lt;caption&gt;.table-border&lt;/caption&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;#&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 1&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 2&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1246&lt;/td&gt;
+      &lt;td&gt;Hello&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;4652&lt;/td&gt;
+      &lt;td&gt;Goodbye&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;1657&lt;/td&gt;
+      &lt;td&gt;Cheers&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;1498&lt;/td&gt;
+      &lt;td&gt;Beers&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;3286&lt;/td&gt;
+      &lt;td&gt;Awesome&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+          </div>
+          <hr>
+          <h2>Row Border</h2>
+          <p>A Table UI element with a border between each row in the table.</p>
+          <div class="sw-demo sw-demo-table">
+            <table class="table table-border-rows">
+              <caption>.table-border-rows</caption>
+              <tbody>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Thing 1</th>
+                  <th scope="col">Thing 2</th>
+                  <th scope="col">Thing 3</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1246</td>
+                  <td>Hello</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>4652</td>
+                  <td>Goodbye</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1657</td>
+                  <td>Cheers</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>1498</td>
+                  <td>Beers</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>3286</td>
+                  <td>Awesome</td>
+                  <td>true</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example4">
+            <label class="sw-markup-toggle" for="swMarkup6Example4">Show Markup</label>
+            <pre class="sw-markup-body">&lt;table class="table table-border-rows"&gt;
+  &lt;caption&gt;.table-border-rows&lt;/caption&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;#&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 1&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 2&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1246&lt;/td&gt;
+      &lt;td&gt;Hello&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;4652&lt;/td&gt;
+      &lt;td&gt;Goodbye&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;1657&lt;/td&gt;
+      &lt;td&gt;Cheers&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;1498&lt;/td&gt;
+      &lt;td&gt;Beers&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;3286&lt;/td&gt;
+      &lt;td&gt;Awesome&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+          </div>
+          <hr>
+          <h2>Cell Border</h2>
+          <p>A Table UI element with a border between each cell in the table.</p>
+          <div class="sw-demo sw-demo-table">
+            <table class="table table-border-cells">
+              <caption>.table-border-cells</caption>
+              <tbody>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Thing 1</th>
+                  <th scope="col">Thing 2</th>
+                  <th scope="col">Thing 3</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>1246</td>
+                  <td>Hello</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>4652</td>
+                  <td>Goodbye</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1657</td>
+                  <td>Cheers</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>1498</td>
+                  <td>Beers</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>3286</td>
+                  <td>Awesome</td>
+                  <td>true</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example5">
+            <label class="sw-markup-toggle" for="swMarkup6Example5">Show Markup</label>
+            <pre class="sw-markup-body">&lt;table class="table table-border-cells"&gt;
+  &lt;caption&gt;.table-border-cells&lt;/caption&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;#&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 1&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 2&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1246&lt;/td&gt;
+      &lt;td&gt;Hello&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;4652&lt;/td&gt;
+      &lt;td&gt;Goodbye&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;1657&lt;/td&gt;
+      &lt;td&gt;Cheers&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;1498&lt;/td&gt;
+      &lt;td&gt;Beers&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;3286&lt;/td&gt;
+      &lt;td&gt;Awesome&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+          </div>
+          <hr>
+          <h2>Striped</h2>
+          <p>A Table UI element with alternating background colors for each row in the table.</p>
+          <div class="sw-demo sw-demo-table">
+            <table class="table table-striped">
+              <caption>.table-striped</caption>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Thing 1</th>
+                  <th scope="col">Thing 2</th>
+                  <th scope="col">Thing 3</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td scope="col">#</td>
+                  <td scope="col">Thing 1</td>
+                  <td scope="col">Thing 2</td>
+                  <td scope="col">Thing 3</td>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>1246</td>
+                  <td>Hello</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>4652</td>
+                  <td>Goodbye</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1657</td>
+                  <td>Cheers</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>1498</td>
+                  <td>Beers</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>3286</td>
+                  <td>Awesome</td>
+                  <td>true</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example6">
+            <label class="sw-markup-toggle" for="swMarkup6Example6">Show Markup</label>
+            <pre class="sw-markup-body">&lt;table class="table table-striped"&gt;
+  &lt;caption&gt;.table-striped&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th scope="col"&gt;#&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 1&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 2&lt;/th&gt;
+      &lt;th scope="col"&gt;Thing 3&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td scope="col"&gt;#&lt;/td&gt;
+      &lt;td scope="col"&gt;Thing 1&lt;/td&gt;
+      &lt;td scope="col"&gt;Thing 2&lt;/td&gt;
+      &lt;td scope="col"&gt;Thing 3&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;1246&lt;/td&gt;
+      &lt;td&gt;Hello&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;4652&lt;/td&gt;
+      &lt;td&gt;Goodbye&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;1657&lt;/td&gt;
+      &lt;td&gt;Cheers&lt;/td&gt;
+      &lt;td&gt;false&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;1498&lt;/td&gt;
+      &lt;td&gt;Beers&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;3286&lt;/td&gt;
+      &lt;td&gt;Awesome&lt;/td&gt;
+      &lt;td&gt;true&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-7">
           <h1>Icon</h1>
           <p>The Icon UI component displays an icon from an <a href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/" target="_blank">SVG sprite</a> that is included at the top of the webpage.</p>
           <h2>Default</h2>
@@ -750,8 +1324,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <svg class="icon-book"><use xlink:href="#icon-book"></use></svg>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example1">
-            <label class="sw-markup-toggle" for="swMarkup6Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example1">
+            <label class="sw-markup-toggle" for="swMarkup7Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;svg class="icon-book"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;</pre>
           </div>
           <hr>
@@ -763,8 +1337,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <svg class="icon-book icon-large"><use xlink:href="#icon-book"></use></svg>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example2">
-            <label class="sw-markup-toggle" for="swMarkup6Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example2">
+            <label class="sw-markup-toggle" for="swMarkup7Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;svg class="icon-book icon-small"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;
 &lt;svg class="icon-book icon-medium"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;
 &lt;svg class="icon-book icon-large"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;</pre>
@@ -791,8 +1365,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </h2>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup6Example3">
-            <label class="sw-markup-toggle" for="swMarkup6Example3">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example3">
+            <label class="sw-markup-toggle" for="swMarkup7Example3">Show Markup</label>
             <pre class="sw-markup-body">&lt;p&gt;
   &lt;svg class="icon-book icon-left"&gt;&lt;use xlink:href="#icon-book"&gt;&lt;/use&gt;&lt;/svg&gt;
   Left-aligned
@@ -811,7 +1385,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/h2&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-7">
+        <section class="sw-section js-scrollspy-section" id="sw-section-8">
           <h1>Container</h1>
           <p>The Container UI component sets a maximum width for its child content, and can be used to help create layout on a webpage. This website itself uses Containers to set a maximum width for the header, body, and footer contents.</p>
           <h2>Default</h2>
@@ -820,12 +1394,12 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <div class="container">I am contained!</div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup7Example1">
-            <label class="sw-markup-toggle" for="swMarkup7Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example1">
+            <label class="sw-markup-toggle" for="swMarkup8Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="container"&gt;I am contained!&lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-8">
+        <section class="sw-section js-scrollspy-section" id="sw-section-9">
           <h1>Grid</h1>
           <p>The Grid UI component provides row-column functionality that can be used to create more complex layouts on a webpage.</p>
           <h2>Default</h2>
@@ -902,8 +1476,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example1">
-            <label class="sw-markup-toggle" for="swMarkup8Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example1">
+            <label class="sw-markup-toggle" for="swMarkup9Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="grid"&gt;
   &lt;div class="grid-row"&gt;
     &lt;div class="grid-col-12"&gt;&lt;div class="sw-demo-grid-col"&gt;12&lt;/div&gt;&lt;/div&gt;
@@ -1008,8 +1582,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example2">
-            <label class="sw-markup-toggle" for="swMarkup8Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example2">
+            <label class="sw-markup-toggle" for="swMarkup9Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="grid"&gt;
   &lt;div class="grid-row"&gt;
     &lt;div class="grid-col-4"&gt;
@@ -1069,8 +1643,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example3">
-            <label class="sw-markup-toggle" for="swMarkup8Example3">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example3">
+            <label class="sw-markup-toggle" for="swMarkup9Example3">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="grid"&gt;
   &lt;div class="grid-row"&gt;
     &lt;div class="grid-col-2 grid-push-1"&gt;2.grid-push-1&lt;/div&gt;
@@ -1160,8 +1734,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup8Example4">
-            <label class="sw-markup-toggle" for="swMarkup8Example4">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example4">
+            <label class="sw-markup-toggle" for="swMarkup9Example4">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="grid"&gt;
   &lt;div class="grid-row grid-gapless"&gt;
     &lt;div class="grid-col-12"&gt;12&lt;/div&gt;
@@ -1216,7 +1790,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-9">
+        <section class="sw-section js-scrollspy-section" id="sw-section-10">
           <h1>List</h1>
           <p>The List UI component provides a few simple variations from the default list styles introduced by Typography.</p>
           <h2>Unstyled</h2>
@@ -1243,8 +1817,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </ul>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example1">
-            <label class="sw-markup-toggle" for="swMarkup9Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example1">
+            <label class="sw-markup-toggle" for="swMarkup10Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;ul class="list-unstyled"&gt;
   &lt;li&gt;List Item 1&lt;/li&gt;
   &lt;li&gt;
@@ -1285,8 +1859,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </ul>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup9Example2">
-            <label class="sw-markup-toggle" for="swMarkup9Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example2">
+            <label class="sw-markup-toggle" for="swMarkup10Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;dl class="list-inline"&gt;
   &lt;dt&gt;Definition List Title 1&lt;/dt&gt;
   &lt;dd&gt;This is a definition list division.&lt;/dd&gt;
@@ -1303,7 +1877,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/ul&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-10">
+        <section class="sw-section js-scrollspy-section" id="sw-section-11">
           <h1>Alert</h1>
           <p>The Alert UI component is used to notify a user of a change in the state of the interface.</p>
           <h2>Default</h2>
@@ -1330,8 +1904,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup10Example1">
-            <label class="sw-markup-toggle" for="swMarkup10Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example1">
+            <label class="sw-markup-toggle" for="swMarkup11Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="alert" role="alert"&gt;
   &lt;strong&gt;Default:&lt;/strong&gt; I am a default alert. &lt;a href="#!"&gt;This is an alert link&lt;/a&gt;.
 &lt;/div&gt;
@@ -1349,7 +1923,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-11">
+        <section class="sw-section js-scrollspy-section" id="sw-section-12">
           <h1>Breadcrumbs</h1>
           <p>The Breadcrumbs UI component is navigation that displays a trail of webpages leading to the current webpage.</p>
           <h2>Default</h2>
@@ -1363,8 +1937,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </ul>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup11Example1">
-            <label class="sw-markup-toggle" for="swMarkup11Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup12Example1">
+            <label class="sw-markup-toggle" for="swMarkup12Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;ul class="breadcrumbs"&gt;
   &lt;li class="breadcrumbs-item"&gt;&lt;a class="breadcrumbs-link" href="#!"&gt;Orchestra&lt;/a&gt;&lt;/li&gt;
   &lt;li class="breadcrumbs-item"&gt;&lt;a class="breadcrumbs-link" href="#!"&gt;Instrumentation&lt;/a&gt;&lt;/li&gt;
@@ -1373,7 +1947,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/ul&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-12">
+        <section class="sw-section js-scrollspy-section" id="sw-section-13">
           <h1>Button</h1>
           <p>The Button UI component is a clickable interface element that can trigger an action or state change within the interface.</p>
           <h2>Default</h2>
@@ -1393,8 +1967,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <button class="button button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup12Example1">
-            <label class="sw-markup-toggle" for="swMarkup12Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup13Example1">
+            <label class="sw-markup-toggle" for="swMarkup13Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-blue"&gt;
@@ -1426,8 +2000,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             <button class="button button-pill button-gray-lightest">Gray Lightest</button>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup12Example2">
-            <label class="sw-markup-toggle" for="swMarkup12Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup13Example2">
+            <label class="sw-markup-toggle" for="swMarkup13Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;button class="button button-pill button-blue"&gt;Blue&lt;/button&gt;
 &lt;button class="button button-pill button-blue-lightest"&gt;Blue Lightest&lt;/button&gt;
 &lt;button class="button button-pill button-blue"&gt;
@@ -1442,7 +2016,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;button class="button button-pill button-gray-lightest"&gt;Gray Lightest&lt;/button&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-13">
+        <section class="sw-section js-scrollspy-section" id="sw-section-14">
           <h1>Pagination</h1>
           <p>The Pagination UI component is a clickable interface element that let}s the user navigate between pages of related content.</p>
           <h2>Default</h2>
@@ -1482,8 +2056,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </nav>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup13Example1">
-            <label class="sw-markup-toggle" for="swMarkup13Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup14Example1">
+            <label class="sw-markup-toggle" for="swMarkup14Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;nav class="pagination" role="navigation" aria-label="Page navigation"&gt;
   &lt;ul class="pagination-list"&gt;
     &lt;li class="pagination-item is-disabled"&gt;
@@ -1518,7 +2092,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/nav&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-14">
+        <section class="sw-section js-scrollspy-section" id="sw-section-15">
           <h1>Card</h1>
           <p>The Card UI component is a way to organize related information in a condensed, reusable format. Cards are typically represented stacked on top of one another, or arranged side-by-side in a grid format.</p>
           <h2>Default</h2>
@@ -1541,8 +2115,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup14Example1">
-            <label class="sw-markup-toggle" for="swMarkup14Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup15Example1">
+            <label class="sw-markup-toggle" for="swMarkup15Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card"&gt;
   &lt;div class="card-header"&gt;
     &lt;div class="card-heading"&gt;&lt;span&gt;$15&lt;/span&gt;PSD Version&lt;/div&gt;
@@ -1576,8 +2150,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup14Example2">
-            <label class="sw-markup-toggle" for="swMarkup14Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup15Example2">
+            <label class="sw-markup-toggle" for="swMarkup15Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="card card-image"&gt;
   &lt;div class="card-header"&gt;
     &lt;img src="./assets/ui/card/card-image.jpg" alt="Foggy Lake"&gt;
@@ -1591,7 +2165,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-15">
+        <section class="sw-section js-scrollspy-section" id="sw-section-16">
           <h1>Accordion</h1>
           <p>The Accordion UI component is used to toggle the visibility of information on a webpage. Accordions help reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please.</p>
           <h2>Default</h2>
@@ -1619,8 +2193,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup15Example1">
-            <label class="sw-markup-toggle" for="swMarkup15Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup16Example1">
+            <label class="sw-markup-toggle" for="swMarkup16Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="accordion"&gt;
   &lt;input class="accordion-input" type="radio" name="accordion-1" id="accordion-input-1" checked&gt;
   &lt;label class="accordion-label" for="accordion-input-1"&gt;
@@ -1643,7 +2217,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-16">
+        <section class="sw-section js-scrollspy-section" id="sw-section-17">
           <h1>Modal</h1>
           <p>The Modal UI component is a popup window whose visibility is triggered by its respective label, which is styled as a Button UI component. It can then be closed by clicking</p>
           <h2>Default</h2>
@@ -1667,8 +2241,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup16Example1">
-            <label class="sw-markup-toggle" for="swMarkup16Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup17Example1">
+            <label class="sw-markup-toggle" for="swMarkup17Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;input type="checkbox" id="modal1" class="modal-input"&gt;
 &lt;label class="button button-blue" for="modal1"&gt;Open Modal&lt;/label&gt;
 &lt;label class="modal-overlay" for="modal1"&gt;&lt;/label&gt;
@@ -1687,7 +2261,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-17">
+        <section class="sw-section js-scrollspy-section" id="sw-section-18">
           <h1>Tabpanel</h1>
           <p>The Tabpanel UI component is another way to reduce the initial amount of visible information on the page, allowing users to toggle visibility as they please. When a user clicks on a tab, it displays the corresponding tab content.</p>
           <h2>Default</h2>
@@ -1737,8 +2311,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup17Example1">
-            <label class="sw-markup-toggle" for="swMarkup17Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup18Example1">
+            <label class="sw-markup-toggle" for="swMarkup18Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-1" name="tabpanel-1" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-1-input-2" name="tabpanel-1"&gt;
@@ -1830,8 +2404,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup17Example2">
-            <label class="sw-markup-toggle" for="swMarkup17Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup18Example2">
+            <label class="sw-markup-toggle" for="swMarkup18Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-alt" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-1" name="tabpanel-2" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-2-input-2" name="tabpanel-2"&gt;
@@ -1923,8 +2497,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup17Example3">
-            <label class="sw-markup-toggle" for="swMarkup17Example3">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup18Example3">
+            <label class="sw-markup-toggle" for="swMarkup18Example3">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tabpanel tabpanel-vertical" role="tabpanel"&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-1" name="tabpanel-3" checked&gt;
   &lt;input class="tabpanel-input" type="radio" id="tabpanel-3-input-2" name="tabpanel-3"&gt;
@@ -1969,7 +2543,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-18">
+        <section class="sw-section js-scrollspy-section" id="sw-section-19">
           <h1>Carousel</h1>
           <p>The Carousel UI component lets a user navigate through a set of images using different types of navigation.</p>
           <h2>Default</h2>
@@ -1999,8 +2573,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup18Example1">
-            <label class="sw-markup-toggle" for="swMarkup18Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup19Example1">
+            <label class="sw-markup-toggle" for="swMarkup19Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="carousel"&gt;
   &lt;div class="carousel-item"&gt;
     &lt;input class="carousel-input" type="radio" name="carousel1" id="carousel1Item1" checked&gt;
@@ -2058,8 +2632,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup18Example2">
-            <label class="sw-markup-toggle" for="swMarkup18Example2">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup19Example2">
+            <label class="sw-markup-toggle" for="swMarkup19Example2">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="carousel carousel-arrows"&gt;
   &lt;div class="carousel-item"&gt;
     &lt;input class="carousel-input" type="radio" name="carousel2" id="carousel2Item1" checked&gt;
@@ -2090,7 +2664,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-19">
+        <section class="sw-section js-scrollspy-section" id="sw-section-20">
           <h1>Tilt Hover</h1>
           <p>The Tilt Hover UI component adds a “tilting” visual effect to a card-like UI element as the user hovers over the element.</p>
           <h2>Default</h2>
@@ -2117,8 +2691,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </div>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup19Example1">
-            <label class="sw-markup-toggle" for="swMarkup19Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup20Example1">
+            <label class="sw-markup-toggle" for="swMarkup20Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;div class="tilt"&gt;
   &lt;div class="tilt-container"&gt;
     &lt;div class="tilt-grid" id="tilt-grid-1"&gt;&lt;/div&gt;
@@ -2140,7 +2714,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/div&gt;</pre>
           </div>
         </section>
-        <section class="sw-section js-scrollspy-section" id="sw-section-20">
+        <section class="sw-section js-scrollspy-section" id="sw-section-21">
           <h1>Flipnav</h1>
           <p>The Flipnav UI component is a navigation bar with links that perform a 3d “flip” animation on mouse hover.</p>
           <h2>Default</h2>
@@ -2179,8 +2753,8 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </nav>
           </div>
           <div class="sw-markup">
-            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup20Example1">
-            <label class="sw-markup-toggle" for="swMarkup20Example1">Show Markup</label>
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup21Example1">
+            <label class="sw-markup-toggle" for="swMarkup21Example1">Show Markup</label>
             <pre class="sw-markup-body">&lt;nav class="flipnav" role="navigation"&gt;
   &lt;ul class="flipnav-list"&gt;
     &lt;li class="flipnav-item"&gt;
@@ -2243,49 +2817,52 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
               <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-5">Form</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Icon</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-6">Table</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">Container</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-7">Icon</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-8">Grid</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-8">Container</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-9">List</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-9">Grid</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-10">Alert</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-10">List</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-11">Breadcrumbs</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-11">Alert</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-12">Button</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-12">Breadcrumbs</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-13">Pagination</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-13">Button</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-14">Card</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-14">Pagination</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-15">Accordion</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-15">Card</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-16">Modal</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-16">Accordion</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-17">Tabpanel</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-17">Modal</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-18">Carousel</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-18">Tabpanel</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-19">Tilt Hover</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-19">Carousel</a>
             </li>
             <li class="sw-sidebar-item">
-              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-20">Flipnav</a>
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-20">Tilt Hover</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-21">Flipnav</a>
             </li>
           </ul>
         </nav>
