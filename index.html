@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="./assets/ui/carousel/carousel.css">
   <link rel="stylesheet" href="./assets/ui/color-palette/color-palette.css">
   <link rel="stylesheet" href="./assets/ui/container/container.css">
+  <link rel="stylesheet" href="./assets/ui/flipnav/flipnav.css">
   <link rel="stylesheet" href="./assets/ui/form/form.css">
   <link rel="stylesheet" href="./assets/ui/grid/grid.css">
   <link rel="stylesheet" href="./assets/ui/icon/icon.css">
@@ -2094,7 +2095,7 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
           <p>The Tilt Hover UI component adds a “tilting” visual effect to a card-like UI element as the user hovers over the element.</p>
           <h2>Default</h2>
           <p>Hover over the element below with your mouse to see how the Tilt Hover UI component changes in response.</p>
-          <div class="sw-demo">
+          <div class="sw-demo sw-demo-tilt">
             <div class="tilt">
               <div class="tilt-container">
                 <div class="tilt-grid" id="tilt-grid-1">&nbsp;</div>
@@ -2137,6 +2138,80 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</pre>
+          </div>
+        </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-20">
+          <h1>Flipnav</h1>
+          <p>The Flipnav UI component is a navigation bar with links that perform a 3d “flip” animation on mouse hover.</p>
+          <h2>Default</h2>
+          <p>Hover over each link in the Flipnav below with your mouse to see the animation in action.</p>
+          <div class="sw-demo sw-demo-flipnav">
+            <nav class="flipnav" role="navigation">
+              <ul class="flipnav-list">
+                <li class="flipnav-item">
+                  <a class="flipnav-link" href="#!">
+                    Home
+                    <span class="flipnav-cube" aria-hidden="true">
+                      <span class="flipnav-front">Home</span>
+                      <span class="flipnav-back">Home</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="flipnav-item">
+                  <a class="flipnav-link" href="#!">
+                    About
+                    <span class="flipnav-cube" aria-hidden="true">
+                      <span class="flipnav-front">About</span>
+                      <span class="flipnav-back">About</span>
+                    </span>
+                  </a>
+                </li>
+                <li class="flipnav-item">
+                  <a class="flipnav-link" href="#!">
+                    Contact Us
+                    <span class="flipnav-cube" aria-hidden="true">
+                      <span class="flipnav-front">Contact Us</span>
+                      <span class="flipnav-back">Contact Us</span>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup20Example1">
+            <label class="sw-markup-toggle" for="swMarkup20Example1">Show Markup</label>
+            <pre class="sw-markup-body">&lt;nav class="flipnav" role="navigation"&gt;
+  &lt;ul class="flipnav-list"&gt;
+    &lt;li class="flipnav-item"&gt;
+      &lt;a class="flipnav-link" href="#!"&gt;
+        Home
+        &lt;span class="flipnav-cube" aria-hidden="true"&gt;
+          &lt;span class="flipnav-front"&gt;Home&lt;/span&gt;
+          &lt;span class="flipnav-back"&gt;Home&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="flipnav-item"&gt;
+      &lt;a class="flipnav-link" href="#!"&gt;
+        About
+        &lt;span class="flipnav-cube" aria-hidden="true"&gt;
+          &lt;span class="flipnav-front"&gt;About&lt;/span&gt;
+          &lt;span class="flipnav-back"&gt;About&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="flipnav-item"&gt;
+      &lt;a class="flipnav-link" href="#!"&gt;
+        Contact Us
+        &lt;span class="flipnav-cube" aria-hidden="true"&gt;
+          &lt;span class="flipnav-front"&gt;Contact Us&lt;/span&gt;
+          &lt;span class="flipnav-back"&gt;Contact Us&lt;/span&gt;
+        &lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre>
           </div>
         </section>
       </div>
@@ -2208,6 +2283,9 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </li>
             <li class="sw-sidebar-item">
               <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-19">Tilt Hover</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-20">Flipnav</a>
             </li>
           </ul>
         </nav>

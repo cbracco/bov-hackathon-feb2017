@@ -558,7 +558,7 @@ body {
 }
 
 .sw-demo-tilt .tilt-background {
-  background-image: url(./assets/ui/tilt/tilt-image-1.jpg)
+  background-image: url('../../ui/tilt/tilt-image-1.jpg')
 }
 
 /* Markup */
