@@ -1,8 +1,8 @@
-# MD Hackathon, Feb 24-26 2017: Team 12
+# Orchestra UI
 
-> The repository for Team 12’s February 2017 Hackathon for Modern Developer!
+> A CSS UI framework and component library. The result of Team 12’s work during the MD Hackathon on February 24-26, 2017.
 
-[View the finished product!](https://cbracco.github.io/md-hackathon-team12/)
+[View the showcase!](https://cbracco.github.io/orchestra-ui/)
 
 # Goals
 
