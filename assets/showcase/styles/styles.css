@@ -357,12 +357,6 @@ body {
     width: 20%;
   }
 
-  .sw-sidebar.is-affixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
-
   .sw-sidebar-toggle {
     display: none;
   }

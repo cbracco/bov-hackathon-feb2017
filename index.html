@@ -2788,6 +2788,48 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
 &lt;/nav&gt;</pre>
           </div>
         </section>
+        <section class="sw-section js-scrollspy-section" id="sw-section-22">
+          <h1>Scrollspy</h1>
+          <p>The Scrollspy UI component is a visual guide applied to a set of navigation items on the page that indicates the user’s current scroll position. To use it, simply add the <code>.js-scrollspy-section</code> class to every element on the page that you would like to spy, and add the <code>.js-scrollspy-link</code> to every link in the navigation that corresponds to the element you are spying. The JavaScript adds/removes an HTML class to each navigation item based on whether or not the user has scrolled to the location of that item on the page.</p>
+          <h2>Default</h2>
+          <p>You can see the Scrollspy component in action from the sidebar of this very website.</p>
+          <div class="sw-markup">
+            <input type="checkbox" class="sw-markup-input visuallyhidden" id="swMarkup22Example1">
+            <label class="sw-markup-toggle" for="swMarkup22Example1">Show Markup</label>
+            <pre class="sw-markup-body">var scrollSpy = (function () {
+  // STRICT MODE
+  'use strict';
+
+  //
+  // PUBLIC METHODS
+  //
+  function init () {
+    var sections = {};
+    var section = document.querySelectorAll('.js-scrollspy-section');
+    var i = 0;
+
+    Array.prototype.forEach.call(section, function (event) {
+      sections[event.id] = event.offsetTop;
+    });
+
+    document.addEventListener('scroll', function (event) {
+      var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
+      for (i in sections) {
+        if (sections[i] <= scrollPos) {
+          document.querySelector('.js-scrollspy-link.is-current').classList.remove('is-current');
+          document.querySelector('.js-scrollspy-link[href*=' + i + ']').classList.add('is-current');
+        }
+      }
+    }, false);
+  }
+
+  return {
+    init: init
+  }
+})();</pre>
+          </div>
+        </section>
       </div>
       <!-- Sidebar -->
       <div class="sw-sidebar js-position-sticky">
@@ -2863,6 +2905,9 @@ p q r s t u v w x y z { | } ~&lt;/pre&gt;</pre>
             </li>
             <li class="sw-sidebar-item">
               <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-21">Flipnav</a>
+            </li>
+            <li class="sw-sidebar-item">
+              <a class="sw-sidebar-link js-scrollspy-link" href="#sw-section-22">Scrollspy</a>
             </li>
           </ul>
         </nav>
