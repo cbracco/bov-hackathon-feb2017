@@ -51,6 +51,7 @@ body {
 
 .slide {
     width: 24%;
+    height: 70px;
     cursor: pointer;
     position: relative;
 }
