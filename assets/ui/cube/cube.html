@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="cube.css">
+    <title>3d Cube</title>
+</head>
+<body>
+    <div class="wrap">
+
+        <input type="radio" checked id="radio-front" name="select-face"/>  
+        <input type="radio" id="radio-right" name="select-face"/>
+        <input type="radio" id="radio-left" name="select-face"/>
+
+        <input type="radio" id="radio-back" name="select-face"/>
+
+
+        <div class="space">
+            <div class="cube">
+                
+                <img src="photo1.jpg" class="cube-face  cube-face-front">
+                <img src="photo2.jpg" class="cube-face  cube-face-back">
+                <img src="photo3.jpg" class="cube-face  cube-face-left">
+                <img src="photo4.jpg" class="cube-face  cube-face-right">
+            </div>
+        </div>
+
+        <div class="labels-container">
+            <label for="radio-front">
+                <img src="photo1.jpg" class="slide">
+            </label>
+            <label for="radio-right">
+                <img src="photo2.jpg" class="slide">
+            </label>
+            <label for="radio-left">
+                <img src="photo3.jpg" class="slide">
+            </label>
+            <label for="radio-back">
+                <img src="photo4.jpg" class="slide">
+            </label>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.space {
+  margin: 100px;
+  width: 600px;
+  height: 300px;
+  
+  perspective: 1200px;
+  margin: 0 auto;
+}
+.cube {
+  position: relative;
+  width: inherit;
+  height: inherit;
+  
+  transform-style: preserve-3d;
+  transition: transform 2s cubic-bezier(.35,-0.71,.94,1.03);
+}
+.cube-face {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+}
+
+.cube-face-front {
+  transform: translate3d(0, 0, 300px);
+  
+}
+
+.cube-face-back {
+  transform: rotateY(180deg) translate3d(0, 0, 300px);
+}
+
+.cube-face-left {
+  transform: rotateY(-90deg) translate3d(0, 0, 300px);
+}
+
+.cube-face-right {
+  transform: rotateY(90deg) translate3d(0, 0, 300px);
+}
+
+
+.labels-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 50px;
+
+}
+
+.slide {
+    width: 24%;
+    cursor: pointer;
+    position: relative;
+}
+
+
+#radio-back:checked ~ .space .cube {
+  transform: rotateY(180deg); 
+} 
+
+#radio-left:checked ~ .space .cube {
+  transform: rotateY(90deg); 
+} 
+
+#radio-right:checked ~ .space .cube {
+  transform: rotateY(-90deg); 
+}
+
+input[type="radio"] {
+  display: none;
+}
