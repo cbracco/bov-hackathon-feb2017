@@ -2,7 +2,7 @@
 
 > A CSS UI framework and component library. The result of Team 12’s work during the [Bov Academy](https://bovacademy.com/) Hackathon on February 24-26, 2017.
 
-[View the showcase!](https://cbracco.github.io/orchestra-ui/)
+[View the showcase!](https://cbracco.github.io/bov-hackathon-feb2017/)
 
 # Goals
 
